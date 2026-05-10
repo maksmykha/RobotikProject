@@ -9,25 +9,25 @@ Die gesamte Umgebung wurde in Gazebo Sim aufgebaut und umfasst:
 sowie unterschiedliche Ablagebereiche zur Sortierung der erkannten Objekte.
 
 
-#Wichtige Links:
+# Wichtige Links:
 
-Universal Robots ROS2 Driver
+*Universal Robots ROS2 Driver*
 https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver?utm_source=chatgpt.com
 https://docs.universal-robots.com/Universal_Robots_ROS_Documentation/?utm_source=chatgpt.com
 
 
-Movelt 2:
+*Movelt 2*
 https://moveit.picknik.ai/humble/?utm_source=chatgpt.com#
 
 
-YOLO ROS2:
+*YOLO ROS2*
 https://github.com/mgonzs13/yolo_ros?utm_source=chatgpt.com
 
 
-Beispiel-Projekte / GitHub Suche:
+*Beispiel-Projekte / GitHub Suche*
 https://github.com/marybayyouk/clair-pick-and-place-ros2
 https://github.com/ninjamath3/ur5-simulation
 
 
-Gazebo Sim:
+*Gazebo Sim*
 https://gazebosim.org/docs?utm_source=chatgpt.com

@@ -1,6 +1,6 @@
 # RobotikProject
 
-m Rahmen der Robotik-Vorlesung im 4. Semester an der DHBW wurde eine vollständige industrielle Pick-&-Place-Simulation mit ROS2, Gazebo, MoveIt2 und YOLO entwickelt. Ziel des Projekts ist die automatisierte Erkennung, Verfolgung und Sortierung von Objekten auf einem Förderband mithilfe eines kollaborativen UR-Roboterarms.
+Im Rahmen der Robotik-Vorlesung im 4. Semester an der DHBW wurde eine vollständige industrielle Pick-&-Place-Simulation mit ROS2, Gazebo, MoveIt2 und YOLO entwickelt. Ziel des Projekts ist die automatisierte Erkennung, Verfolgung und Sortierung von Objekten auf einem Förderband mithilfe eines kollaborativen UR-Roboterarms.
 
 Die gesamte Umgebung wurde in Gazebo Sim aufgebaut und umfasst:
 - einen UR-Roboterarm,

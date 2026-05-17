@@ -1,0 +1,1 @@
+/home/maksmykha/Documents/RobotikProject/build/yolo_msgs/rosidl_generator_rs/yolo_msgs/rust/src/msg/rmw.rs

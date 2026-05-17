@@ -1,0 +1,1 @@
+/home/maksmykha/Documents/RobotikProject/build/yolo_msgs/rosidl_generator_c/yolo_msgs/msg/detail/detection_array__functions.h

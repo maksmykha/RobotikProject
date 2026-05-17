@@ -1,0 +1,1 @@
+/home/maksmykha/Documents/RobotikProject/build/yolo_msgs/ament_cmake_core/yolo_msgsConfig.cmake

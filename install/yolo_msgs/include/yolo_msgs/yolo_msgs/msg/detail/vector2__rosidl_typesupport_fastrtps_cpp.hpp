@@ -1,0 +1,1 @@
+/home/maksmykha/Documents/RobotikProject/build/yolo_msgs/rosidl_typesupport_fastrtps_cpp/yolo_msgs/msg/detail/vector2__rosidl_typesupport_fastrtps_cpp.hpp

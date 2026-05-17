@@ -1,0 +1,1 @@
+/home/maksmykha/Documents/RobotikProject/src/yolo_ros/yolo_msgs/msg/KeyPoint2D.msg

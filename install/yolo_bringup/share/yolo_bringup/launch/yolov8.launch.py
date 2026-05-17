@@ -1,0 +1,1 @@
+/home/maksmykha/Documents/RobotikProject/src/yolo_ros/yolo_bringup/launch/yolov8.launch.py

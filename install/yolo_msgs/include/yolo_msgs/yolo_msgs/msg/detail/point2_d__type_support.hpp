@@ -1,0 +1,1 @@
+/home/maksmykha/Documents/RobotikProject/build/yolo_msgs/rosidl_generator_cpp/yolo_msgs/msg/detail/point2_d__type_support.hpp

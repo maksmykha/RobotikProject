@@ -1,0 +1,48 @@
+####Aufgaben#####
+
+
+Dienstag, den 25.05.2026 13:00
+
+
+
+
+*******Alle*******
+Entwicklungumgebung einrichten:
+- ROS2 Jazzy installieren
+- Gazebo Sim installieren
+- Movelt2 installieren
+- RViz installieren
+
+
+
+*******Nina******
+Roboterarm finden und einrichten
+UR5e
+
+******Max*******
+Aufbau der Projektstruktur
+
+
+****Maksym und Tim****
+Erstellung der Gazebo-Simulationumgebung
+
+
+
+
+
+
+##############################
+Das System soll:
+Prio 1:
+eine virtuelle Industrieumgebung besitzen,
+ein Förderband simulieren,
+Objekte auf dem Band bewegen,
+Kamerabilder erzeugen,
+Objekte mit YOLO erkennen,
+Objektpositionen berechnen,
+den Roboterarm bewegen
+Objekte sortieren
+
+Prio 2:
+Objekte greifen
+################################

@@ -1,0 +1,11 @@
+package.xml
+setup.cfg
+setup.py
+resource/robotik_control
+robotik_control/__init__.py
+robotik_control.egg-info/PKG-INFO
+robotik_control.egg-info/SOURCES.txt
+robotik_control.egg-info/dependency_links.txt
+robotik_control.egg-info/requires.txt
+robotik_control.egg-info/top_level.txt
+robotik_control.egg-info/zip-safe

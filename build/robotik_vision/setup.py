@@ -1,0 +1,1 @@
+/home/maksmykha/Documents/RobotikProject/src/robotik_vision/setup.py

@@ -1,0 +1,9 @@
+/home/maksmykha/Documents/RobotikProject/build/robotik_description/CMakeFiles/uninstall.dir
+/home/maksmykha/Documents/RobotikProject/build/robotik_description/CMakeFiles/robotik_description_uninstall.dir
+/home/maksmykha/Documents/RobotikProject/build/robotik_description/CMakeFiles/test.dir
+/home/maksmykha/Documents/RobotikProject/build/robotik_description/CMakeFiles/edit_cache.dir
+/home/maksmykha/Documents/RobotikProject/build/robotik_description/CMakeFiles/rebuild_cache.dir
+/home/maksmykha/Documents/RobotikProject/build/robotik_description/CMakeFiles/list_install_components.dir
+/home/maksmykha/Documents/RobotikProject/build/robotik_description/CMakeFiles/install.dir
+/home/maksmykha/Documents/RobotikProject/build/robotik_description/CMakeFiles/install/local.dir
+/home/maksmykha/Documents/RobotikProject/build/robotik_description/CMakeFiles/install/strip.dir

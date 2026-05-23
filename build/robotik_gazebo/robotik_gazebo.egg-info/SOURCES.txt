@@ -1,0 +1,11 @@
+package.xml
+setup.cfg
+setup.py
+resource/robotik_gazebo
+robotik_gazebo/__init__.py
+robotik_gazebo.egg-info/PKG-INFO
+robotik_gazebo.egg-info/SOURCES.txt
+robotik_gazebo.egg-info/dependency_links.txt
+robotik_gazebo.egg-info/requires.txt
+robotik_gazebo.egg-info/top_level.txt
+robotik_gazebo.egg-info/zip-safe

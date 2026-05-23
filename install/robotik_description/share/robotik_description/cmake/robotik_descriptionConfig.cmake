@@ -1,0 +1,1 @@
+/home/maksmykha/Documents/RobotikProject/build/robotik_description/ament_cmake_core/robotik_descriptionConfig.cmake

@@ -1,0 +1,15 @@
+[1.443s] Invoking command in '/home/maksmykha/Documents/RobotikProject/build/robotik_control': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/maksmykha/Documents/RobotikProject/build/robotik_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/maksmykha/Documents/RobotikProject/install/robotik_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/maksmykha/Documents/RobotikProject/build/robotik_control/build --no-deps symlink_data
+[1.696s] running develop
+[1.845s] running egg_info
+[1.856s] writing robotik_control.egg-info/PKG-INFO
+[1.858s] writing dependency_links to robotik_control.egg-info/dependency_links.txt
+[1.858s] writing requirements to robotik_control.egg-info/requires.txt
+[1.858s] writing top-level names to robotik_control.egg-info/top_level.txt
+[1.881s] reading manifest file 'robotik_control.egg-info/SOURCES.txt'
+[1.882s] writing manifest file 'robotik_control.egg-info/SOURCES.txt'
+[1.902s] running build_ext
+[1.902s] Creating /home/maksmykha/Documents/RobotikProject/install/robotik_control/lib/python3.12/site-packages/robotik-control.egg-link (link to .)
+[1.902s] 
+[1.902s] Installed /home/maksmykha/Documents/RobotikProject/build/robotik_control
+[1.902s] running symlink_data
+[1.946s] Invoked command in '/home/maksmykha/Documents/RobotikProject/build/robotik_control' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/maksmykha/Documents/RobotikProject/build/robotik_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/maksmykha/Documents/RobotikProject/install/robotik_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/maksmykha/Documents/RobotikProject/build/robotik_control/build --no-deps symlink_data

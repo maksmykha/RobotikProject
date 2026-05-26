@@ -1,0 +1,23 @@
+running develop
+Removing /home/maksmykha/Documents/RobotikProject/install/robotik_sorting/lib/python3.12/site-packages/robotik-sorting.egg-link (link to .)
+running egg_info
+writing ../../build/robotik_sorting/robotik_sorting.egg-info/PKG-INFO
+writing dependency_links to ../../build/robotik_sorting/robotik_sorting.egg-info/dependency_links.txt
+writing requirements to ../../build/robotik_sorting/robotik_sorting.egg-info/requires.txt
+writing top-level names to ../../build/robotik_sorting/robotik_sorting.egg-info/top_level.txt
+reading manifest file '../../build/robotik_sorting/robotik_sorting.egg-info/SOURCES.txt'
+writing manifest file '../../build/robotik_sorting/robotik_sorting.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+creating /home/maksmykha/Documents/RobotikProject/install/robotik_sorting/lib/python3.12/site-packages/robotik_sorting
+copying /home/maksmykha/Documents/RobotikProject/build/robotik_sorting/build/lib/robotik_sorting/__init__.py -> /home/maksmykha/Documents/RobotikProject/install/robotik_sorting/lib/python3.12/site-packages/robotik_sorting
+byte-compiling /home/maksmykha/Documents/RobotikProject/install/robotik_sorting/lib/python3.12/site-packages/robotik_sorting/__init__.py to __init__.cpython-312.pyc
+running install_data
+copying resource/robotik_sorting -> /home/maksmykha/Documents/RobotikProject/install/robotik_sorting/share/ament_index/resource_index/packages
+copying package.xml -> /home/maksmykha/Documents/RobotikProject/install/robotik_sorting/share/robotik_sorting
+running install_egg_info
+Copying ../../build/robotik_sorting/robotik_sorting.egg-info to /home/maksmykha/Documents/RobotikProject/install/robotik_sorting/lib/python3.12/site-packages/robotik_sorting-0.0.0-py3.12.egg-info
+running install_scripts
+writing list of installed files to '/home/maksmykha/Documents/RobotikProject/build/robotik_sorting/install.log'

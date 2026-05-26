@@ -1,0 +1,2 @@
+[console_scripts]
+test_node = robotik_vision.test_node:main

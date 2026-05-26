@@ -1,0 +1,13 @@
+running develop
+running egg_info
+writing robotik_vision.egg-info/PKG-INFO
+writing dependency_links to robotik_vision.egg-info/dependency_links.txt
+writing requirements to robotik_vision.egg-info/requires.txt
+writing top-level names to robotik_vision.egg-info/top_level.txt
+reading manifest file 'robotik_vision.egg-info/SOURCES.txt'
+writing manifest file 'robotik_vision.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/maksmykha/Documents/RobotikProject/install/robotik_vision/lib/python3.12/site-packages/robotik-vision.egg-link (link to .)
+
+Installed /home/maksmykha/Documents/RobotikProject/build/robotik_vision
+running symlink_data

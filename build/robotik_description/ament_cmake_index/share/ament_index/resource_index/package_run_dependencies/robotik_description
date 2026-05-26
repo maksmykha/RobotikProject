@@ -1,1 +1,1 @@
-ament_lint_auto;ament_lint_common
+xacro;robot_state_publisher;rviz2;ur_description;ament_lint_auto;ament_lint_common

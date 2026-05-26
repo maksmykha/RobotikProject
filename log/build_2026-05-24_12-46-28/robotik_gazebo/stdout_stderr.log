@@ -1,0 +1,17 @@
+running develop
+running egg_info
+writing robotik_gazebo.egg-info/PKG-INFO
+writing dependency_links to robotik_gazebo.egg-info/dependency_links.txt
+writing requirements to robotik_gazebo.egg-info/requires.txt
+writing top-level names to robotik_gazebo.egg-info/top_level.txt
+reading manifest file 'robotik_gazebo.egg-info/SOURCES.txt'
+writing manifest file 'robotik_gazebo.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/maksmykha/Documents/RobotikProject/install/robotik_gazebo/lib/python3.12/site-packages/robotik-gazebo.egg-link (link to .)
+
+Installed /home/maksmykha/Documents/RobotikProject/build/robotik_gazebo
+running symlink_data
+creating /home/maksmykha/Documents/RobotikProject/install/robotik_gazebo/share/robotik_gazebo/launch
+symbolically linking /home/maksmykha/Documents/RobotikProject/build/robotik_gazebo/launch/gazebo_world.launch.py -> /home/maksmykha/Documents/RobotikProject/install/robotik_gazebo/share/robotik_gazebo/launch
+creating /home/maksmykha/Documents/RobotikProject/install/robotik_gazebo/share/robotik_gazebo/works
+symbolically linking /home/maksmykha/Documents/RobotikProject/build/robotik_gazebo/works/pick_place_world.sdf -> /home/maksmykha/Documents/RobotikProject/install/robotik_gazebo/share/robotik_gazebo/works

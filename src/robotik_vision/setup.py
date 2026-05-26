@@ -23,7 +23,8 @@ setup(
         ],
     },
     entry_points={
-        'console_scripts': [
-        ],
-    },
+    'console_scripts': [
+        'test_node = robotik_vision.test_node:main',
+    ],
+},
 )

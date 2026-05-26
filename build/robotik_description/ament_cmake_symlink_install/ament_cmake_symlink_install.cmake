@@ -315,6 +315,9 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
+# install(DIRECTORY "urdf" "launch" "rviz" "DESTINATION" "share/robotik_description")
+ament_cmake_symlink_install_directory("/home/maksmykha/Documents/RobotikProject/src/robotik_description" DIRECTORY "urdf" "launch" "rviz" "DESTINATION" "share/robotik_description")
+
 # install(FILES "/home/maksmykha/Documents/RobotikProject/build/robotik_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/robotik_description" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/maksmykha/Documents/RobotikProject/src/robotik_description" FILES "/home/maksmykha/Documents/RobotikProject/build/robotik_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/robotik_description" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 

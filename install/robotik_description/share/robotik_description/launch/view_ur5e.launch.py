@@ -1,0 +1,1 @@
+/home/maksmykha/Documents/RobotikProject/src/robotik_description/launch/view_ur5e.launch.py

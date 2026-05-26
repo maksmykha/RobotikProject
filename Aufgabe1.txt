@@ -30,6 +30,43 @@ Erstellung der Gazebo-Simulationumgebung
 
 
 
+zu tun:
+1. TF prüfen
+TF-Frames des UR5e analysieren und prüfen, ob die Koordinatensysteme zwischen world, base_link und tool0 korrekt funktionieren.
+
+2. UR5e in Gazebo einfügen
+Den UR5e-Roboter in die Gazebo-Simulation integrieren, damit der Roboter zusammen mit der Welt simuliert werden kann.
+
+3. Gazebo-Launch erweitern
+Eine zentrale Launch-Datei erstellen, die Gazebo, den Roboter und später weitere Komponenten automatisch startet.
+
+4. Förderband verbessern
+Das Förderband optisch und funktional erweitern, damit später Objekte darauf platziert und transportiert werden können.
+
+5. Kamera hinzufügen
+Eine virtuelle Kamera in Gazebo einbauen, die das Förderband überwacht und Bilddaten erzeugt.
+
+6. Bridge einrichten
+Die Verbindung zwischen Gazebo und ROS2 konfigurieren, damit Sensordaten als ROS2-Topics verfügbar werden.
+
+7. Testobjekte hinzufügen
+Würfel, Zylinder und andere Objekte in die Simulation einfügen, damit Kamera und YOLO etwas erkennen können.
+
+8. Kamerabild prüfen
+Kontrollieren, ob die Kamera korrekt Bilder liefert und die Bilddaten in ROS2 sichtbar sind.
+
+9. YOLO anschließen
+YOLO mit dem Kamerabild verbinden, damit Objekte automatisch erkannt und klassifiziert werden können.
+
+10. Objektposition berechnen
+Die Position erkannter Objekte aus den Bilddaten berechnen und in Weltkoordinaten umwandeln8das Kamera wird erst an den Greifhand erst engehangen.
+
+11. MoveIt2 anbinden
+MoveIt2 für die Bewegungsplanung des UR5e konfigurieren und erste Bewegungen planen.
+
+12. Pick-and-Place-Logik schreiben
+Die komplette Steuerlogik entwickeln, damit der Roboter Objekte erkennt, greift und sortiert ablegt.
+
 
 ##############################
 Das System soll:

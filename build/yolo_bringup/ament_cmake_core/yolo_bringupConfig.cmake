@@ -16,7 +16,7 @@ set(_yolo_bringup_CONFIG_INCLUDED TRUE)
 
 # output package information
 if(NOT yolo_bringup_FIND_QUIETLY)
-  message(STATUS "Found yolo_bringup: 4.6.0 (${yolo_bringup_DIR})")
+  message(STATUS "Found yolo_bringup: 4.6.1 (${yolo_bringup_DIR})")
 endif()
 
 # warn when using a deprecated package

@@ -1,5 +1,5 @@
 set(_AMENT_PACKAGE_NAME "yolo_msgs")
-set(yolo_msgs_VERSION "4.6.0")
+set(yolo_msgs_VERSION "4.6.1")
 set(yolo_msgs_MAINTAINER "Miguel Ángel González Santamarta <mgons@unileon.es>")
 set(yolo_msgs_BUILD_DEPENDS "std_msgs" "geometry_msgs")
 set(yolo_msgs_BUILDTOOL_DEPENDS "ament_cmake")

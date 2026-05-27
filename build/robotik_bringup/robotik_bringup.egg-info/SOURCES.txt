@@ -9,6 +9,9 @@ setup.py
 ../../build/robotik_bringup/robotik_bringup.egg-info/zip-safe
 resource/robotik_bringup
 robotik_bringup/__init__.py
-test/test_copyright.py
-test/test_flake8.py
-test/test_pep257.py
+robotik_bringup.egg-info/PKG-INFO
+robotik_bringup.egg-info/SOURCES.txt
+robotik_bringup.egg-info/dependency_links.txt
+robotik_bringup.egg-info/requires.txt
+robotik_bringup.egg-info/top_level.txt
+robotik_bringup.egg-info/zip-safe

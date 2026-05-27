@@ -387,8 +387,8 @@ ament_cmake_symlink_install_files("/home/maksmykha/Documents/RobotikProject/src/
 # install(FILES "/home/maksmykha/Documents/RobotikProject/build/yolo_msgs/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/yolo_msgs/environment")
 ament_cmake_symlink_install_files("/home/maksmykha/Documents/RobotikProject/src/yolo_ros/yolo_msgs" FILES "/home/maksmykha/Documents/RobotikProject/build/yolo_msgs/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/yolo_msgs/environment")
 
-# install(DIRECTORY "/home/maksmykha/Documents/RobotikProject/build/yolo_msgs/ament_cmake_python/yolo_msgs/yolo_msgs.egg-info/" "DESTINATION" "lib/python3.12/site-packages/yolo_msgs-4.6.0-py3.12.egg-info")
-ament_cmake_symlink_install_directory("/home/maksmykha/Documents/RobotikProject/src/yolo_ros/yolo_msgs" DIRECTORY "/home/maksmykha/Documents/RobotikProject/build/yolo_msgs/ament_cmake_python/yolo_msgs/yolo_msgs.egg-info/" "DESTINATION" "lib/python3.12/site-packages/yolo_msgs-4.6.0-py3.12.egg-info")
+# install(DIRECTORY "/home/maksmykha/Documents/RobotikProject/build/yolo_msgs/ament_cmake_python/yolo_msgs/yolo_msgs.egg-info/" "DESTINATION" "lib/python3.12/site-packages/yolo_msgs-4.6.1-py3.12.egg-info")
+ament_cmake_symlink_install_directory("/home/maksmykha/Documents/RobotikProject/src/yolo_ros/yolo_msgs" DIRECTORY "/home/maksmykha/Documents/RobotikProject/build/yolo_msgs/ament_cmake_python/yolo_msgs/yolo_msgs.egg-info/" "DESTINATION" "lib/python3.12/site-packages/yolo_msgs-4.6.1-py3.12.egg-info")
 
 # install(DIRECTORY "/home/maksmykha/Documents/RobotikProject/build/yolo_msgs/rosidl_generator_py/yolo_msgs/" "DESTINATION" "lib/python3.12/site-packages/yolo_msgs" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
 ament_cmake_symlink_install_directory("/home/maksmykha/Documents/RobotikProject/src/yolo_ros/yolo_msgs" DIRECTORY "/home/maksmykha/Documents/RobotikProject/build/yolo_msgs/rosidl_generator_py/yolo_msgs/" "DESTINATION" "lib/python3.12/site-packages/yolo_msgs" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")

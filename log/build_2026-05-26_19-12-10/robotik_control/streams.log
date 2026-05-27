@@ -1,0 +1,17 @@
+[1.525s] Invoking command in '/home/maksmykha/Documents/RobotikProject/build/robotik_control': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/maksmykha/Documents/RobotikProject/build/robotik_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/maksmykha/Documents/RobotikProject/install/robotik_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/maksmykha/Documents/RobotikProject/build/robotik_control/build --no-deps symlink_data --force
+[2.137s] running develop
+[2.350s] running egg_info
+[2.375s] writing robotik_control.egg-info/PKG-INFO
+[2.375s] writing dependency_links to robotik_control.egg-info/dependency_links.txt
+[2.375s] writing requirements to robotik_control.egg-info/requires.txt
+[2.375s] writing top-level names to robotik_control.egg-info/top_level.txt
+[2.415s] reading manifest file 'robotik_control.egg-info/SOURCES.txt'
+[2.415s] writing manifest file 'robotik_control.egg-info/SOURCES.txt'
+[2.440s] running build_ext
+[2.440s] Creating /home/maksmykha/Documents/RobotikProject/install/robotik_control/lib/python3.12/site-packages/robotik-control.egg-link (link to .)
+[2.442s] 
+[2.442s] Installed /home/maksmykha/Documents/RobotikProject/build/robotik_control
+[2.442s] running symlink_data
+[2.442s] symbolically linking /home/maksmykha/Documents/RobotikProject/build/robotik_control/resource/robotik_control -> /home/maksmykha/Documents/RobotikProject/install/robotik_control/share/ament_index/resource_index/packages
+[2.442s] symbolically linking /home/maksmykha/Documents/RobotikProject/build/robotik_control/package.xml -> /home/maksmykha/Documents/RobotikProject/install/robotik_control/share/robotik_control
+[2.492s] Invoked command in '/home/maksmykha/Documents/RobotikProject/build/robotik_control' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/maksmykha/Documents/RobotikProject/build/robotik_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/maksmykha/Documents/RobotikProject/install/robotik_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/maksmykha/Documents/RobotikProject/build/robotik_control/build --no-deps symlink_data --force

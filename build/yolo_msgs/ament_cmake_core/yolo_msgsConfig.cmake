@@ -16,7 +16,7 @@ set(_yolo_msgs_CONFIG_INCLUDED TRUE)
 
 # output package information
 if(NOT yolo_msgs_FIND_QUIETLY)
-  message(STATUS "Found yolo_msgs: 4.6.0 (${yolo_msgs_DIR})")
+  message(STATUS "Found yolo_msgs: 4.6.1 (${yolo_msgs_DIR})")
 endif()
 
 # warn when using a deprecated package

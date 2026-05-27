@@ -1,5 +1,5 @@
 set(_AMENT_PACKAGE_NAME "yolo_bringup")
-set(yolo_bringup_VERSION "4.6.0")
+set(yolo_bringup_VERSION "4.6.1")
 set(yolo_bringup_MAINTAINER "Miguel Ángel González Santamarta <mgons@unileon.es>")
 set(yolo_bringup_BUILD_DEPENDS "yolo_ros")
 set(yolo_bringup_BUILDTOOL_DEPENDS "ament_cmake")

@@ -1,0 +1,722 @@
+[0.156s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.156s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xfef082c3d490>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xfef082be6ba0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xfef082be6ba0>>, mixin_verb=('build',))
+[0.225s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.225s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.225s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.225s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.225s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.225s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.225s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/maksmykha/Documents/RobotikProject'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extensions ['ignore', 'ignore_ament_install']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'ignore'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'ignore_ament_install'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extensions ['colcon_pkg']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'colcon_pkg'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extensions ['colcon_meta']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'colcon_meta'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extensions ['ros']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'ros'
+[0.257s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_description' with type 'ros.ament_cmake' and name 'robot_description'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_bringup) by extension 'ignore'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_bringup) by extension 'ignore_ament_install'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_bringup) by extensions ['colcon_pkg']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_bringup) by extension 'colcon_pkg'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_bringup) by extensions ['colcon_meta']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_bringup) by extension 'colcon_meta'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_bringup) by extensions ['ros']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_bringup) by extension 'ros'
+[0.258s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robotik_bringup' with type 'ros.ament_python' and name 'robotik_bringup'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_control) by extensions ['ignore', 'ignore_ament_install']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_control) by extension 'ignore'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_control) by extension 'ignore_ament_install'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_control) by extensions ['colcon_pkg']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_control) by extension 'colcon_pkg'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_control) by extensions ['colcon_meta']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_control) by extension 'colcon_meta'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_control) by extensions ['ros']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_control) by extension 'ros'
+[0.259s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robotik_control' with type 'ros.ament_python' and name 'robotik_control'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_description) by extensions ['ignore', 'ignore_ament_install']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_description) by extension 'ignore'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_description) by extension 'ignore_ament_install'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_description) by extensions ['colcon_pkg']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_description) by extension 'colcon_pkg'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_description) by extensions ['colcon_meta']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_description) by extension 'colcon_meta'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_description) by extensions ['ros']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_description) by extension 'ros'
+[0.260s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robotik_description' with type 'ros.ament_cmake' and name 'robotik_description'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_gazebo) by extension 'ignore'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_gazebo) by extension 'ignore_ament_install'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_gazebo) by extensions ['colcon_pkg']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_gazebo) by extension 'colcon_pkg'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_gazebo) by extensions ['colcon_meta']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_gazebo) by extension 'colcon_meta'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_gazebo) by extensions ['ros']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_gazebo) by extension 'ros'
+[0.261s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robotik_gazebo' with type 'ros.ament_python' and name 'robotik_gazebo'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_sorting) by extensions ['ignore', 'ignore_ament_install']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_sorting) by extension 'ignore'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_sorting) by extension 'ignore_ament_install'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_sorting) by extensions ['colcon_pkg']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_sorting) by extension 'colcon_pkg'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_sorting) by extensions ['colcon_meta']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_sorting) by extension 'colcon_meta'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_sorting) by extensions ['ros']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_sorting) by extension 'ros'
+[0.262s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robotik_sorting' with type 'ros.ament_python' and name 'robotik_sorting'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_vision) by extensions ['ignore', 'ignore_ament_install']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_vision) by extension 'ignore'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_vision) by extension 'ignore_ament_install'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_vision) by extensions ['colcon_pkg']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_vision) by extension 'colcon_pkg'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_vision) by extensions ['colcon_meta']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_vision) by extension 'colcon_meta'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_vision) by extensions ['ros']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotik_vision) by extension 'ros'
+[0.263s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robotik_vision' with type 'ros.ament_python' and name 'robotik_vision'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros) by extension 'ignore'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros) by extension 'ignore_ament_install'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros) by extensions ['colcon_pkg']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros) by extension 'colcon_pkg'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros) by extensions ['colcon_meta']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros) by extension 'colcon_meta'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros) by extensions ['ros']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros) by extension 'ros'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros) by extensions ['cmake', 'python']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros) by extension 'cmake'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros) by extension 'python'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros) by extensions ['python_setup_py']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros) by extension 'python_setup_py'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/docs) by extensions ['ignore', 'ignore_ament_install']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/docs) by extension 'ignore'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/docs) by extension 'ignore_ament_install'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/docs) by extensions ['colcon_pkg']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/docs) by extension 'colcon_pkg'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/docs) by extensions ['colcon_meta']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/docs) by extension 'colcon_meta'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/docs) by extensions ['ros']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/docs) by extension 'ros'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/docs) by extensions ['cmake', 'python']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/docs) by extension 'cmake'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/docs) by extension 'python'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/docs) by extensions ['python_setup_py']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/docs) by extension 'python_setup_py'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_bringup) by extension 'ignore'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_bringup) by extension 'ignore_ament_install'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_bringup) by extensions ['colcon_pkg']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_bringup) by extension 'colcon_pkg'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_bringup) by extensions ['colcon_meta']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_bringup) by extension 'colcon_meta'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_bringup) by extensions ['ros']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_bringup) by extension 'ros'
+[0.265s] DEBUG:colcon.colcon_core.package_identification:Package 'src/yolo_ros/yolo_bringup' with type 'ros.ament_cmake' and name 'yolo_bringup'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_msgs) by extension 'ignore'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_msgs) by extension 'ignore_ament_install'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_msgs) by extensions ['colcon_pkg']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_msgs) by extension 'colcon_pkg'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_msgs) by extensions ['colcon_meta']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_msgs) by extension 'colcon_meta'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_msgs) by extensions ['ros']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_msgs) by extension 'ros'
+[0.265s] DEBUG:colcon.colcon_core.package_identification:Package 'src/yolo_ros/yolo_msgs' with type 'ros.ament_cmake' and name 'yolo_msgs'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_ros) by extension 'ignore'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_ros) by extension 'ignore_ament_install'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_ros) by extensions ['colcon_pkg']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_ros) by extension 'colcon_pkg'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_ros) by extensions ['colcon_meta']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_ros) by extension 'colcon_meta'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_ros) by extensions ['ros']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_ros) by extension 'ros'
+[0.267s] DEBUG:colcon.colcon_core.package_identification:Package 'src/yolo_ros/yolo_ros' with type 'ros.ament_python' and name 'yolo_ros'
+[0.267s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.267s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.267s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.267s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.267s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.289s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.289s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.292s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 10 installed packages in /home/maksmykha/Documents/RobotikProject/install
+[0.294s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 428 installed packages in /opt/ros/jazzy
+[0.294s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_args' from command line to 'None'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_target' from command line to 'None'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.333s] DEBUG:colcon.colcon_core.verb:Building package 'robot_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/maksmykha/Documents/RobotikProject/build/robot_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/maksmykha/Documents/RobotikProject/install/robot_description', 'merge_install': False, 'path': '/home/maksmykha/Documents/RobotikProject/src/robot_description', 'symlink_install': True, 'test_result_base': None}
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'robotik_bringup' build argument 'cmake_args' from command line to 'None'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'robotik_bringup' build argument 'cmake_target' from command line to 'None'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'robotik_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'robotik_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'robotik_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'robotik_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'robotik_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'robotik_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'robotik_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.333s] DEBUG:colcon.colcon_core.verb:Building package 'robotik_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/maksmykha/Documents/RobotikProject/build/robotik_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/maksmykha/Documents/RobotikProject/install/robotik_bringup', 'merge_install': False, 'path': '/home/maksmykha/Documents/RobotikProject/src/robotik_bringup', 'symlink_install': True, 'test_result_base': None}
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'robotik_control' build argument 'cmake_args' from command line to 'None'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'robotik_control' build argument 'cmake_target' from command line to 'None'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'robotik_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'robotik_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'robotik_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'robotik_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'robotik_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'robotik_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'robotik_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.333s] DEBUG:colcon.colcon_core.verb:Building package 'robotik_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/maksmykha/Documents/RobotikProject/build/robotik_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/maksmykha/Documents/RobotikProject/install/robotik_control', 'merge_install': False, 'path': '/home/maksmykha/Documents/RobotikProject/src/robotik_control', 'symlink_install': True, 'test_result_base': None}
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'robotik_description' build argument 'cmake_args' from command line to 'None'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'robotik_description' build argument 'cmake_target' from command line to 'None'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'robotik_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'robotik_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'robotik_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'robotik_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'robotik_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'robotik_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'robotik_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.333s] DEBUG:colcon.colcon_core.verb:Building package 'robotik_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/maksmykha/Documents/RobotikProject/build/robotik_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/maksmykha/Documents/RobotikProject/install/robotik_description', 'merge_install': False, 'path': '/home/maksmykha/Documents/RobotikProject/src/robotik_description', 'symlink_install': True, 'test_result_base': None}
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'robotik_gazebo' build argument 'cmake_args' from command line to 'None'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'robotik_gazebo' build argument 'cmake_target' from command line to 'None'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'robotik_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'robotik_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'robotik_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'robotik_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'robotik_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'robotik_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'robotik_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.333s] DEBUG:colcon.colcon_core.verb:Building package 'robotik_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/maksmykha/Documents/RobotikProject/build/robotik_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo', 'merge_install': False, 'path': '/home/maksmykha/Documents/RobotikProject/src/robotik_gazebo', 'symlink_install': True, 'test_result_base': None}
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'robotik_sorting' build argument 'cmake_args' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'robotik_sorting' build argument 'cmake_target' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'robotik_sorting' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'robotik_sorting' build argument 'cmake_clean_cache' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'robotik_sorting' build argument 'cmake_clean_first' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'robotik_sorting' build argument 'cmake_force_configure' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'robotik_sorting' build argument 'ament_cmake_args' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'robotik_sorting' build argument 'catkin_cmake_args' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'robotik_sorting' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.334s] DEBUG:colcon.colcon_core.verb:Building package 'robotik_sorting' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/maksmykha/Documents/RobotikProject/build/robotik_sorting', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/maksmykha/Documents/RobotikProject/install/robotik_sorting', 'merge_install': False, 'path': '/home/maksmykha/Documents/RobotikProject/src/robotik_sorting', 'symlink_install': True, 'test_result_base': None}
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'robotik_vision' build argument 'cmake_args' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'robotik_vision' build argument 'cmake_target' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'robotik_vision' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'robotik_vision' build argument 'cmake_clean_cache' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'robotik_vision' build argument 'cmake_clean_first' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'robotik_vision' build argument 'cmake_force_configure' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'robotik_vision' build argument 'ament_cmake_args' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'robotik_vision' build argument 'catkin_cmake_args' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'robotik_vision' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.334s] DEBUG:colcon.colcon_core.verb:Building package 'robotik_vision' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/maksmykha/Documents/RobotikProject/build/robotik_vision', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/maksmykha/Documents/RobotikProject/install/robotik_vision', 'merge_install': False, 'path': '/home/maksmykha/Documents/RobotikProject/src/robotik_vision', 'symlink_install': True, 'test_result_base': None}
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'yolo_msgs' build argument 'cmake_args' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'yolo_msgs' build argument 'cmake_target' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'yolo_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'yolo_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'yolo_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'yolo_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'yolo_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'yolo_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'yolo_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.334s] DEBUG:colcon.colcon_core.verb:Building package 'yolo_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/maksmykha/Documents/RobotikProject/build/yolo_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs', 'merge_install': False, 'path': '/home/maksmykha/Documents/RobotikProject/src/yolo_ros/yolo_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'yolo_ros' build argument 'cmake_args' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'yolo_ros' build argument 'cmake_target' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'yolo_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'yolo_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'yolo_ros' build argument 'cmake_clean_first' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'yolo_ros' build argument 'cmake_force_configure' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'yolo_ros' build argument 'ament_cmake_args' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'yolo_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'yolo_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.334s] DEBUG:colcon.colcon_core.verb:Building package 'yolo_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/maksmykha/Documents/RobotikProject/build/yolo_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/maksmykha/Documents/RobotikProject/install/yolo_ros', 'merge_install': False, 'path': '/home/maksmykha/Documents/RobotikProject/src/yolo_ros/yolo_ros', 'symlink_install': True, 'test_result_base': None}
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'yolo_bringup' build argument 'cmake_args' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'yolo_bringup' build argument 'cmake_target' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'yolo_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'yolo_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'yolo_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'yolo_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'yolo_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'yolo_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'yolo_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.334s] DEBUG:colcon.colcon_core.verb:Building package 'yolo_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/maksmykha/Documents/RobotikProject/build/yolo_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/maksmykha/Documents/RobotikProject/install/yolo_bringup', 'merge_install': False, 'path': '/home/maksmykha/Documents/RobotikProject/src/yolo_ros/yolo_bringup', 'symlink_install': True, 'test_result_base': None}
+[0.334s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.335s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.335s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/maksmykha/Documents/RobotikProject/src/yolo_ros/yolo_msgs' with build type 'ament_cmake'
+[0.335s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/maksmykha/Documents/RobotikProject/src/yolo_ros/yolo_msgs'
+[0.342s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.342s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.342s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.348s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/maksmykha/Documents/RobotikProject/src/robot_description' with build type 'ament_cmake'
+[0.348s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/maksmykha/Documents/RobotikProject/src/robot_description'
+[0.348s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.348s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.356s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/maksmykha/Documents/RobotikProject/src/robotik_bringup' with build type 'ament_python'
+[0.356s] Level 1:colcon.colcon_core.shell:create_environment_hook('robotik_bringup', 'ament_prefix_path')
+[0.356s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/install/robotik_bringup/share/robotik_bringup/hook/ament_prefix_path.ps1'
+[0.359s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maksmykha/Documents/RobotikProject/install/robotik_bringup/share/robotik_bringup/hook/ament_prefix_path.dsv'
+[0.361s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/install/robotik_bringup/share/robotik_bringup/hook/ament_prefix_path.sh'
+[0.362s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.362s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.366s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/maksmykha/Documents/RobotikProject/src/robotik_control' with build type 'ament_python'
+[0.366s] Level 1:colcon.colcon_core.shell:create_environment_hook('robotik_control', 'ament_prefix_path')
+[0.366s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/install/robotik_control/share/robotik_control/hook/ament_prefix_path.ps1'
+[0.367s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maksmykha/Documents/RobotikProject/install/robotik_control/share/robotik_control/hook/ament_prefix_path.dsv'
+[0.367s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/install/robotik_control/share/robotik_control/hook/ament_prefix_path.sh'
+[0.371s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.371s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.381s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/maksmykha/Documents/RobotikProject/src/robotik_description' with build type 'ament_cmake'
+[0.381s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/maksmykha/Documents/RobotikProject/src/robotik_description'
+[0.381s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.381s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.391s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/maksmykha/Documents/RobotikProject/src/robotik_gazebo' with build type 'ament_python'
+[0.391s] Level 1:colcon.colcon_core.shell:create_environment_hook('robotik_gazebo', 'ament_prefix_path')
+[0.391s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo/share/robotik_gazebo/hook/ament_prefix_path.ps1'
+[0.391s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo/share/robotik_gazebo/hook/ament_prefix_path.dsv'
+[0.391s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo/share/robotik_gazebo/hook/ament_prefix_path.sh'
+[0.392s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.392s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.396s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/maksmykha/Documents/RobotikProject/src/robotik_sorting' with build type 'ament_python'
+[0.396s] Level 1:colcon.colcon_core.shell:create_environment_hook('robotik_sorting', 'ament_prefix_path')
+[0.396s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/install/robotik_sorting/share/robotik_sorting/hook/ament_prefix_path.ps1'
+[0.397s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maksmykha/Documents/RobotikProject/install/robotik_sorting/share/robotik_sorting/hook/ament_prefix_path.dsv'
+[0.397s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/install/robotik_sorting/share/robotik_sorting/hook/ament_prefix_path.sh'
+[0.397s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.397s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.403s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/maksmykha/Documents/RobotikProject/src/robotik_vision' with build type 'ament_python'
+[0.404s] Level 1:colcon.colcon_core.shell:create_environment_hook('robotik_vision', 'ament_prefix_path')
+[0.404s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/install/robotik_vision/share/robotik_vision/hook/ament_prefix_path.ps1'
+[0.405s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maksmykha/Documents/RobotikProject/install/robotik_vision/share/robotik_vision/hook/ament_prefix_path.dsv'
+[0.405s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/install/robotik_vision/share/robotik_vision/hook/ament_prefix_path.sh'
+[0.406s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.406s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.416s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maksmykha/Documents/RobotikProject/build/yolo_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/maksmykha/Documents/RobotikProject/install/yolo_ros:/home/maksmykha/Documents/RobotikProject/install/robotik_vision:/home/maksmykha/Documents/RobotikProject/install/robotik_sorting:/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo:/home/maksmykha/Documents/RobotikProject/install/robotik_control:/home/maksmykha/Documents/RobotikProject/install/robotik_bringup:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/maksmykha/Documents/RobotikProject/src/yolo_ros/yolo_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/maksmykha/Documents/RobotikProject/install/yolo_msgs
+[0.423s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maksmykha/Documents/RobotikProject/build/robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/maksmykha/Documents/RobotikProject/install/yolo_ros:/home/maksmykha/Documents/RobotikProject/install/robotik_vision:/home/maksmykha/Documents/RobotikProject/install/robotik_sorting:/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo:/home/maksmykha/Documents/RobotikProject/install/robotik_control:/home/maksmykha/Documents/RobotikProject/install/robotik_bringup:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/maksmykha/Documents/RobotikProject/src/robot_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/maksmykha/Documents/RobotikProject/install/robot_description
+[0.589s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/maksmykha/Documents/RobotikProject/src/robotik_bringup'
+[0.590s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.590s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.725s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/maksmykha/Documents/RobotikProject/src/robotik_control'
+[0.725s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.725s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.731s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maksmykha/Documents/RobotikProject/build/robotik_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/maksmykha/Documents/RobotikProject/install/yolo_ros:/home/maksmykha/Documents/RobotikProject/install/robotik_vision:/home/maksmykha/Documents/RobotikProject/install/robotik_sorting:/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo:/home/maksmykha/Documents/RobotikProject/install/robotik_control:/home/maksmykha/Documents/RobotikProject/install/robotik_bringup:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/maksmykha/Documents/RobotikProject/src/robotik_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/maksmykha/Documents/RobotikProject/install/robotik_description
+[0.869s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/maksmykha/Documents/RobotikProject/src/robotik_gazebo'
+[0.869s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.869s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.005s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/maksmykha/Documents/RobotikProject/src/robotik_sorting'
+[1.005s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.005s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.015s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maksmykha/Documents/RobotikProject/build/robotik_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/maksmykha/Documents/RobotikProject/install/yolo_ros:/home/maksmykha/Documents/RobotikProject/install/robotik_vision:/home/maksmykha/Documents/RobotikProject/install/robotik_sorting:/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo:/home/maksmykha/Documents/RobotikProject/install/robotik_control:/home/maksmykha/Documents/RobotikProject/install/robotik_bringup:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/maksmykha/Documents/RobotikProject/src/robotik_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/maksmykha/Documents/RobotikProject/install/robotik_description
+[1.015s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maksmykha/Documents/RobotikProject/build/robotik_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/maksmykha/Documents/RobotikProject/install/yolo_ros:/home/maksmykha/Documents/RobotikProject/install/robotik_vision:/home/maksmykha/Documents/RobotikProject/install/robotik_sorting:/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo:/home/maksmykha/Documents/RobotikProject/install/robotik_control:/home/maksmykha/Documents/RobotikProject/install/robotik_bringup:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/maksmykha/Documents/RobotikProject/build/robotik_description -- -j8 -l8
+[1.015s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maksmykha/Documents/RobotikProject/build/robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/maksmykha/Documents/RobotikProject/install/yolo_ros:/home/maksmykha/Documents/RobotikProject/install/robotik_vision:/home/maksmykha/Documents/RobotikProject/install/robotik_sorting:/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo:/home/maksmykha/Documents/RobotikProject/install/robotik_control:/home/maksmykha/Documents/RobotikProject/install/robotik_bringup:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/maksmykha/Documents/RobotikProject/src/robot_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/maksmykha/Documents/RobotikProject/install/robot_description
+[1.016s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maksmykha/Documents/RobotikProject/build/robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/maksmykha/Documents/RobotikProject/install/yolo_ros:/home/maksmykha/Documents/RobotikProject/install/robotik_vision:/home/maksmykha/Documents/RobotikProject/install/robotik_sorting:/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo:/home/maksmykha/Documents/RobotikProject/install/robotik_control:/home/maksmykha/Documents/RobotikProject/install/robotik_bringup:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/maksmykha/Documents/RobotikProject/build/robot_description -- -j8 -l8
+[1.156s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/maksmykha/Documents/RobotikProject/src/robotik_vision'
+[1.157s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.157s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.169s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maksmykha/Documents/RobotikProject/build/robotik_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/maksmykha/Documents/RobotikProject/install/yolo_ros:/home/maksmykha/Documents/RobotikProject/install/robotik_vision:/home/maksmykha/Documents/RobotikProject/install/robotik_sorting:/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo:/home/maksmykha/Documents/RobotikProject/install/robotik_control:/home/maksmykha/Documents/RobotikProject/install/robotik_bringup:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/maksmykha/Documents/RobotikProject/build/robotik_description -- -j8 -l8
+[1.182s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maksmykha/Documents/RobotikProject/build/robotik_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/maksmykha/Documents/RobotikProject/install/yolo_ros:/home/maksmykha/Documents/RobotikProject/install/robotik_vision:/home/maksmykha/Documents/RobotikProject/install/robotik_sorting:/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo:/home/maksmykha/Documents/RobotikProject/install/robotik_control:/home/maksmykha/Documents/RobotikProject/install/robotik_bringup:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/maksmykha/Documents/RobotikProject/build/robotik_description
+[1.183s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maksmykha/Documents/RobotikProject/build/robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/maksmykha/Documents/RobotikProject/install/yolo_ros:/home/maksmykha/Documents/RobotikProject/install/robotik_vision:/home/maksmykha/Documents/RobotikProject/install/robotik_sorting:/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo:/home/maksmykha/Documents/RobotikProject/install/robotik_control:/home/maksmykha/Documents/RobotikProject/install/robotik_bringup:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/maksmykha/Documents/RobotikProject/build/robot_description -- -j8 -l8
+[1.185s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maksmykha/Documents/RobotikProject/build/robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/maksmykha/Documents/RobotikProject/install/yolo_ros:/home/maksmykha/Documents/RobotikProject/install/robotik_vision:/home/maksmykha/Documents/RobotikProject/install/robotik_sorting:/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo:/home/maksmykha/Documents/RobotikProject/install/robotik_control:/home/maksmykha/Documents/RobotikProject/install/robotik_bringup:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/maksmykha/Documents/RobotikProject/build/robot_description
+[1.234s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robotik_description)
+[1.234s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maksmykha/Documents/RobotikProject/build/robotik_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/maksmykha/Documents/RobotikProject/install/yolo_ros:/home/maksmykha/Documents/RobotikProject/install/robotik_vision:/home/maksmykha/Documents/RobotikProject/install/robotik_sorting:/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo:/home/maksmykha/Documents/RobotikProject/install/robotik_control:/home/maksmykha/Documents/RobotikProject/install/robotik_bringup:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/maksmykha/Documents/RobotikProject/build/robotik_description
+[1.249s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robotik_description' for CMake module files
+[1.250s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robotik_description' for CMake config files
+[1.250s] Level 1:colcon.colcon_core.shell:create_environment_hook('robotik_description', 'cmake_prefix_path')
+[1.250s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/install/robotik_description/share/robotik_description/hook/cmake_prefix_path.ps1'
+[1.251s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maksmykha/Documents/RobotikProject/install/robotik_description/share/robotik_description/hook/cmake_prefix_path.dsv'
+[1.251s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/install/robotik_description/share/robotik_description/hook/cmake_prefix_path.sh'
+[1.252s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robotik_description/bin'
+[1.252s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robotik_description/lib/pkgconfig/robotik_description.pc'
+[1.252s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robotik_description/lib/python3.12/site-packages'
+[1.253s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robotik_description/bin'
+[1.253s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/robotik_description/share/robotik_description/package.ps1'
+[1.255s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/maksmykha/Documents/RobotikProject/install/robotik_description/share/robotik_description/package.dsv'
+[1.257s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/robotik_description/share/robotik_description/package.sh'
+[1.258s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/robotik_description/share/robotik_description/package.bash'
+[1.263s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/robotik_description/share/robotik_description/package.zsh'
+[1.265s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/maksmykha/Documents/RobotikProject/install/robotik_description/share/colcon-core/packages/robotik_description)
+[1.266s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robotik_description)
+[1.266s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robotik_description' for CMake module files
+[1.266s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robotik_description' for CMake config files
+[1.266s] Level 1:colcon.colcon_core.shell:create_environment_hook('robotik_description', 'cmake_prefix_path')
+[1.267s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/install/robotik_description/share/robotik_description/hook/cmake_prefix_path.ps1'
+[1.267s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maksmykha/Documents/RobotikProject/install/robotik_description/share/robotik_description/hook/cmake_prefix_path.dsv'
+[1.267s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/install/robotik_description/share/robotik_description/hook/cmake_prefix_path.sh'
+[1.268s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robotik_description/bin'
+[1.268s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robotik_description/lib/pkgconfig/robotik_description.pc'
+[1.268s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robotik_description/lib/python3.12/site-packages'
+[1.269s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robotik_description/bin'
+[1.269s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/robotik_description/share/robotik_description/package.ps1'
+[1.269s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/maksmykha/Documents/RobotikProject/install/robotik_description/share/robotik_description/package.dsv'
+[1.270s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/robotik_description/share/robotik_description/package.sh'
+[1.270s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/robotik_description/share/robotik_description/package.bash'
+[1.270s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/robotik_description/share/robotik_description/package.zsh'
+[1.270s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/maksmykha/Documents/RobotikProject/install/robotik_description/share/colcon-core/packages/robotik_description)
+[1.271s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_description)
+[1.271s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robot_description' for CMake module files
+[1.272s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robot_description' for CMake config files
+[1.272s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_description', 'cmake_prefix_path')
+[1.272s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/install/robot_description/share/robot_description/hook/cmake_prefix_path.ps1'
+[1.273s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maksmykha/Documents/RobotikProject/build/robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/maksmykha/Documents/RobotikProject/install/yolo_ros:/home/maksmykha/Documents/RobotikProject/install/robotik_vision:/home/maksmykha/Documents/RobotikProject/install/robotik_sorting:/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo:/home/maksmykha/Documents/RobotikProject/install/robotik_control:/home/maksmykha/Documents/RobotikProject/install/robotik_bringup:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/maksmykha/Documents/RobotikProject/build/robot_description
+[1.276s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maksmykha/Documents/RobotikProject/install/robot_description/share/robot_description/hook/cmake_prefix_path.dsv'
+[1.276s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/install/robot_description/share/robot_description/hook/cmake_prefix_path.sh'
+[1.277s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robot_description/bin'
+[1.277s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robot_description/lib/pkgconfig/robot_description.pc'
+[1.277s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robot_description/lib/python3.12/site-packages'
+[1.277s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robot_description/bin'
+[1.277s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/robot_description/share/robot_description/package.ps1'
+[1.278s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/maksmykha/Documents/RobotikProject/install/robot_description/share/robot_description/package.dsv'
+[1.278s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/robot_description/share/robot_description/package.sh'
+[1.278s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/robot_description/share/robot_description/package.bash'
+[1.279s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/robot_description/share/robot_description/package.zsh'
+[1.279s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/maksmykha/Documents/RobotikProject/install/robot_description/share/colcon-core/packages/robot_description)
+[1.279s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_description)
+[1.279s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robot_description' for CMake module files
+[1.280s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robot_description' for CMake config files
+[1.280s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_description', 'cmake_prefix_path')
+[1.280s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/install/robot_description/share/robot_description/hook/cmake_prefix_path.ps1'
+[1.280s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maksmykha/Documents/RobotikProject/install/robot_description/share/robot_description/hook/cmake_prefix_path.dsv'
+[1.280s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/install/robot_description/share/robot_description/hook/cmake_prefix_path.sh'
+[1.281s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robot_description/bin'
+[1.281s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robot_description/lib/pkgconfig/robot_description.pc'
+[1.281s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robot_description/lib/python3.12/site-packages'
+[1.282s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robot_description/bin'
+[1.282s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/robot_description/share/robot_description/package.ps1'
+[1.282s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/maksmykha/Documents/RobotikProject/install/robot_description/share/robot_description/package.dsv'
+[1.283s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/robot_description/share/robot_description/package.sh'
+[1.283s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/robot_description/share/robot_description/package.bash'
+[1.283s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/robot_description/share/robot_description/package.zsh'
+[1.284s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/maksmykha/Documents/RobotikProject/install/robot_description/share/colcon-core/packages/robot_description)
+[1.882s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/maksmykha/Documents/RobotikProject/install/robotik_vision/share/ament_index/resource_index/packages/robotik_vision
+[1.882s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/maksmykha/Documents/RobotikProject/install/robotik_vision/share/robotik_vision/package.xml
+[1.882s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/maksmykha/Documents/RobotikProject/install/robotik_vision/lib/robotik_vision/test_node
+[1.884s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maksmykha/Documents/RobotikProject/build/robotik_vision': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/maksmykha/Documents/RobotikProject/build/robotik_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/maksmykha/Documents/RobotikProject/install/robotik_vision/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/maksmykha/Documents/RobotikProject/build/robotik_vision/build --no-deps symlink_data --force
+[1.885s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/maksmykha/Documents/RobotikProject/install/robotik_gazebo/share/ament_index/resource_index/packages/robotik_gazebo
+[1.886s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/maksmykha/Documents/RobotikProject/install/robotik_gazebo/share/robotik_gazebo/package.xml
+[1.886s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/maksmykha/Documents/RobotikProject/install/robotik_gazebo/share/robotik_gazebo/launch/gazebo_world.launch.py
+[1.886s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/maksmykha/Documents/RobotikProject/install/robotik_gazebo/share/robotik_gazebo/works/pick_place_world.sdf
+[1.889s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maksmykha/Documents/RobotikProject/build/robotik_gazebo': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/maksmykha/Documents/RobotikProject/build/robotik_gazebo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/maksmykha/Documents/RobotikProject/build/robotik_gazebo/build --no-deps symlink_data --force
+[1.889s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/maksmykha/Documents/RobotikProject/install/robotik_control/share/ament_index/resource_index/packages/robotik_control
+[1.889s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/maksmykha/Documents/RobotikProject/install/robotik_control/share/robotik_control/package.xml
+[1.892s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maksmykha/Documents/RobotikProject/build/robotik_control': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/maksmykha/Documents/RobotikProject/build/robotik_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/maksmykha/Documents/RobotikProject/install/robotik_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/maksmykha/Documents/RobotikProject/build/robotik_control/build --no-deps symlink_data --force
+[1.894s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/maksmykha/Documents/RobotikProject/install/robotik_sorting/share/ament_index/resource_index/packages/robotik_sorting
+[1.894s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/maksmykha/Documents/RobotikProject/install/robotik_sorting/share/robotik_sorting/package.xml
+[1.896s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maksmykha/Documents/RobotikProject/build/robotik_sorting': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/maksmykha/Documents/RobotikProject/build/robotik_sorting/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/maksmykha/Documents/RobotikProject/install/robotik_sorting/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/maksmykha/Documents/RobotikProject/build/robotik_sorting/build --no-deps symlink_data --force
+[1.896s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/maksmykha/Documents/RobotikProject/install/robotik_bringup/share/ament_index/resource_index/packages/robotik_bringup
+[1.897s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/maksmykha/Documents/RobotikProject/install/robotik_bringup/share/robotik_bringup/package.xml
+[1.902s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maksmykha/Documents/RobotikProject/build/robotik_bringup': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/maksmykha/Documents/RobotikProject/build/robotik_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/maksmykha/Documents/RobotikProject/install/robotik_bringup/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/maksmykha/Documents/RobotikProject/build/robotik_bringup/build --no-deps symlink_data --force
+[2.395s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maksmykha/Documents/RobotikProject/build/yolo_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/maksmykha/Documents/RobotikProject/install/yolo_ros:/home/maksmykha/Documents/RobotikProject/install/robotik_vision:/home/maksmykha/Documents/RobotikProject/install/robotik_sorting:/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo:/home/maksmykha/Documents/RobotikProject/install/robotik_control:/home/maksmykha/Documents/RobotikProject/install/robotik_bringup:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/maksmykha/Documents/RobotikProject/src/yolo_ros/yolo_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/maksmykha/Documents/RobotikProject/install/yolo_msgs
+[2.396s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maksmykha/Documents/RobotikProject/build/yolo_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/maksmykha/Documents/RobotikProject/install/yolo_ros:/home/maksmykha/Documents/RobotikProject/install/robotik_vision:/home/maksmykha/Documents/RobotikProject/install/robotik_sorting:/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo:/home/maksmykha/Documents/RobotikProject/install/robotik_control:/home/maksmykha/Documents/RobotikProject/install/robotik_bringup:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/maksmykha/Documents/RobotikProject/build/yolo_msgs -- -j8 -l8
+[2.594s] Level 1:colcon.colcon_core.shell:create_environment_hook('robotik_vision', 'pythonpath_develop')
+[2.594s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/build/robotik_vision/share/robotik_vision/hook/pythonpath_develop.ps1'
+[2.595s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maksmykha/Documents/RobotikProject/build/robotik_vision' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/maksmykha/Documents/RobotikProject/build/robotik_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/maksmykha/Documents/RobotikProject/install/robotik_vision/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/maksmykha/Documents/RobotikProject/build/robotik_vision/build --no-deps symlink_data --force
+[2.595s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maksmykha/Documents/RobotikProject/build/robotik_vision/share/robotik_vision/hook/pythonpath_develop.dsv'
+[2.595s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/build/robotik_vision/share/robotik_vision/hook/pythonpath_develop.sh'
+[2.598s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robotik_vision' for CMake module files
+[2.598s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robotik_vision' for CMake config files
+[2.599s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robotik_vision/lib'
+[2.599s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robotik_vision/bin'
+[2.599s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robotik_vision/lib/pkgconfig/robotik_vision.pc'
+[2.599s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robotik_vision/lib/python3.12/site-packages'
+[2.599s] Level 1:colcon.colcon_core.shell:create_environment_hook('robotik_vision', 'pythonpath')
+[2.599s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/install/robotik_vision/share/robotik_vision/hook/pythonpath.ps1'
+[2.600s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maksmykha/Documents/RobotikProject/install/robotik_vision/share/robotik_vision/hook/pythonpath.dsv'
+[2.600s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/install/robotik_vision/share/robotik_vision/hook/pythonpath.sh'
+[2.600s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robotik_vision/bin'
+[2.600s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robotik_vision)
+[2.600s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/robotik_vision/share/robotik_vision/package.ps1'
+[2.601s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/maksmykha/Documents/RobotikProject/install/robotik_vision/share/robotik_vision/package.dsv'
+[2.602s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/robotik_vision/share/robotik_vision/package.sh'
+[2.602s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/robotik_vision/share/robotik_vision/package.bash'
+[2.602s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/robotik_vision/share/robotik_vision/package.zsh'
+[2.602s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/maksmykha/Documents/RobotikProject/install/robotik_vision/share/colcon-core/packages/robotik_vision)
+[2.611s] Level 1:colcon.colcon_core.shell:create_environment_hook('robotik_sorting', 'pythonpath_develop')
+[2.611s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/build/robotik_sorting/share/robotik_sorting/hook/pythonpath_develop.ps1'
+[2.613s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maksmykha/Documents/RobotikProject/build/robotik_sorting' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/maksmykha/Documents/RobotikProject/build/robotik_sorting/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/maksmykha/Documents/RobotikProject/install/robotik_sorting/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/maksmykha/Documents/RobotikProject/build/robotik_sorting/build --no-deps symlink_data --force
+[2.614s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maksmykha/Documents/RobotikProject/build/robotik_sorting/share/robotik_sorting/hook/pythonpath_develop.dsv'
+[2.615s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/build/robotik_sorting/share/robotik_sorting/hook/pythonpath_develop.sh'
+[2.616s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robotik_sorting' for CMake module files
+[2.616s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robotik_sorting' for CMake config files
+[2.617s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robotik_sorting/lib'
+[2.617s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robotik_sorting/bin'
+[2.617s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robotik_sorting/lib/pkgconfig/robotik_sorting.pc'
+[2.617s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robotik_sorting/lib/python3.12/site-packages'
+[2.617s] Level 1:colcon.colcon_core.shell:create_environment_hook('robotik_sorting', 'pythonpath')
+[2.617s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/install/robotik_sorting/share/robotik_sorting/hook/pythonpath.ps1'
+[2.617s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maksmykha/Documents/RobotikProject/install/robotik_sorting/share/robotik_sorting/hook/pythonpath.dsv'
+[2.620s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/install/robotik_sorting/share/robotik_sorting/hook/pythonpath.sh'
+[2.621s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robotik_sorting/bin'
+[2.621s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robotik_sorting)
+[2.621s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/robotik_sorting/share/robotik_sorting/package.ps1'
+[2.621s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/maksmykha/Documents/RobotikProject/install/robotik_sorting/share/robotik_sorting/package.dsv'
+[2.622s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/robotik_sorting/share/robotik_sorting/package.sh'
+[2.623s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/robotik_sorting/share/robotik_sorting/package.bash'
+[2.625s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/robotik_sorting/share/robotik_sorting/package.zsh'
+[2.625s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/maksmykha/Documents/RobotikProject/install/robotik_sorting/share/colcon-core/packages/robotik_sorting)
+[2.704s] Level 1:colcon.colcon_core.shell:create_environment_hook('robotik_bringup', 'pythonpath_develop')
+[2.705s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maksmykha/Documents/RobotikProject/build/robotik_bringup' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/maksmykha/Documents/RobotikProject/build/robotik_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/maksmykha/Documents/RobotikProject/install/robotik_bringup/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/maksmykha/Documents/RobotikProject/build/robotik_bringup/build --no-deps symlink_data --force
+[2.705s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/build/robotik_bringup/share/robotik_bringup/hook/pythonpath_develop.ps1'
+[2.706s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maksmykha/Documents/RobotikProject/build/robotik_bringup/share/robotik_bringup/hook/pythonpath_develop.dsv'
+[2.706s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/build/robotik_bringup/share/robotik_bringup/hook/pythonpath_develop.sh'
+[2.707s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robotik_bringup' for CMake module files
+[2.707s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robotik_bringup' for CMake config files
+[2.707s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robotik_bringup/lib'
+[2.708s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robotik_bringup/bin'
+[2.708s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robotik_bringup/lib/pkgconfig/robotik_bringup.pc'
+[2.708s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robotik_bringup/lib/python3.12/site-packages'
+[2.708s] Level 1:colcon.colcon_core.shell:create_environment_hook('robotik_bringup', 'pythonpath')
+[2.708s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/install/robotik_bringup/share/robotik_bringup/hook/pythonpath.ps1'
+[2.708s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maksmykha/Documents/RobotikProject/install/robotik_bringup/share/robotik_bringup/hook/pythonpath.dsv'
+[2.709s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/install/robotik_bringup/share/robotik_bringup/hook/pythonpath.sh'
+[2.709s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robotik_bringup/bin'
+[2.710s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robotik_bringup)
+[2.710s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/robotik_bringup/share/robotik_bringup/package.ps1'
+[2.710s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/maksmykha/Documents/RobotikProject/install/robotik_bringup/share/robotik_bringup/package.dsv'
+[2.712s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/robotik_bringup/share/robotik_bringup/package.sh'
+[2.712s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/robotik_bringup/share/robotik_bringup/package.bash'
+[2.712s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/robotik_bringup/share/robotik_bringup/package.zsh'
+[2.713s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/maksmykha/Documents/RobotikProject/install/robotik_bringup/share/colcon-core/packages/robotik_bringup)
+[2.721s] Level 1:colcon.colcon_core.shell:create_environment_hook('robotik_gazebo', 'pythonpath_develop')
+[2.722s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/build/robotik_gazebo/share/robotik_gazebo/hook/pythonpath_develop.ps1'
+[2.722s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maksmykha/Documents/RobotikProject/build/robotik_gazebo/share/robotik_gazebo/hook/pythonpath_develop.dsv'
+[2.722s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/build/robotik_gazebo/share/robotik_gazebo/hook/pythonpath_develop.sh'
+[2.723s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo' for CMake module files
+[2.723s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo' for CMake config files
+[2.723s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo/lib'
+[2.724s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo/bin'
+[2.724s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo/lib/pkgconfig/robotik_gazebo.pc'
+[2.724s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo/lib/python3.12/site-packages'
+[2.724s] Level 1:colcon.colcon_core.shell:create_environment_hook('robotik_gazebo', 'pythonpath')
+[2.724s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo/share/robotik_gazebo/hook/pythonpath.ps1'
+[2.727s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo/share/robotik_gazebo/hook/pythonpath.dsv'
+[2.728s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo/share/robotik_gazebo/hook/pythonpath.sh'
+[2.728s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo/bin'
+[2.730s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robotik_gazebo)
+[2.731s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo/share/robotik_gazebo/package.ps1'
+[2.731s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maksmykha/Documents/RobotikProject/build/robotik_gazebo' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/maksmykha/Documents/RobotikProject/build/robotik_gazebo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/maksmykha/Documents/RobotikProject/build/robotik_gazebo/build --no-deps symlink_data --force
+[2.732s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo/share/robotik_gazebo/package.dsv'
+[2.732s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo/share/robotik_gazebo/package.sh'
+[2.732s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo/share/robotik_gazebo/package.bash'
+[2.733s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo/share/robotik_gazebo/package.zsh'
+[2.733s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo/share/colcon-core/packages/robotik_gazebo)
+[2.857s] Level 1:colcon.colcon_core.shell:create_environment_hook('robotik_control', 'pythonpath_develop')
+[2.857s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/build/robotik_control/share/robotik_control/hook/pythonpath_develop.ps1'
+[2.858s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maksmykha/Documents/RobotikProject/build/robotik_control' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/maksmykha/Documents/RobotikProject/build/robotik_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/maksmykha/Documents/RobotikProject/install/robotik_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/maksmykha/Documents/RobotikProject/build/robotik_control/build --no-deps symlink_data --force
+[2.858s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maksmykha/Documents/RobotikProject/build/robotik_control/share/robotik_control/hook/pythonpath_develop.dsv'
+[2.858s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/build/robotik_control/share/robotik_control/hook/pythonpath_develop.sh'
+[2.859s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robotik_control' for CMake module files
+[2.859s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robotik_control' for CMake config files
+[2.859s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robotik_control/lib'
+[2.859s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robotik_control/bin'
+[2.859s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robotik_control/lib/pkgconfig/robotik_control.pc'
+[2.860s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robotik_control/lib/python3.12/site-packages'
+[2.860s] Level 1:colcon.colcon_core.shell:create_environment_hook('robotik_control', 'pythonpath')
+[2.860s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/install/robotik_control/share/robotik_control/hook/pythonpath.ps1'
+[2.860s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maksmykha/Documents/RobotikProject/install/robotik_control/share/robotik_control/hook/pythonpath.dsv'
+[2.860s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/install/robotik_control/share/robotik_control/hook/pythonpath.sh'
+[2.861s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/robotik_control/bin'
+[2.861s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robotik_control)
+[2.861s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/robotik_control/share/robotik_control/package.ps1'
+[2.861s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/maksmykha/Documents/RobotikProject/install/robotik_control/share/robotik_control/package.dsv'
+[2.861s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/robotik_control/share/robotik_control/package.sh'
+[2.862s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/robotik_control/share/robotik_control/package.bash'
+[2.862s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/robotik_control/share/robotik_control/package.zsh'
+[2.862s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/maksmykha/Documents/RobotikProject/install/robotik_control/share/colcon-core/packages/robotik_control)
+[2.946s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maksmykha/Documents/RobotikProject/build/yolo_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/maksmykha/Documents/RobotikProject/install/yolo_ros:/home/maksmykha/Documents/RobotikProject/install/robotik_vision:/home/maksmykha/Documents/RobotikProject/install/robotik_sorting:/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo:/home/maksmykha/Documents/RobotikProject/install/robotik_control:/home/maksmykha/Documents/RobotikProject/install/robotik_bringup:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/maksmykha/Documents/RobotikProject/build/yolo_msgs -- -j8 -l8
+[2.947s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maksmykha/Documents/RobotikProject/build/yolo_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/maksmykha/Documents/RobotikProject/install/yolo_ros:/home/maksmykha/Documents/RobotikProject/install/robotik_vision:/home/maksmykha/Documents/RobotikProject/install/robotik_sorting:/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo:/home/maksmykha/Documents/RobotikProject/install/robotik_control:/home/maksmykha/Documents/RobotikProject/install/robotik_bringup:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/maksmykha/Documents/RobotikProject/build/yolo_msgs
+[3.076s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yolo_msgs)
+[3.076s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs' for CMake module files
+[3.076s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maksmykha/Documents/RobotikProject/build/yolo_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/maksmykha/Documents/RobotikProject/install/yolo_ros:/home/maksmykha/Documents/RobotikProject/install/robotik_vision:/home/maksmykha/Documents/RobotikProject/install/robotik_sorting:/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo:/home/maksmykha/Documents/RobotikProject/install/robotik_control:/home/maksmykha/Documents/RobotikProject/install/robotik_bringup:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/maksmykha/Documents/RobotikProject/build/yolo_msgs
+[3.077s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs' for CMake config files
+[3.077s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolo_msgs', 'cmake_prefix_path')
+[3.077s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/hook/cmake_prefix_path.ps1'
+[3.077s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/hook/cmake_prefix_path.dsv'
+[3.077s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/hook/cmake_prefix_path.sh'
+[3.078s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib'
+[3.078s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolo_msgs', 'ld_library_path_lib')
+[3.078s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/hook/ld_library_path_lib.ps1'
+[3.078s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/hook/ld_library_path_lib.dsv'
+[3.078s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/hook/ld_library_path_lib.sh'
+[3.078s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/bin'
+[3.078s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/pkgconfig/yolo_msgs.pc'
+[3.078s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages'
+[3.078s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolo_msgs', 'pythonpath')
+[3.079s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/hook/pythonpath.ps1'
+[3.079s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/hook/pythonpath.dsv'
+[3.079s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/hook/pythonpath.sh'
+[3.079s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/bin'
+[3.079s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/package.ps1'
+[3.080s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/package.dsv'
+[3.080s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/package.sh'
+[3.080s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/package.bash'
+[3.080s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/package.zsh'
+[3.080s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/colcon-core/packages/yolo_msgs)
+[3.080s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yolo_msgs)
+[3.080s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs' for CMake module files
+[3.081s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs' for CMake config files
+[3.081s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolo_msgs', 'cmake_prefix_path')
+[3.081s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/hook/cmake_prefix_path.ps1'
+[3.081s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/hook/cmake_prefix_path.dsv'
+[3.081s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/hook/cmake_prefix_path.sh'
+[3.081s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib'
+[3.082s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolo_msgs', 'ld_library_path_lib')
+[3.082s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/hook/ld_library_path_lib.ps1'
+[3.082s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/hook/ld_library_path_lib.dsv'
+[3.082s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/hook/ld_library_path_lib.sh'
+[3.082s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/bin'
+[3.082s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/pkgconfig/yolo_msgs.pc'
+[3.082s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages'
+[3.082s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolo_msgs', 'pythonpath')
+[3.082s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/hook/pythonpath.ps1'
+[3.082s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/hook/pythonpath.dsv'
+[3.083s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/hook/pythonpath.sh'
+[3.083s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/bin'
+[3.083s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/package.ps1'
+[3.084s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/package.dsv'
+[3.084s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/package.sh'
+[3.084s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/package.bash'
+[3.084s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/package.zsh'
+[3.084s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/colcon-core/packages/yolo_msgs)
+[3.085s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/maksmykha/Documents/RobotikProject/src/yolo_ros/yolo_ros' with build type 'ament_python'
+[3.085s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolo_ros', 'ament_prefix_path')
+[3.085s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/install/yolo_ros/share/yolo_ros/hook/ament_prefix_path.ps1'
+[3.085s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maksmykha/Documents/RobotikProject/install/yolo_ros/share/yolo_ros/hook/ament_prefix_path.dsv'
+[3.086s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/install/yolo_ros/share/yolo_ros/hook/ament_prefix_path.sh'
+[3.086s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.086s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.214s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/maksmykha/Documents/RobotikProject/src/yolo_ros/yolo_ros'
+[3.214s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.214s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.513s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/maksmykha/Documents/RobotikProject/install/yolo_ros/share/ament_index/resource_index/packages/yolo_ros
+[3.513s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/maksmykha/Documents/RobotikProject/install/yolo_ros/share/yolo_ros/package.xml
+[3.513s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/maksmykha/Documents/RobotikProject/install/yolo_ros/lib/yolo_ros/debug_node
+[3.513s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/maksmykha/Documents/RobotikProject/install/yolo_ros/lib/yolo_ros/detect_3d_node
+[3.513s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/maksmykha/Documents/RobotikProject/install/yolo_ros/lib/yolo_ros/tracking_node
+[3.513s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/maksmykha/Documents/RobotikProject/install/yolo_ros/lib/yolo_ros/yolo_node
+[3.516s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maksmykha/Documents/RobotikProject/build/yolo_ros': CMAKE_PREFIX_PATH=/home/maksmykha/Documents/RobotikProject/install/yolo_msgs:/home/maksmykha/Documents/RobotikProject/install/yolo_bringup:/home/maksmykha/Documents/RobotikProject/install/robotik_description:/home/maksmykha/Documents/RobotikProject/install/robot_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/maksmykha/Documents/RobotikProject/build/yolo_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/maksmykha/Documents/RobotikProject/install/yolo_ros/lib/python3.12/site-packages:/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages:/home/maksmykha/Documents/RobotikProject/install/yolo_ros/lib/python3.12/site-packages:/home/maksmykha/Documents/RobotikProject/install/robotik_vision/lib/python3.12/site-packages:/home/maksmykha/Documents/RobotikProject/install/robotik_sorting/lib/python3.12/site-packages:/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo/lib/python3.12/site-packages:/home/maksmykha/Documents/RobotikProject/install/robotik_control/lib/python3.12/site-packages:/home/maksmykha/Documents/RobotikProject/install/robotik_bringup/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/maksmykha/Documents/RobotikProject/build/yolo_ros/build --no-deps symlink_data --force
+[3.838s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolo_ros', 'pythonpath_develop')
+[3.838s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/build/yolo_ros/share/yolo_ros/hook/pythonpath_develop.ps1'
+[3.839s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maksmykha/Documents/RobotikProject/build/yolo_ros' returned '0': CMAKE_PREFIX_PATH=/home/maksmykha/Documents/RobotikProject/install/yolo_msgs:/home/maksmykha/Documents/RobotikProject/install/yolo_bringup:/home/maksmykha/Documents/RobotikProject/install/robotik_description:/home/maksmykha/Documents/RobotikProject/install/robot_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/maksmykha/Documents/RobotikProject/build/yolo_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/maksmykha/Documents/RobotikProject/install/yolo_ros/lib/python3.12/site-packages:/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages:/home/maksmykha/Documents/RobotikProject/install/yolo_ros/lib/python3.12/site-packages:/home/maksmykha/Documents/RobotikProject/install/robotik_vision/lib/python3.12/site-packages:/home/maksmykha/Documents/RobotikProject/install/robotik_sorting/lib/python3.12/site-packages:/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo/lib/python3.12/site-packages:/home/maksmykha/Documents/RobotikProject/install/robotik_control/lib/python3.12/site-packages:/home/maksmykha/Documents/RobotikProject/install/robotik_bringup/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/maksmykha/Documents/RobotikProject/build/yolo_ros/build --no-deps symlink_data --force
+[3.839s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maksmykha/Documents/RobotikProject/build/yolo_ros/share/yolo_ros/hook/pythonpath_develop.dsv'
+[3.839s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/build/yolo_ros/share/yolo_ros/hook/pythonpath_develop.sh'
+[3.839s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/yolo_ros' for CMake module files
+[3.840s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/yolo_ros' for CMake config files
+[3.840s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/yolo_ros/lib'
+[3.840s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/yolo_ros/bin'
+[3.840s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/yolo_ros/lib/pkgconfig/yolo_ros.pc'
+[3.840s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/yolo_ros/lib/python3.12/site-packages'
+[3.840s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolo_ros', 'pythonpath')
+[3.840s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/install/yolo_ros/share/yolo_ros/hook/pythonpath.ps1'
+[3.840s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maksmykha/Documents/RobotikProject/install/yolo_ros/share/yolo_ros/hook/pythonpath.dsv'
+[3.840s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/install/yolo_ros/share/yolo_ros/hook/pythonpath.sh'
+[3.841s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/yolo_ros/bin'
+[3.841s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yolo_ros)
+[3.841s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/yolo_ros/share/yolo_ros/package.ps1'
+[3.841s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/maksmykha/Documents/RobotikProject/install/yolo_ros/share/yolo_ros/package.dsv'
+[3.841s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/yolo_ros/share/yolo_ros/package.sh'
+[3.842s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/yolo_ros/share/yolo_ros/package.bash'
+[3.842s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/yolo_ros/share/yolo_ros/package.zsh'
+[3.842s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/maksmykha/Documents/RobotikProject/install/yolo_ros/share/colcon-core/packages/yolo_ros)
+[3.842s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/maksmykha/Documents/RobotikProject/src/yolo_ros/yolo_bringup' with build type 'ament_cmake'
+[3.842s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/maksmykha/Documents/RobotikProject/src/yolo_ros/yolo_bringup'
+[3.842s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.842s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.857s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maksmykha/Documents/RobotikProject/build/yolo_bringup': AMENT_PREFIX_PATH=/home/maksmykha/Documents/RobotikProject/install/yolo_ros:/home/maksmykha/Documents/RobotikProject/install/yolo_bringup:/home/maksmykha/Documents/RobotikProject/install/yolo_msgs:/home/maksmykha/Documents/RobotikProject/install/robotik_vision:/home/maksmykha/Documents/RobotikProject/install/robotik_sorting:/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo:/home/maksmykha/Documents/RobotikProject/install/robotik_description:/home/maksmykha/Documents/RobotikProject/install/robotik_control:/home/maksmykha/Documents/RobotikProject/install/robotik_bringup:/home/maksmykha/Documents/RobotikProject/install/robot_description:/opt/ros/jazzy CMAKE_PREFIX_PATH=/home/maksmykha/Documents/RobotikProject/install/yolo_msgs:/home/maksmykha/Documents/RobotikProject/install/yolo_bringup:/home/maksmykha/Documents/RobotikProject/install/robotik_description:/home/maksmykha/Documents/RobotikProject/install/robot_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/maksmykha/Documents/RobotikProject/install/yolo_ros:/home/maksmykha/Documents/RobotikProject/install/robotik_vision:/home/maksmykha/Documents/RobotikProject/install/robotik_sorting:/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo:/home/maksmykha/Documents/RobotikProject/install/robotik_control:/home/maksmykha/Documents/RobotikProject/install/robotik_bringup:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/maksmykha/Documents/RobotikProject/build/yolo_ros:${PYTHONPATH} /usr/bin/cmake /home/maksmykha/Documents/RobotikProject/src/yolo_ros/yolo_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/maksmykha/Documents/RobotikProject/install/yolo_bringup
+[4.061s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maksmykha/Documents/RobotikProject/build/yolo_bringup' returned '0': AMENT_PREFIX_PATH=/home/maksmykha/Documents/RobotikProject/install/yolo_ros:/home/maksmykha/Documents/RobotikProject/install/yolo_bringup:/home/maksmykha/Documents/RobotikProject/install/yolo_msgs:/home/maksmykha/Documents/RobotikProject/install/robotik_vision:/home/maksmykha/Documents/RobotikProject/install/robotik_sorting:/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo:/home/maksmykha/Documents/RobotikProject/install/robotik_description:/home/maksmykha/Documents/RobotikProject/install/robotik_control:/home/maksmykha/Documents/RobotikProject/install/robotik_bringup:/home/maksmykha/Documents/RobotikProject/install/robot_description:/opt/ros/jazzy CMAKE_PREFIX_PATH=/home/maksmykha/Documents/RobotikProject/install/yolo_msgs:/home/maksmykha/Documents/RobotikProject/install/yolo_bringup:/home/maksmykha/Documents/RobotikProject/install/robotik_description:/home/maksmykha/Documents/RobotikProject/install/robot_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/maksmykha/Documents/RobotikProject/install/yolo_ros:/home/maksmykha/Documents/RobotikProject/install/robotik_vision:/home/maksmykha/Documents/RobotikProject/install/robotik_sorting:/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo:/home/maksmykha/Documents/RobotikProject/install/robotik_control:/home/maksmykha/Documents/RobotikProject/install/robotik_bringup:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/maksmykha/Documents/RobotikProject/build/yolo_ros:${PYTHONPATH} /usr/bin/cmake /home/maksmykha/Documents/RobotikProject/src/yolo_ros/yolo_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/maksmykha/Documents/RobotikProject/install/yolo_bringup
+[4.062s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maksmykha/Documents/RobotikProject/build/yolo_bringup': AMENT_PREFIX_PATH=/home/maksmykha/Documents/RobotikProject/install/yolo_ros:/home/maksmykha/Documents/RobotikProject/install/yolo_bringup:/home/maksmykha/Documents/RobotikProject/install/yolo_msgs:/home/maksmykha/Documents/RobotikProject/install/robotik_vision:/home/maksmykha/Documents/RobotikProject/install/robotik_sorting:/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo:/home/maksmykha/Documents/RobotikProject/install/robotik_description:/home/maksmykha/Documents/RobotikProject/install/robotik_control:/home/maksmykha/Documents/RobotikProject/install/robotik_bringup:/home/maksmykha/Documents/RobotikProject/install/robot_description:/opt/ros/jazzy CMAKE_PREFIX_PATH=/home/maksmykha/Documents/RobotikProject/install/yolo_msgs:/home/maksmykha/Documents/RobotikProject/install/yolo_bringup:/home/maksmykha/Documents/RobotikProject/install/robotik_description:/home/maksmykha/Documents/RobotikProject/install/robot_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/maksmykha/Documents/RobotikProject/install/yolo_ros:/home/maksmykha/Documents/RobotikProject/install/robotik_vision:/home/maksmykha/Documents/RobotikProject/install/robotik_sorting:/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo:/home/maksmykha/Documents/RobotikProject/install/robotik_control:/home/maksmykha/Documents/RobotikProject/install/robotik_bringup:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/maksmykha/Documents/RobotikProject/build/yolo_ros:${PYTHONPATH} /usr/bin/cmake --build /home/maksmykha/Documents/RobotikProject/build/yolo_bringup -- -j8 -l8
+[4.082s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maksmykha/Documents/RobotikProject/build/yolo_bringup' returned '0': AMENT_PREFIX_PATH=/home/maksmykha/Documents/RobotikProject/install/yolo_ros:/home/maksmykha/Documents/RobotikProject/install/yolo_bringup:/home/maksmykha/Documents/RobotikProject/install/yolo_msgs:/home/maksmykha/Documents/RobotikProject/install/robotik_vision:/home/maksmykha/Documents/RobotikProject/install/robotik_sorting:/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo:/home/maksmykha/Documents/RobotikProject/install/robotik_description:/home/maksmykha/Documents/RobotikProject/install/robotik_control:/home/maksmykha/Documents/RobotikProject/install/robotik_bringup:/home/maksmykha/Documents/RobotikProject/install/robot_description:/opt/ros/jazzy CMAKE_PREFIX_PATH=/home/maksmykha/Documents/RobotikProject/install/yolo_msgs:/home/maksmykha/Documents/RobotikProject/install/yolo_bringup:/home/maksmykha/Documents/RobotikProject/install/robotik_description:/home/maksmykha/Documents/RobotikProject/install/robot_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/maksmykha/Documents/RobotikProject/install/yolo_ros:/home/maksmykha/Documents/RobotikProject/install/robotik_vision:/home/maksmykha/Documents/RobotikProject/install/robotik_sorting:/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo:/home/maksmykha/Documents/RobotikProject/install/robotik_control:/home/maksmykha/Documents/RobotikProject/install/robotik_bringup:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/maksmykha/Documents/RobotikProject/build/yolo_ros:${PYTHONPATH} /usr/bin/cmake --build /home/maksmykha/Documents/RobotikProject/build/yolo_bringup -- -j8 -l8
+[4.084s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maksmykha/Documents/RobotikProject/build/yolo_bringup': AMENT_PREFIX_PATH=/home/maksmykha/Documents/RobotikProject/install/yolo_ros:/home/maksmykha/Documents/RobotikProject/install/yolo_bringup:/home/maksmykha/Documents/RobotikProject/install/yolo_msgs:/home/maksmykha/Documents/RobotikProject/install/robotik_vision:/home/maksmykha/Documents/RobotikProject/install/robotik_sorting:/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo:/home/maksmykha/Documents/RobotikProject/install/robotik_description:/home/maksmykha/Documents/RobotikProject/install/robotik_control:/home/maksmykha/Documents/RobotikProject/install/robotik_bringup:/home/maksmykha/Documents/RobotikProject/install/robot_description:/opt/ros/jazzy CMAKE_PREFIX_PATH=/home/maksmykha/Documents/RobotikProject/install/yolo_msgs:/home/maksmykha/Documents/RobotikProject/install/yolo_bringup:/home/maksmykha/Documents/RobotikProject/install/robotik_description:/home/maksmykha/Documents/RobotikProject/install/robot_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/maksmykha/Documents/RobotikProject/install/yolo_ros:/home/maksmykha/Documents/RobotikProject/install/robotik_vision:/home/maksmykha/Documents/RobotikProject/install/robotik_sorting:/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo:/home/maksmykha/Documents/RobotikProject/install/robotik_control:/home/maksmykha/Documents/RobotikProject/install/robotik_bringup:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/maksmykha/Documents/RobotikProject/build/yolo_ros:${PYTHONPATH} /usr/bin/cmake --install /home/maksmykha/Documents/RobotikProject/build/yolo_bringup
+[4.105s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yolo_bringup)
+[4.105s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/yolo_bringup' for CMake module files
+[4.105s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maksmykha/Documents/RobotikProject/build/yolo_bringup' returned '0': AMENT_PREFIX_PATH=/home/maksmykha/Documents/RobotikProject/install/yolo_ros:/home/maksmykha/Documents/RobotikProject/install/yolo_bringup:/home/maksmykha/Documents/RobotikProject/install/yolo_msgs:/home/maksmykha/Documents/RobotikProject/install/robotik_vision:/home/maksmykha/Documents/RobotikProject/install/robotik_sorting:/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo:/home/maksmykha/Documents/RobotikProject/install/robotik_description:/home/maksmykha/Documents/RobotikProject/install/robotik_control:/home/maksmykha/Documents/RobotikProject/install/robotik_bringup:/home/maksmykha/Documents/RobotikProject/install/robot_description:/opt/ros/jazzy CMAKE_PREFIX_PATH=/home/maksmykha/Documents/RobotikProject/install/yolo_msgs:/home/maksmykha/Documents/RobotikProject/install/yolo_bringup:/home/maksmykha/Documents/RobotikProject/install/robotik_description:/home/maksmykha/Documents/RobotikProject/install/robot_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/maksmykha/Documents/RobotikProject/install/yolo_ros:/home/maksmykha/Documents/RobotikProject/install/robotik_vision:/home/maksmykha/Documents/RobotikProject/install/robotik_sorting:/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo:/home/maksmykha/Documents/RobotikProject/install/robotik_control:/home/maksmykha/Documents/RobotikProject/install/robotik_bringup:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/maksmykha/Documents/RobotikProject/build/yolo_ros:${PYTHONPATH} /usr/bin/cmake --install /home/maksmykha/Documents/RobotikProject/build/yolo_bringup
+[4.106s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/yolo_bringup' for CMake config files
+[4.106s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolo_bringup', 'cmake_prefix_path')
+[4.106s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/install/yolo_bringup/share/yolo_bringup/hook/cmake_prefix_path.ps1'
+[4.106s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maksmykha/Documents/RobotikProject/install/yolo_bringup/share/yolo_bringup/hook/cmake_prefix_path.dsv'
+[4.106s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/install/yolo_bringup/share/yolo_bringup/hook/cmake_prefix_path.sh'
+[4.107s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/yolo_bringup/bin'
+[4.107s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/yolo_bringup/lib/pkgconfig/yolo_bringup.pc'
+[4.107s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/yolo_bringup/lib/python3.12/site-packages'
+[4.107s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/yolo_bringup/bin'
+[4.107s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/yolo_bringup/share/yolo_bringup/package.ps1'
+[4.108s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/maksmykha/Documents/RobotikProject/install/yolo_bringup/share/yolo_bringup/package.dsv'
+[4.108s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/yolo_bringup/share/yolo_bringup/package.sh'
+[4.108s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/yolo_bringup/share/yolo_bringup/package.bash'
+[4.108s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/yolo_bringup/share/yolo_bringup/package.zsh'
+[4.108s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/maksmykha/Documents/RobotikProject/install/yolo_bringup/share/colcon-core/packages/yolo_bringup)
+[4.108s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yolo_bringup)
+[4.108s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/yolo_bringup' for CMake module files
+[4.109s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/yolo_bringup' for CMake config files
+[4.109s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolo_bringup', 'cmake_prefix_path')
+[4.109s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/install/yolo_bringup/share/yolo_bringup/hook/cmake_prefix_path.ps1'
+[4.109s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maksmykha/Documents/RobotikProject/install/yolo_bringup/share/yolo_bringup/hook/cmake_prefix_path.dsv'
+[4.109s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maksmykha/Documents/RobotikProject/install/yolo_bringup/share/yolo_bringup/hook/cmake_prefix_path.sh'
+[4.109s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/yolo_bringup/bin'
+[4.109s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/yolo_bringup/lib/pkgconfig/yolo_bringup.pc'
+[4.109s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/yolo_bringup/lib/python3.12/site-packages'
+[4.110s] Level 1:colcon.colcon_core.environment:checking '/home/maksmykha/Documents/RobotikProject/install/yolo_bringup/bin'
+[4.110s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/yolo_bringup/share/yolo_bringup/package.ps1'
+[4.110s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/maksmykha/Documents/RobotikProject/install/yolo_bringup/share/yolo_bringup/package.dsv'
+[4.110s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/yolo_bringup/share/yolo_bringup/package.sh'
+[4.110s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/yolo_bringup/share/yolo_bringup/package.bash'
+[4.110s] INFO:colcon.colcon_core.shell:Creating package script '/home/maksmykha/Documents/RobotikProject/install/yolo_bringup/share/yolo_bringup/package.zsh'
+[4.110s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/maksmykha/Documents/RobotikProject/install/yolo_bringup/share/colcon-core/packages/yolo_bringup)
+[4.111s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.111s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.111s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[4.111s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.118s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.118s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.118s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[4.159s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[4.159s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/maksmykha/Documents/RobotikProject/install/local_setup.ps1'
+[4.160s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/maksmykha/Documents/RobotikProject/install/_local_setup_util_ps1.py'
+[4.162s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/maksmykha/Documents/RobotikProject/install/setup.ps1'
+[4.164s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/maksmykha/Documents/RobotikProject/install/local_setup.sh'
+[4.165s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/maksmykha/Documents/RobotikProject/install/_local_setup_util_sh.py'
+[4.165s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/maksmykha/Documents/RobotikProject/install/setup.sh'
+[4.167s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/maksmykha/Documents/RobotikProject/install/local_setup.bash'
+[4.167s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/maksmykha/Documents/RobotikProject/install/setup.bash'
+[4.169s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/maksmykha/Documents/RobotikProject/install/local_setup.zsh'
+[4.169s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/maksmykha/Documents/RobotikProject/install/setup.zsh'

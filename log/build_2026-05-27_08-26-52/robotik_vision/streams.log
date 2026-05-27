@@ -1,0 +1,17 @@
+[1.175s] Invoking command in '/home/maksmykha/Documents/RobotikProject/build/robotik_vision': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/maksmykha/Documents/RobotikProject/build/robotik_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/maksmykha/Documents/RobotikProject/install/robotik_vision/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/maksmykha/Documents/RobotikProject/build/robotik_vision/build --no-deps symlink_data
+[1.419s] running develop
+[1.551s] running egg_info
+[1.563s] writing robotik_vision.egg-info/PKG-INFO
+[1.563s] writing dependency_links to robotik_vision.egg-info/dependency_links.txt
+[1.564s] writing entry points to robotik_vision.egg-info/entry_points.txt
+[1.564s] writing requirements to robotik_vision.egg-info/requires.txt
+[1.564s] writing top-level names to robotik_vision.egg-info/top_level.txt
+[1.590s] reading manifest file 'robotik_vision.egg-info/SOURCES.txt'
+[1.590s] writing manifest file 'robotik_vision.egg-info/SOURCES.txt'
+[1.607s] running build_ext
+[1.607s] Creating /home/maksmykha/Documents/RobotikProject/install/robotik_vision/lib/python3.12/site-packages/robotik-vision.egg-link (link to .)
+[1.607s] Installing test_node script to /home/maksmykha/Documents/RobotikProject/install/robotik_vision/lib/robotik_vision
+[1.608s] 
+[1.608s] Installed /home/maksmykha/Documents/RobotikProject/build/robotik_vision
+[1.608s] running symlink_data
+[1.648s] Invoked command in '/home/maksmykha/Documents/RobotikProject/build/robotik_vision' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/maksmykha/Documents/RobotikProject/build/robotik_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/maksmykha/Documents/RobotikProject/install/robotik_vision/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/maksmykha/Documents/RobotikProject/build/robotik_vision/build --no-deps symlink_data

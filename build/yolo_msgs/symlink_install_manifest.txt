@@ -190,10 +190,10 @@
 /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/detail/set_classes__rosidl_typesupport_introspection_cpp.hpp
 /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/environment/pythonpath.sh
 /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/environment/pythonpath.dsv
-/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs-4.6.0-py3.12.egg-info/PKG-INFO
-/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs-4.6.0-py3.12.egg-info/SOURCES.txt
-/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs-4.6.0-py3.12.egg-info/dependency_links.txt
-/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs-4.6.0-py3.12.egg-info/top_level.txt
+/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs-4.6.1-py3.12.egg-info/PKG-INFO
+/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs-4.6.1-py3.12.egg-info/SOURCES.txt
+/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs-4.6.1-py3.12.egg-info/dependency_links.txt
+/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs-4.6.1-py3.12.egg-info/top_level.txt
 /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/__init__.py
 /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/_yolo_msgs_s.ep.rosidl_typesupport_c.c
 /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/_yolo_msgs_s.ep.rosidl_typesupport_fastrtps_c.c

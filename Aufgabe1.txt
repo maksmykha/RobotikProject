@@ -1,30 +1,27 @@
 ####Aufgaben#####
 
 
-Dienstag, den 25.05.2026 13:00
+Dienstag, den 02.06.2026 13:00
 
 
-
-
-*******Alle*******
-Entwicklungumgebung einrichten:
-- ROS2 Jazzy installieren
-- Gazebo Sim installieren
-- Movelt2 installieren
-- RViz installieren
-
-
-
-*******Nina******
-Roboterarm finden und einrichten
-UR5e
-
-******Max*******
-Aufbau der Projektstruktur
 
 
 ****Maksym und Tim****
-Erstellung der Gazebo-Simulationumgebung
+Kamera am Greifer hinzufügen
+    Kamera bewegt sich mit dem Roboterarm
+    camera_link hängt am Node tool0 
+Bridge einrichten
+    Kamera DAten aus Gazebo sind in ROS2 verfügbar(YOLO braucht später ROS2 topics)
+    prüfen dass kamera wirklich BIlder liefert an ROS2
+
+
+****Nina und Max****
+Förderband verbessern
+  Quasi Tisch
+    Ablagerbereiche hinzufügen
+    Position relativ zum UR5e profen(machen alle es bei Review)
+Testobjekte hinzufügen
+    zuerst nur Würfel mit verschiedene Farben  
 
 
 

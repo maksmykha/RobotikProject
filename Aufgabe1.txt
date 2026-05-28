@@ -260,6 +260,8 @@ launch/gazebo_world.launch.py
 
 cd ~/Documents/RobotikProject
 
+colcon build
+
 source install/setup.bash
 
 ros2 launch robotik_gazebo gazebo_world.launch.py

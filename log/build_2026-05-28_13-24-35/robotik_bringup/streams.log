@@ -1,0 +1,15 @@
+[2.643s] Invoking command in '/home/maksmykha/Documents/RobotikProject/build/robotik_bringup': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/maksmykha/Documents/RobotikProject/build/robotik_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/maksmykha/Documents/RobotikProject/install/robotik_bringup/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/maksmykha/Documents/RobotikProject/build/robotik_bringup/build --no-deps symlink_data
+[3.134s] running develop
+[3.382s] running egg_info
+[3.412s] writing robotik_bringup.egg-info/PKG-INFO
+[3.412s] writing dependency_links to robotik_bringup.egg-info/dependency_links.txt
+[3.412s] writing requirements to robotik_bringup.egg-info/requires.txt
+[3.412s] writing top-level names to robotik_bringup.egg-info/top_level.txt
+[3.468s] reading manifest file 'robotik_bringup.egg-info/SOURCES.txt'
+[3.468s] writing manifest file 'robotik_bringup.egg-info/SOURCES.txt'
+[3.498s] running build_ext
+[3.499s] Creating /home/maksmykha/Documents/RobotikProject/install/robotik_bringup/lib/python3.12/site-packages/robotik-bringup.egg-link (link to .)
+[3.509s] 
+[3.509s] Installed /home/maksmykha/Documents/RobotikProject/build/robotik_bringup
+[3.509s] running symlink_data
+[3.568s] Invoked command in '/home/maksmykha/Documents/RobotikProject/build/robotik_bringup' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/maksmykha/Documents/RobotikProject/build/robotik_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/maksmykha/Documents/RobotikProject/install/robotik_bringup/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/maksmykha/Documents/RobotikProject/build/robotik_bringup/build --no-deps symlink_data

@@ -1,12 +1,6 @@
 package.xml
 setup.cfg
 setup.py
-../../build/robotik_bringup/robotik_bringup.egg-info/PKG-INFO
-../../build/robotik_bringup/robotik_bringup.egg-info/SOURCES.txt
-../../build/robotik_bringup/robotik_bringup.egg-info/dependency_links.txt
-../../build/robotik_bringup/robotik_bringup.egg-info/requires.txt
-../../build/robotik_bringup/robotik_bringup.egg-info/top_level.txt
-../../build/robotik_bringup/robotik_bringup.egg-info/zip-safe
 resource/robotik_bringup
 robotik_bringup/__init__.py
 robotik_bringup.egg-info/PKG-INFO

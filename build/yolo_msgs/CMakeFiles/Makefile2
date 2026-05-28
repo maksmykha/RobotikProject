@@ -194,7 +194,6 @@ CMakeFiles/yolo_msgs_uninstall.dir/clean:
 # Target rules for target CMakeFiles/yolo_msgs.dir
 
 # All Build rule for target.
-CMakeFiles/yolo_msgs.dir/all: yolo_msgs__rs/CMakeFiles/yolo_msgs__rs.dir/all
 CMakeFiles/yolo_msgs.dir/all: CMakeFiles/yolo_msgs__rosidl_generator_type_description.dir/all
 CMakeFiles/yolo_msgs.dir/all: CMakeFiles/yolo_msgs__rosidl_generator_c.dir/all
 CMakeFiles/yolo_msgs.dir/all: CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_c.dir/all
@@ -204,6 +203,7 @@ CMakeFiles/yolo_msgs.dir/all: CMakeFiles/yolo_msgs__cpp.dir/all
 CMakeFiles/yolo_msgs.dir/all: CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_cpp.dir/all
 CMakeFiles/yolo_msgs.dir/all: CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_cpp.dir/all
 CMakeFiles/yolo_msgs.dir/all: CMakeFiles/yolo_msgs__rosidl_typesupport_cpp.dir/all
+CMakeFiles/yolo_msgs.dir/all: yolo_msgs__rs/CMakeFiles/yolo_msgs__rs.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolo_msgs.dir/build.make CMakeFiles/yolo_msgs.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/yolo_msgs.dir/build.make CMakeFiles/yolo_msgs.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/maksmykha/Documents/RobotikProject/build/yolo_msgs/CMakeFiles --progress-num= "Built target yolo_msgs"

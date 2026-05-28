@@ -5,8 +5,8 @@
 #include <string.h>
 
 #include "yolo_msgs/msg/detail/detection__struct.h"
-#include "yolo_msgs/msg/detail/detection__functions.h"
 #include "yolo_msgs/msg/detail/detection__type_support.h"
+#include "yolo_msgs/msg/detail/detection__functions.h"
 #include "rosidl_typesupport_interface/macros.h"
 
 #ifdef __cplusplus

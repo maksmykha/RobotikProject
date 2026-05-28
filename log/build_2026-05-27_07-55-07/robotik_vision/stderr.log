@@ -1,2 +1,0 @@
-/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:363: UserWarning: Unbuilt egg for robotik-control [unknown version] (/home/maksmykha/Documents/RobotikProject/build/robotik_control)
-  self.local_index = Environment(self.shadow_path + sys.path)

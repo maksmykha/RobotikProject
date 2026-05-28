@@ -1,0 +1,562 @@
+[0.052s] Invoking command in '/home/maksmykha/Documents/RobotikProject/build/yolo_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/maksmykha/Documents/RobotikProject/install/yolo_ros:/home/maksmykha/Documents/RobotikProject/install/robotik_vision:/home/maksmykha/Documents/RobotikProject/install/robotik_sorting:/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo:/home/maksmykha/Documents/RobotikProject/install/robotik_control:/home/maksmykha/Documents/RobotikProject/install/robotik_bringup:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/maksmykha/Documents/RobotikProject/src/yolo_ros/yolo_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/maksmykha/Documents/RobotikProject/install/yolo_msgs
+[0.889s] -- The C compiler identification is GNU 13.3.0
+[0.889s] -- The CXX compiler identification is GNU 13.3.0
+[0.889s] -- Detecting C compiler ABI info
+[0.889s] -- Detecting C compiler ABI info - done
+[0.889s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.889s] -- Detecting C compile features
+[0.889s] -- Detecting C compile features - done
+[0.889s] -- Detecting CXX compiler ABI info
+[0.890s] -- Detecting CXX compiler ABI info - done
+[0.890s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.890s] -- Detecting CXX compile features
+[0.890s] -- Detecting CXX compile features - done
+[0.890s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.890s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.890s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.932s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.943s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.044s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.147s] -- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[1.153s] -- Found std_msgs: 5.3.7 (/opt/ros/jazzy/share/std_msgs/cmake)
+[1.223s] -- Found geometry_msgs: 5.3.7 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[2.421s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[2.939s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.403s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.407s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[3.510s] -- Found PythonExtra: /usr/bin/python3  
+[3.831s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[3.927s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[3.936s] -- Configuring done (3.8s)
+[3.989s] -- Generating done (0.0s)
+[3.997s] -- Build files have been written to: /home/maksmykha/Documents/RobotikProject/build/yolo_msgs
+[4.004s] Invoked command in '/home/maksmykha/Documents/RobotikProject/build/yolo_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/maksmykha/Documents/RobotikProject/install/yolo_ros:/home/maksmykha/Documents/RobotikProject/install/robotik_vision:/home/maksmykha/Documents/RobotikProject/install/robotik_sorting:/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo:/home/maksmykha/Documents/RobotikProject/install/robotik_control:/home/maksmykha/Documents/RobotikProject/install/robotik_bringup:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/maksmykha/Documents/RobotikProject/src/yolo_ros/yolo_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/maksmykha/Documents/RobotikProject/install/yolo_msgs
+[4.005s] Invoking command in '/home/maksmykha/Documents/RobotikProject/build/yolo_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/maksmykha/Documents/RobotikProject/install/yolo_ros:/home/maksmykha/Documents/RobotikProject/install/robotik_vision:/home/maksmykha/Documents/RobotikProject/install/robotik_sorting:/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo:/home/maksmykha/Documents/RobotikProject/install/robotik_control:/home/maksmykha/Documents/RobotikProject/install/robotik_bringup:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/maksmykha/Documents/RobotikProject/build/yolo_msgs -- -j8 -l8
+[4.039s] [  1%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[4.042s] [  2%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[4.050s] [  2%] Built target ament_cmake_python_symlink_yolo_msgs
+[4.182s] running egg_info
+[4.182s] creating yolo_msgs.egg-info
+[4.192s] writing yolo_msgs.egg-info/PKG-INFO
+[4.192s] writing dependency_links to yolo_msgs.egg-info/dependency_links.txt
+[4.192s] writing top-level names to yolo_msgs.egg-info/top_level.txt
+[4.192s] writing manifest file 'yolo_msgs.egg-info/SOURCES.txt'
+[4.221s] reading manifest file 'yolo_msgs.egg-info/SOURCES.txt'
+[4.221s] writing manifest file 'yolo_msgs.egg-info/SOURCES.txt'
+[4.247s] [  2%] Built target ament_cmake_python_build_yolo_msgs_egg
+[4.396s] [  2%] Built target yolo_msgs__rosidl_generator_type_description
+[4.404s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[4.414s] [  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[4.421s] [  2%] Built target yolo_msgs__rs
+[5.035s] [  2%] Built target yolo_msgs__cpp
+[5.223s] [  3%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/point2_d__description.c.o[0m
+[5.224s] [  4%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/vector2__functions.c.o[0m
+[5.225s] [  4%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/vector2__type_support.c.o[0m
+[5.225s] [  4%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/point2_d__type_support.c.o[0m
+[5.230s] [  5%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/vector2__description.c.o[0m
+[5.230s] [  6%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/point2_d__functions.c.o[0m
+[5.230s] [  7%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/pose2_d__description.c.o[0m
+[5.230s] [  8%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/pose2_d__functions.c.o[0m
+[5.289s] [  8%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/pose2_d__type_support.c.o[0m
+[5.289s] [  9%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/bounding_box2_d__description.c.o[0m
+[5.304s] [ 11%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/bounding_box3_d__description.c.o[0m
+[5.315s] [ 11%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/bounding_box2_d__type_support.c.o[0m
+[5.316s] [ 11%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/bounding_box2_d__functions.c.o[0m
+[5.327s] [ 11%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/bounding_box3_d__functions.c.o[0m
+[5.333s] [ 12%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/mask__description.c.o[0m
+[5.333s] [ 13%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/bounding_box3_d__type_support.c.o[0m
+[5.337s] [ 13%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/mask__functions.c.o[0m
+[5.337s] [ 14%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/mask__type_support.c.o[0m
+[5.352s] [ 15%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/key_point2_d__description.c.o[0m
+[5.369s] [ 15%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/key_point2_d__functions.c.o[0m
+[5.389s] [ 16%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/key_point2_d__type_support.c.o[0m
+[5.391s] [ 16%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/key_point2_d_array__functions.c.o[0m
+[5.392s] [ 17%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/key_point2_d_array__type_support.c.o[0m
+[5.393s] [ 18%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/key_point2_d_array__description.c.o[0m
+[5.413s] [ 19%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/key_point3_d__description.c.o[0m
+[5.413s] [ 19%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/key_point3_d__functions.c.o[0m
+[5.429s] [ 20%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/key_point3_d__type_support.c.o[0m
+[5.437s] [ 21%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/key_point3_d_array__type_support.c.o[0m
+[5.437s] [ 22%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/key_point3_d_array__description.c.o[0m
+[5.438s] [ 22%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/key_point3_d_array__functions.c.o[0m
+[5.457s] [ 22%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/detection__description.c.o[0m
+[5.460s] [ 23%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/detection__type_support.c.o[0m
+[5.465s] [ 24%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/detection__functions.c.o[0m
+[5.471s] [ 24%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/detection_array__description.c.o[0m
+[5.483s] [ 25%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/detection_array__functions.c.o[0m
+[5.483s] [ 26%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/detection_array__type_support.c.o[0m
+[5.487s] [ 26%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/srv/detail/set_classes__description.c.o[0m
+[5.506s] [ 27%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/srv/detail/set_classes__type_support.c.o[0m
+[5.511s] [ 28%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/srv/detail/set_classes__functions.c.o[0m
+[5.573s] [ 28%] [32m[1mLinking C shared library libyolo_msgs__rosidl_generator_c.so[0m
+[5.603s] [ 28%] Built target yolo_msgs__rosidl_generator_c
+[5.612s] [ 30%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[5.612s] [ 30%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[5.612s] [ 30%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[5.612s] [ 31%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[5.612s] [ 32%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[5.612s] [ 32%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[6.270s] [ 33%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolo_msgs/msg/vector2__type_support.cpp.o[0m
+[6.270s] [ 34%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolo_msgs/msg/pose2_d__type_support.cpp.o[0m
+[6.272s] [ 34%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolo_msgs/msg/point2_d__type_support.cpp.o[0m
+[6.278s] [ 35%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolo_msgs/msg/point2_d__type_support.cpp.o[0m
+[6.369s] [ 36%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolo_msgs/msg/bounding_box3_d__type_support.cpp.o[0m
+[6.370s] [ 36%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolo_msgs/msg/bounding_box2_d__type_support.cpp.o[0m
+[6.397s] [ 37%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolo_msgs/msg/vector2__type_support.cpp.o[0m
+[6.422s] [ 37%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolo_msgs/msg/pose2_d__type_support.cpp.o[0m
+[6.433s] [ 37%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolo_msgs/msg/mask__type_support.cpp.o[0m
+[6.472s] [ 38%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolo_msgs/msg/key_point2_d__type_support.cpp.o[0m
+[6.523s] [ 39%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolo_msgs/msg/key_point2_d_array__type_support.cpp.o[0m
+[6.556s] [ 39%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolo_msgs/msg/key_point3_d__type_support.cpp.o[0m
+[6.578s] [ 40%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolo_msgs/msg/detail/point2_d__type_support.c.o[0m
+[6.622s] [ 41%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolo_msgs/msg/detail/point2_d__type_support.cpp.o[0m
+[6.622s] [ 42%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolo_msgs/msg/key_point3_d_array__type_support.cpp.o[0m
+[6.646s] [ 43%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolo_msgs/msg/detail/vector2__type_support.c.o[0m
+[6.673s] [ 44%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolo_msgs/msg/detection__type_support.cpp.o[0m
+[6.687s] [ 44%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolo_msgs/msg/detail/pose2_d__type_support.c.o[0m
+[6.720s] [ 44%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolo_msgs/msg/detection_array__type_support.cpp.o[0m
+[6.740s] [ 45%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolo_msgs/msg/detail/bounding_box2_d__type_support.c.o[0m
+[6.763s] [ 45%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolo_msgs/msg/detail/dds_fastrtps/point2_d__type_support.cpp.o[0m
+[6.794s] [ 46%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolo_msgs/msg/detail/bounding_box3_d__type_support.c.o[0m
+[6.799s] [ 47%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolo_msgs/srv/set_classes__type_support.cpp.o[0m
+[6.878s] [ 47%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolo_msgs/msg/detail/mask__type_support.c.o[0m
+[6.904s] [ 48%] [32m[1mLinking CXX shared library libyolo_msgs__rosidl_typesupport_c.so[0m
+[6.904s] [ 48%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolo_msgs/msg/detail/vector2__type_support.cpp.o[0m
+[6.921s] [ 49%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolo_msgs/msg/detail/point2_d__type_support_c.cpp.o[0m
+[6.936s] [ 50%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolo_msgs/msg/detail/key_point2_d__type_support.c.o[0m
+[6.936s] [ 51%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolo_msgs/msg/bounding_box2_d__type_support.cpp.o[0m
+[6.937s] [ 51%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolo_msgs/msg/detail/key_point2_d_array__type_support.c.o[0m
+[6.955s] [ 51%] Built target yolo_msgs__rosidl_typesupport_c
+[6.968s] [ 52%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolo_msgs/msg/detail/dds_fastrtps/vector2__type_support.cpp.o[0m
+[6.980s] [ 53%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolo_msgs/msg/detail/pose2_d__type_support.cpp.o[0m
+[6.981s] [ 54%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolo_msgs/msg/detail/key_point3_d__type_support.c.o[0m
+[7.014s] [ 55%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolo_msgs/msg/detail/bounding_box2_d__type_support.cpp.o[0m
+[7.056s] [ 56%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolo_msgs/msg/detail/key_point3_d_array__type_support.c.o[0m
+[7.116s] [ 56%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolo_msgs/msg/detail/detection__type_support.c.o[0m
+[7.164s] [ 57%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolo_msgs/msg/detail/detection_array__type_support.c.o[0m
+[7.226s] [ 58%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolo_msgs/srv/detail/set_classes__type_support.c.o[0m
+[7.256s] [ 59%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolo_msgs/msg/detail/dds_fastrtps/pose2_d__type_support.cpp.o[0m
+[7.321s] [ 59%] [32m[1mLinking C shared library libyolo_msgs__rosidl_typesupport_introspection_c.so[0m
+[7.339s] [ 59%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolo_msgs/msg/bounding_box3_d__type_support.cpp.o[0m
+[7.395s] [ 59%] Built target yolo_msgs__rosidl_typesupport_introspection_c
+[7.398s] [ 59%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolo_msgs/msg/detail/vector2__type_support_c.cpp.o[0m
+[7.436s] [ 59%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolo_msgs/msg/detail/dds_fastrtps/bounding_box2_d__type_support.cpp.o[0m
+[7.510s] [ 60%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolo_msgs/msg/mask__type_support.cpp.o[0m
+[7.510s] [ 60%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolo_msgs/msg/detail/bounding_box3_d__type_support.cpp.o[0m
+[7.567s] [ 61%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolo_msgs/msg/detail/mask__type_support.cpp.o[0m
+[7.681s] [ 62%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolo_msgs/msg/detail/pose2_d__type_support_c.cpp.o[0m
+[7.695s] [ 63%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolo_msgs/msg/detail/bounding_box2_d__type_support_c.cpp.o[0m
+[7.892s] [ 63%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolo_msgs/msg/detail/key_point2_d__type_support.cpp.o[0m
+[7.950s] [ 64%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolo_msgs/msg/key_point2_d__type_support.cpp.o[0m
+[8.042s] [ 65%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolo_msgs/msg/detail/key_point2_d_array__type_support.cpp.o[0m
+[8.095s] [ 65%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolo_msgs/msg/detail/bounding_box3_d__type_support_c.cpp.o[0m
+[8.197s] [ 65%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolo_msgs/msg/key_point2_d_array__type_support.cpp.o[0m
+[8.271s] [ 66%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolo_msgs/msg/detail/dds_fastrtps/bounding_box3_d__type_support.cpp.o[0m
+[8.275s] [ 67%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolo_msgs/msg/key_point3_d__type_support.cpp.o[0m
+[8.277s] [ 67%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolo_msgs/msg/detail/dds_fastrtps/mask__type_support.cpp.o[0m
+[8.291s] [ 68%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolo_msgs/msg/detail/dds_fastrtps/key_point2_d__type_support.cpp.o[0m
+[8.291s] [ 69%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolo_msgs/msg/detail/key_point3_d__type_support.cpp.o[0m
+[8.409s] [ 70%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolo_msgs/msg/key_point3_d_array__type_support.cpp.o[0m
+[8.565s] [ 71%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolo_msgs/msg/detail/mask__type_support_c.cpp.o[0m
+[8.665s] [ 71%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolo_msgs/msg/detail/key_point3_d_array__type_support.cpp.o[0m
+[8.696s] [ 72%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolo_msgs/msg/detail/dds_fastrtps/key_point2_d_array__type_support.cpp.o[0m
+[8.727s] [ 73%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolo_msgs/msg/detail/detection__type_support.cpp.o[0m
+[8.766s] [ 73%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolo_msgs/msg/detection__type_support.cpp.o[0m
+[8.810s] [ 73%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolo_msgs/msg/detail/key_point2_d__type_support_c.cpp.o[0m
+[8.861s] [ 74%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolo_msgs/msg/detail/detection_array__type_support.cpp.o[0m
+[8.899s] [ 75%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolo_msgs/msg/detection_array__type_support.cpp.o[0m
+[9.060s] [ 76%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolo_msgs/msg/detail/key_point2_d_array__type_support_c.cpp.o[0m
+[9.109s] [ 76%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolo_msgs/msg/detail/dds_fastrtps/key_point3_d__type_support.cpp.o[0m
+[9.167s] [ 77%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolo_msgs/srv/set_classes__type_support.cpp.o[0m
+[9.168s] [ 78%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolo_msgs/msg/detail/dds_fastrtps/key_point3_d_array__type_support.cpp.o[0m
+[9.271s] [ 79%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolo_msgs/msg/detail/key_point3_d__type_support_c.cpp.o[0m
+[9.322s] [ 79%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolo_msgs/srv/detail/set_classes__type_support.cpp.o[0m
+[9.382s] [ 79%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolo_msgs/msg/detail/key_point3_d_array__type_support_c.cpp.o[0m
+[9.526s] [ 80%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolo_msgs/msg/detail/dds_fastrtps/detection__type_support.cpp.o[0m
+[9.644s] [ 80%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolo_msgs/msg/detail/dds_fastrtps/detection_array__type_support.cpp.o[0m
+[9.682s] [ 81%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolo_msgs/srv/detail/dds_fastrtps/set_classes__type_support.cpp.o[0m
+[9.779s] [ 81%] [32m[1mLinking CXX shared library libyolo_msgs__rosidl_typesupport_cpp.so[0m
+[9.792s] [ 82%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolo_msgs/msg/detail/detection__type_support_c.cpp.o[0m
+[9.859s] [ 83%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolo_msgs/msg/detail/detection_array__type_support_c.cpp.o[0m
+[9.899s] [ 83%] Built target yolo_msgs__rosidl_typesupport_cpp
+[9.903s] [ 84%] [32m[1mLinking CXX shared library libyolo_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[9.911s] [ 84%] [32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolo_msgs/srv/detail/set_classes__type_support_c.cpp.o[0m
+[10.016s] [ 84%] Built target yolo_msgs__rosidl_typesupport_introspection_cpp
+[10.378s] [ 85%] [32m[1mLinking CXX shared library libyolo_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[10.475s] [ 85%] Built target yolo_msgs__rosidl_typesupport_fastrtps_c
+[10.486s] [ 86%] [32m[1mLinking CXX shared library libyolo_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[10.540s] [ 86%] Built target yolo_msgs__rosidl_typesupport_fastrtps_cpp
+[10.571s] [ 86%] Built target yolo_msgs
+[10.585s] [ 87%] [34m[1mGenerating Python code for ROS interfaces[0m
+[11.543s] [ 87%] Built target yolo_msgs__py
+[11.564s] [ 88%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_py.dir/rosidl_generator_py/yolo_msgs/msg/_vector2_s.c.o[0m
+[11.564s] [ 89%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_py.dir/rosidl_generator_py/yolo_msgs/msg/_point2_d_s.c.o[0m
+[11.564s] [ 89%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_py.dir/rosidl_generator_py/yolo_msgs/msg/_bounding_box3_d_s.c.o[0m
+[11.566s] [ 90%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_py.dir/rosidl_generator_py/yolo_msgs/msg/_bounding_box2_d_s.c.o[0m
+[11.566s] [ 91%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_py.dir/rosidl_generator_py/yolo_msgs/msg/_mask_s.c.o[0m
+[11.567s] [ 91%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_py.dir/rosidl_generator_py/yolo_msgs/msg/_key_point2_d_array_s.c.o[0m
+[11.567s] [ 91%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_py.dir/rosidl_generator_py/yolo_msgs/msg/_pose2_d_s.c.o[0m
+[11.574s] [ 92%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_py.dir/rosidl_generator_py/yolo_msgs/msg/_key_point2_d_s.c.o[0m
+[11.744s] [ 93%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_py.dir/rosidl_generator_py/yolo_msgs/msg/_key_point3_d_s.c.o[0m
+[11.745s] [ 94%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_py.dir/rosidl_generator_py/yolo_msgs/msg/_key_point3_d_array_s.c.o[0m
+[11.746s] [ 94%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_py.dir/rosidl_generator_py/yolo_msgs/msg/_detection_s.c.o[0m
+[11.749s] [ 95%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_py.dir/rosidl_generator_py/yolo_msgs/srv/_set_classes_s.c.o[0m
+[11.749s] [ 96%] [32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_py.dir/rosidl_generator_py/yolo_msgs/msg/_detection_array_s.c.o[0m
+[11.864s] [ 96%] [32m[1mLinking C shared library libyolo_msgs__rosidl_generator_py.so[0m
+[11.895s] [ 96%] Built target yolo_msgs__rosidl_generator_py
+[11.908s] [ 98%] [32mBuilding C object CMakeFiles/yolo_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/yolo_msgs/_yolo_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[11.908s] [ 98%] [32mBuilding C object CMakeFiles/yolo_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/yolo_msgs/_yolo_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[11.908s] [ 98%] [32mBuilding C object CMakeFiles/yolo_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/yolo_msgs/_yolo_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[11.998s] [ 99%] [32m[1mLinking C shared module rosidl_generator_py/yolo_msgs/yolo_msgs_s__rosidl_typesupport_c.so[0m
+[12.000s] [ 99%] [32m[1mLinking C shared module rosidl_generator_py/yolo_msgs/yolo_msgs_s__rosidl_typesupport_fastrtps_c.so[0m
+[12.001s] [100%] [32m[1mLinking C shared module rosidl_generator_py/yolo_msgs/yolo_msgs_s__rosidl_typesupport_introspection_c.so[0m
+[12.017s] [100%] Built target yolo_msgs_s__rosidl_typesupport_c
+[12.020s] [100%] Built target yolo_msgs_s__rosidl_typesupport_fastrtps_c
+[12.021s] [100%] Built target yolo_msgs_s__rosidl_typesupport_introspection_c
+[12.028s] Invoked command in '/home/maksmykha/Documents/RobotikProject/build/yolo_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/maksmykha/Documents/RobotikProject/install/yolo_ros:/home/maksmykha/Documents/RobotikProject/install/robotik_vision:/home/maksmykha/Documents/RobotikProject/install/robotik_sorting:/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo:/home/maksmykha/Documents/RobotikProject/install/robotik_control:/home/maksmykha/Documents/RobotikProject/install/robotik_bringup:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/maksmykha/Documents/RobotikProject/build/yolo_msgs -- -j8 -l8
+[12.029s] Invoking command in '/home/maksmykha/Documents/RobotikProject/build/yolo_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/maksmykha/Documents/RobotikProject/install/yolo_ros:/home/maksmykha/Documents/RobotikProject/install/robotik_vision:/home/maksmykha/Documents/RobotikProject/install/robotik_sorting:/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo:/home/maksmykha/Documents/RobotikProject/install/robotik_control:/home/maksmykha/Documents/RobotikProject/install/robotik_bringup:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/maksmykha/Documents/RobotikProject/build/yolo_msgs
+[12.034s] -- Install configuration: ""
+[12.035s] -- Execute custom install script
+[12.035s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/ament_index/resource_index/rosidl_interfaces/yolo_msgs
+[12.039s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/msg/Point2D.json
+[12.044s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/msg/Vector2.json
+[12.049s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/msg/Pose2D.json
+[12.057s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/msg/BoundingBox2D.json
+[12.062s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/msg/BoundingBox3D.json
+[12.068s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/msg/Mask.json
+[12.074s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/msg/KeyPoint2D.json
+[12.079s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/msg/KeyPoint2DArray.json
+[12.084s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/msg/KeyPoint3D.json
+[12.089s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/msg/KeyPoint3DArray.json
+[12.093s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/msg/Detection.json
+[12.098s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/msg/DetectionArray.json
+[12.103s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/srv/SetClasses.json
+[12.109s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/bounding_box2_d.h
+[12.113s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/bounding_box3_d.h
+[12.118s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box2_d__functions.h
+[12.122s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box2_d__struct.h
+[12.127s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box2_d__type_support.h
+[12.131s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box3_d__functions.h
+[12.135s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box3_d__struct.h
+[12.140s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box3_d__type_support.h
+[12.145s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection__functions.h
+[12.149s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection__struct.h
+[12.160s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection__type_support.h
+[12.163s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection_array__functions.h
+[12.169s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection_array__struct.h
+[12.175s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection_array__type_support.h
+[12.180s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d__functions.h
+[12.185s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d__struct.h
+[12.190s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d__type_support.h
+[12.195s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d_array__functions.h
+[12.200s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d_array__struct.h
+[12.205s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d_array__type_support.h
+[12.210s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d__functions.h
+[12.214s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d__struct.h
+[12.219s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d__type_support.h
+[12.223s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d_array__functions.h
+[12.228s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d_array__struct.h
+[12.232s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d_array__type_support.h
+[12.237s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/mask__functions.h
+[12.242s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/mask__struct.h
+[12.247s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/mask__type_support.h
+[12.252s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/point2_d__functions.h
+[12.258s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/point2_d__struct.h
+[12.265s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/point2_d__type_support.h
+[12.270s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/pose2_d__functions.h
+[12.275s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/pose2_d__struct.h
+[12.281s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/pose2_d__type_support.h
+[12.285s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/vector2__functions.h
+[12.290s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/vector2__struct.h
+[12.295s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/vector2__type_support.h
+[12.300s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detection.h
+[12.304s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detection_array.h
+[12.309s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/key_point2_d.h
+[12.313s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/key_point2_d_array.h
+[12.318s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/key_point3_d.h
+[12.322s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/key_point3_d_array.h
+[12.326s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/mask.h
+[12.331s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/point2_d.h
+[12.335s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/pose2_d.h
+[12.340s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/rosidl_generator_c__visibility_control.h
+[12.344s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/vector2.h
+[12.348s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/detail/set_classes__functions.h
+[12.357s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/detail/set_classes__struct.h
+[12.360s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/detail/set_classes__type_support.h
+[12.366s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/set_classes.h
+[12.372s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/environment/library_path.sh
+[12.377s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/environment/library_path.dsv
+[12.382s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box2_d__rosidl_typesupport_fastrtps_c.h
+[12.387s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box3_d__rosidl_typesupport_fastrtps_c.h
+[12.392s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection__rosidl_typesupport_fastrtps_c.h
+[12.396s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection_array__rosidl_typesupport_fastrtps_c.h
+[12.401s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d__rosidl_typesupport_fastrtps_c.h
+[12.406s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d_array__rosidl_typesupport_fastrtps_c.h
+[12.411s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d__rosidl_typesupport_fastrtps_c.h
+[12.416s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d_array__rosidl_typesupport_fastrtps_c.h
+[12.420s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/mask__rosidl_typesupport_fastrtps_c.h
+[12.425s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/point2_d__rosidl_typesupport_fastrtps_c.h
+[12.430s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/pose2_d__rosidl_typesupport_fastrtps_c.h
+[12.435s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/vector2__rosidl_typesupport_fastrtps_c.h
+[12.439s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[12.444s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/detail/set_classes__rosidl_typesupport_fastrtps_c.h
+[12.449s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box2_d__rosidl_typesupport_introspection_c.h
+[12.458s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box3_d__rosidl_typesupport_introspection_c.h
+[12.462s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h
+[12.467s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection_array__rosidl_typesupport_introspection_c.h
+[12.473s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d__rosidl_typesupport_introspection_c.h
+[12.479s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d_array__rosidl_typesupport_introspection_c.h
+[12.484s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d__rosidl_typesupport_introspection_c.h
+[12.489s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d_array__rosidl_typesupport_introspection_c.h
+[12.493s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/mask__rosidl_typesupport_introspection_c.h
+[12.499s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/point2_d__rosidl_typesupport_introspection_c.h
+[12.503s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/pose2_d__rosidl_typesupport_introspection_c.h
+[12.508s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/vector2__rosidl_typesupport_introspection_c.h
+[12.513s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[12.518s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/detail/set_classes__rosidl_typesupport_introspection_c.h
+[12.523s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/bounding_box2_d.hpp
+[12.528s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/bounding_box3_d.hpp
+[12.533s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box2_d__builder.hpp
+[12.538s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box2_d__struct.hpp
+[12.542s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box2_d__traits.hpp
+[12.548s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box2_d__type_support.hpp
+[12.552s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box3_d__builder.hpp
+[12.561s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box3_d__struct.hpp
+[12.566s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box3_d__traits.hpp
+[12.573s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box3_d__type_support.hpp
+[12.578s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection__builder.hpp
+[12.583s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection__struct.hpp
+[12.588s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection__traits.hpp
+[12.593s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection__type_support.hpp
+[12.598s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection_array__builder.hpp
+[12.603s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection_array__struct.hpp
+[12.608s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection_array__traits.hpp
+[12.613s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection_array__type_support.hpp
+[12.617s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d__builder.hpp
+[12.622s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d__struct.hpp
+[12.626s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d__traits.hpp
+[12.631s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d__type_support.hpp
+[12.636s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d_array__builder.hpp
+[12.641s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d_array__struct.hpp
+[12.646s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d_array__traits.hpp
+[12.650s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d_array__type_support.hpp
+[12.657s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d__builder.hpp
+[12.663s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d__struct.hpp
+[12.669s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d__traits.hpp
+[12.675s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d__type_support.hpp
+[12.680s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d_array__builder.hpp
+[12.685s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d_array__struct.hpp
+[12.690s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d_array__traits.hpp
+[12.695s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d_array__type_support.hpp
+[12.699s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/mask__builder.hpp
+[12.703s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/mask__struct.hpp
+[12.708s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/mask__traits.hpp
+[12.713s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/mask__type_support.hpp
+[12.718s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/point2_d__builder.hpp
+[12.722s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/point2_d__struct.hpp
+[12.727s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/point2_d__traits.hpp
+[12.731s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/point2_d__type_support.hpp
+[12.736s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/pose2_d__builder.hpp
+[12.740s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/pose2_d__struct.hpp
+[12.744s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/pose2_d__traits.hpp
+[12.748s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/pose2_d__type_support.hpp
+[12.753s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/vector2__builder.hpp
+[12.760s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/vector2__struct.hpp
+[12.766s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/vector2__traits.hpp
+[12.772s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/vector2__type_support.hpp
+[12.778s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detection.hpp
+[12.783s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detection_array.hpp
+[12.788s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/key_point2_d.hpp
+[12.792s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/key_point2_d_array.hpp
+[12.797s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/key_point3_d.hpp
+[12.801s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/key_point3_d_array.hpp
+[12.805s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/mask.hpp
+[12.810s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/point2_d.hpp
+[12.814s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/pose2_d.hpp
+[12.818s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[12.823s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/vector2.hpp
+[12.827s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/detail/set_classes__builder.hpp
+[12.831s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/detail/set_classes__struct.hpp
+[12.836s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/detail/set_classes__traits.hpp
+[12.840s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/detail/set_classes__type_support.hpp
+[12.844s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/set_classes.hpp
+[12.850s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box2_d__rosidl_typesupport_fastrtps_cpp.hpp
+[12.860s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box3_d__rosidl_typesupport_fastrtps_cpp.hpp
+[12.862s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection__rosidl_typesupport_fastrtps_cpp.hpp
+[12.868s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection_array__rosidl_typesupport_fastrtps_cpp.hpp
+[12.873s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d__rosidl_typesupport_fastrtps_cpp.hpp
+[12.879s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d_array__rosidl_typesupport_fastrtps_cpp.hpp
+[12.884s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d__rosidl_typesupport_fastrtps_cpp.hpp
+[12.890s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d_array__rosidl_typesupport_fastrtps_cpp.hpp
+[12.896s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/mask__rosidl_typesupport_fastrtps_cpp.hpp
+[12.901s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/point2_d__rosidl_typesupport_fastrtps_cpp.hpp
+[12.906s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/pose2_d__rosidl_typesupport_fastrtps_cpp.hpp
+[12.910s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/vector2__rosidl_typesupport_fastrtps_cpp.hpp
+[12.915s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[12.919s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/detail/set_classes__rosidl_typesupport_fastrtps_cpp.hpp
+[12.924s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box2_d__rosidl_typesupport_introspection_cpp.hpp
+[12.928s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box3_d__rosidl_typesupport_introspection_cpp.hpp
+[12.933s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection__rosidl_typesupport_introspection_cpp.hpp
+[12.938s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection_array__rosidl_typesupport_introspection_cpp.hpp
+[12.943s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d__rosidl_typesupport_introspection_cpp.hpp
+[12.948s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d_array__rosidl_typesupport_introspection_cpp.hpp
+[12.952s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d__rosidl_typesupport_introspection_cpp.hpp
+[12.961s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d_array__rosidl_typesupport_introspection_cpp.hpp
+[12.967s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/mask__rosidl_typesupport_introspection_cpp.hpp
+[12.973s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/point2_d__rosidl_typesupport_introspection_cpp.hpp
+[12.978s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/pose2_d__rosidl_typesupport_introspection_cpp.hpp
+[12.984s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/vector2__rosidl_typesupport_introspection_cpp.hpp
+[12.989s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/detail/set_classes__rosidl_typesupport_introspection_cpp.hpp
+[12.994s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/environment/pythonpath.sh
+[12.999s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/environment/pythonpath.dsv
+[13.004s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs-4.6.1-py3.12.egg-info/PKG-INFO
+[13.008s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs-4.6.1-py3.12.egg-info/SOURCES.txt
+[13.013s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs-4.6.1-py3.12.egg-info/dependency_links.txt
+[13.017s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs-4.6.1-py3.12.egg-info/top_level.txt
+[13.023s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/__init__.py
+[13.028s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/_yolo_msgs_s.ep.rosidl_typesupport_c.c
+[13.033s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/_yolo_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[13.038s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/_yolo_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[13.042s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/msg/__init__.py
+[13.047s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/msg/_bounding_box2_d.py
+[13.051s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/msg/_bounding_box2_d_s.c
+[13.060s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/msg/_bounding_box3_d.py
+[13.068s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/msg/_bounding_box3_d_s.c
+[13.074s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/msg/_detection.py
+[13.079s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/msg/_detection_array.py
+[13.085s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/msg/_detection_array_s.c
+[13.090s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/msg/_detection_s.c
+[13.095s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/msg/_key_point2_d.py
+[13.100s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/msg/_key_point2_d_array.py
+[13.105s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/msg/_key_point2_d_array_s.c
+[13.110s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/msg/_key_point2_d_s.c
+[13.115s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/msg/_key_point3_d.py
+[13.120s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/msg/_key_point3_d_array.py
+[13.125s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/msg/_key_point3_d_array_s.c
+[13.129s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/msg/_key_point3_d_s.c
+[13.135s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/msg/_mask.py
+[13.139s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/msg/_mask_s.c
+[13.144s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/msg/_point2_d.py
+[13.149s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/msg/_point2_d_s.c
+[13.154s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/msg/_pose2_d.py
+[13.162s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/msg/_pose2_d_s.c
+[13.169s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/msg/_vector2.py
+[13.174s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/msg/_vector2_s.c
+[13.180s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/srv/__init__.py
+[13.185s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/srv/_set_classes.py
+[13.190s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/srv/_set_classes_s.c
+[13.195s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/yolo_msgs_s__rosidl_typesupport_c.so
+[13.200s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/yolo_msgs_s__rosidl_typesupport_fastrtps_c.so
+[13.204s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/yolo_msgs_s__rosidl_typesupport_introspection_c.so
+[13.209s] -- Up-to-date symlink: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/yolo_msgs_s__rosidl_typesupport_fastrtps_c.so
+[13.210s] -- Up-to-date symlink: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/yolo_msgs_s__rosidl_typesupport_introspection_c.so
+[13.210s] -- Up-to-date symlink: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/yolo_msgs_s__rosidl_typesupport_c.so
+[13.210s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/ament_index/resource_index/rust_packages/yolo_msgs
+[13.215s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/rust/Cargo.toml
+[13.220s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/rust/build.rs
+[13.225s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/rust/src/lib.rs
+[13.229s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/rust/src/msg.rs
+[13.234s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/rust/src/msg/rmw.rs
+[13.238s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/rust/src/srv.rs
+[13.243s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/rust/src/srv/rmw.rs
+[13.247s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/msg/Point2D.idl
+[13.252s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/msg/Vector2.idl
+[13.260s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/msg/Pose2D.idl
+[13.265s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/msg/BoundingBox2D.idl
+[13.271s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/msg/BoundingBox3D.idl
+[13.277s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/msg/Mask.idl
+[13.283s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/msg/KeyPoint2D.idl
+[13.288s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/msg/KeyPoint2DArray.idl
+[13.293s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/msg/KeyPoint3D.idl
+[13.298s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/msg/KeyPoint3DArray.idl
+[13.302s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/msg/Detection.idl
+[13.307s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/msg/DetectionArray.idl
+[13.311s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/srv/SetClasses.idl
+[13.316s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/msg/Point2D.msg
+[13.321s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/msg/Vector2.msg
+[13.326s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/msg/Pose2D.msg
+[13.331s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/msg/BoundingBox2D.msg
+[13.335s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/msg/BoundingBox3D.msg
+[13.340s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/msg/Mask.msg
+[13.344s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/msg/KeyPoint2D.msg
+[13.349s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/msg/KeyPoint2DArray.msg
+[13.353s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/msg/KeyPoint3D.msg
+[13.360s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/msg/KeyPoint3DArray.msg
+[13.366s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/msg/Detection.msg
+[13.373s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/msg/DetectionArray.msg
+[13.379s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/srv/SetClasses.srv
+[13.384s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/ament_index/resource_index/package_run_dependencies/yolo_msgs
+[13.390s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/ament_index/resource_index/parent_prefix_path/yolo_msgs
+[13.395s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/environment/ament_prefix_path.sh
+[13.399s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/environment/ament_prefix_path.dsv
+[13.404s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/environment/path.sh
+[13.409s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/environment/path.dsv
+[13.414s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/local_setup.bash
+[13.419s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/local_setup.sh
+[13.423s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/local_setup.zsh
+[13.428s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/local_setup.dsv
+[13.432s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/package.dsv
+[13.437s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/ament_index/resource_index/packages/yolo_msgs
+[13.442s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/cmake/rosidl_cmake-extras.cmake
+[13.447s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[13.452s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[13.459s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[13.463s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[13.469s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[13.475s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[13.481s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/cmake/yolo_msgsConfig.cmake
+[13.487s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/cmake/yolo_msgsConfig-version.cmake
+[13.492s] -- Symlinking: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/package.xml
+[13.497s] -- Installing: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/libyolo_msgs__rosidl_generator_c.so
+[13.497s] -- Set non-toolchain portion of runtime path of "/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/libyolo_msgs__rosidl_generator_c.so" to ""
+[13.497s] -- Installing: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/libyolo_msgs__rosidl_typesupport_fastrtps_c.so
+[13.497s] -- Set non-toolchain portion of runtime path of "/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/libyolo_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[13.497s] -- Installing: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/libyolo_msgs__rosidl_typesupport_introspection_c.so
+[13.498s] -- Set non-toolchain portion of runtime path of "/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/libyolo_msgs__rosidl_typesupport_introspection_c.so" to ""
+[13.498s] -- Installing: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/libyolo_msgs__rosidl_typesupport_c.so
+[13.498s] -- Set non-toolchain portion of runtime path of "/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/libyolo_msgs__rosidl_typesupport_c.so" to ""
+[13.498s] -- Installing: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/libyolo_msgs__rosidl_typesupport_fastrtps_cpp.so
+[13.498s] -- Set non-toolchain portion of runtime path of "/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/libyolo_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[13.498s] -- Installing: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/libyolo_msgs__rosidl_typesupport_introspection_cpp.so
+[13.499s] -- Set non-toolchain portion of runtime path of "/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/libyolo_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[13.499s] -- Installing: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/libyolo_msgs__rosidl_typesupport_cpp.so
+[13.499s] -- Set non-toolchain portion of runtime path of "/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/libyolo_msgs__rosidl_typesupport_cpp.so" to ""
+[13.531s] Listing '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs'...
+[13.531s] Compiling '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/__init__.py'...
+[13.531s] Listing '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/msg'...
+[13.531s] Compiling '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/msg/__init__.py'...
+[13.531s] Compiling '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/msg/_bounding_box2_d.py'...
+[13.531s] Compiling '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/msg/_bounding_box3_d.py'...
+[13.531s] Compiling '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/msg/_detection.py'...
+[13.531s] Compiling '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/msg/_detection_array.py'...
+[13.531s] Compiling '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/msg/_key_point2_d.py'...
+[13.531s] Compiling '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/msg/_key_point2_d_array.py'...
+[13.531s] Compiling '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/msg/_key_point3_d.py'...
+[13.532s] Compiling '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/msg/_key_point3_d_array.py'...
+[13.532s] Compiling '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/msg/_mask.py'...
+[13.532s] Compiling '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/msg/_point2_d.py'...
+[13.532s] Compiling '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/msg/_pose2_d.py'...
+[13.532s] Compiling '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/msg/_vector2.py'...
+[13.532s] Listing '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/srv'...
+[13.532s] Compiling '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/srv/__init__.py'...
+[13.532s] Compiling '/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/python3.12/site-packages/yolo_msgs/srv/_set_classes.py'...
+[13.535s] -- Installing: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/libyolo_msgs__rosidl_generator_py.so
+[13.535s] -- Set non-toolchain portion of runtime path of "/home/maksmykha/Documents/RobotikProject/install/yolo_msgs/lib/libyolo_msgs__rosidl_generator_py.so" to ""
+[13.535s] -- Installing: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/cmake/export_yolo_msgs__rosidl_generator_cExport.cmake
+[13.535s] -- Installing: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/cmake/export_yolo_msgs__rosidl_generator_cExport-noconfig.cmake
+[13.535s] -- Installing: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/cmake/export_yolo_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[13.535s] -- Installing: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/cmake/export_yolo_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[13.535s] -- Installing: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/cmake/yolo_msgs__rosidl_typesupport_introspection_cExport.cmake
+[13.535s] -- Installing: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/cmake/yolo_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[13.536s] -- Installing: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/cmake/yolo_msgs__rosidl_typesupport_cExport.cmake
+[13.536s] -- Installing: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/cmake/yolo_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[13.536s] -- Installing: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/cmake/export_yolo_msgs__rosidl_generator_cppExport.cmake
+[13.536s] -- Installing: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/cmake/export_yolo_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[13.536s] -- Installing: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/cmake/export_yolo_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[13.536s] -- Installing: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/cmake/yolo_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[13.536s] -- Installing: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/cmake/yolo_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[13.536s] -- Installing: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/cmake/yolo_msgs__rosidl_typesupport_cppExport.cmake
+[13.536s] -- Installing: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/cmake/yolo_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[13.536s] -- Installing: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/cmake/export_yolo_msgs__rosidl_generator_pyExport.cmake
+[13.536s] -- Installing: /home/maksmykha/Documents/RobotikProject/install/yolo_msgs/share/yolo_msgs/cmake/export_yolo_msgs__rosidl_generator_pyExport-noconfig.cmake
+[13.538s] Invoked command in '/home/maksmykha/Documents/RobotikProject/build/yolo_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/maksmykha/Documents/RobotikProject/install/yolo_ros:/home/maksmykha/Documents/RobotikProject/install/robotik_vision:/home/maksmykha/Documents/RobotikProject/install/robotik_sorting:/home/maksmykha/Documents/RobotikProject/install/robotik_gazebo:/home/maksmykha/Documents/RobotikProject/install/robotik_control:/home/maksmykha/Documents/RobotikProject/install/robotik_bringup:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/maksmykha/Documents/RobotikProject/build/yolo_msgs

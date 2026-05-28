@@ -1,0 +1,24 @@
+[1.728s] Invoking command in '/home/maksmykha/Documents/RobotikProject/build/robotik_vision': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/maksmykha/Documents/RobotikProject/build/robotik_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/maksmykha/Documents/RobotikProject/install/robotik_vision/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/maksmykha/Documents/RobotikProject/build/robotik_vision/build --no-deps symlink_data
+[2.060s] running develop
+[2.227s] running egg_info
+[2.227s] creating robotik_vision.egg-info
+[2.245s] writing robotik_vision.egg-info/PKG-INFO
+[2.245s] writing dependency_links to robotik_vision.egg-info/dependency_links.txt
+[2.245s] writing entry points to robotik_vision.egg-info/entry_points.txt
+[2.245s] writing requirements to robotik_vision.egg-info/requires.txt
+[2.245s] writing top-level names to robotik_vision.egg-info/top_level.txt
+[2.245s] writing manifest file 'robotik_vision.egg-info/SOURCES.txt'
+[2.275s] reading manifest file 'robotik_vision.egg-info/SOURCES.txt'
+[2.275s] writing manifest file 'robotik_vision.egg-info/SOURCES.txt'
+[2.293s] running build_ext
+[2.293s] Creating /home/maksmykha/Documents/RobotikProject/install/robotik_vision/lib/python3.12/site-packages/robotik-vision.egg-link (link to .)
+[2.299s] Installing test_node script to /home/maksmykha/Documents/RobotikProject/install/robotik_vision/lib/robotik_vision
+[2.299s] 
+[2.299s] Installed /home/maksmykha/Documents/RobotikProject/build/robotik_vision
+[2.299s] running symlink_data
+[2.299s] creating /home/maksmykha/Documents/RobotikProject/install/robotik_vision/share/ament_index
+[2.299s] creating /home/maksmykha/Documents/RobotikProject/install/robotik_vision/share/ament_index/resource_index
+[2.299s] creating /home/maksmykha/Documents/RobotikProject/install/robotik_vision/share/ament_index/resource_index/packages
+[2.299s] symbolically linking /home/maksmykha/Documents/RobotikProject/build/robotik_vision/resource/robotik_vision -> /home/maksmykha/Documents/RobotikProject/install/robotik_vision/share/ament_index/resource_index/packages
+[2.299s] symbolically linking /home/maksmykha/Documents/RobotikProject/build/robotik_vision/package.xml -> /home/maksmykha/Documents/RobotikProject/install/robotik_vision/share/robotik_vision
+[2.367s] Invoked command in '/home/maksmykha/Documents/RobotikProject/build/robotik_vision' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/maksmykha/Documents/RobotikProject/build/robotik_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/maksmykha/Documents/RobotikProject/install/robotik_vision/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/maksmykha/Documents/RobotikProject/build/robotik_vision/build --no-deps symlink_data

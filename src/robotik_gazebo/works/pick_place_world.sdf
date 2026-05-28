@@ -22,6 +22,12 @@
       name="gz::sim::systems::SceneBroadcaster">
     </plugin>
 
+    <plugin
+      filename="gz-sim-sensors-system"
+      name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+    
     <light type="directional" name="sun">
       <cast_shadows>true</cast_shadows>
       <pose>0 0 10 0 0 0</pose>
@@ -101,5 +107,8 @@
         </visual>
       </link>
     </model>
+    <include>
+      <uri>model://gripper_depth_camera</uri>
+    </include>
   </world>
 </sdf>

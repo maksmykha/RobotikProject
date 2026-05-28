@@ -1,6 +1,6 @@
 [package]
 name = "yolo_msgs"
-version = "4.6.0"
+version = "4.6.1"
 edition = "2021"
 
 [dependencies]
@@ -9,13 +9,13 @@ serde = { version = "1", optional = true, features = ["derive"] }
 serde-big-array = { version = "0.5.1", optional = true }
 
 # ROS Dependencies
-service_msgs = "*"
-geometry_msgs = "*"
-builtin_interfaces = "*"
 std_msgs = "*"
+service_msgs = "*"
+builtin_interfaces = "*"
+geometry_msgs = "*"
 
 [features]
-serde = ['dep:serde', 'dep:serde-big-array', 'rosidl_runtime_rs/serde', 'service_msgs/serde', 'geometry_msgs/serde', 'builtin_interfaces/serde', 'std_msgs/serde']
+serde = ['dep:serde', 'dep:serde-big-array', 'rosidl_runtime_rs/serde', 'std_msgs/serde', 'service_msgs/serde', 'builtin_interfaces/serde', 'geometry_msgs/serde']
 
 [package.metadata.rclrs]
 reexport = true

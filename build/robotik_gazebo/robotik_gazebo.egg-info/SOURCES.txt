@@ -1,13 +1,9 @@
 package.xml
 setup.cfg
 setup.py
-../../build/robotik_gazebo/robotik_gazebo.egg-info/PKG-INFO
-../../build/robotik_gazebo/robotik_gazebo.egg-info/SOURCES.txt
-../../build/robotik_gazebo/robotik_gazebo.egg-info/dependency_links.txt
-../../build/robotik_gazebo/robotik_gazebo.egg-info/requires.txt
-../../build/robotik_gazebo/robotik_gazebo.egg-info/top_level.txt
-../../build/robotik_gazebo/robotik_gazebo.egg-info/zip-safe
 launch/gazebo_world.launch.py
+models/gripper_depth_camera/model.config
+models/gripper_depth_camera/model.sdf
 resource/robotik_gazebo
 robotik_gazebo/__init__.py
 robotik_gazebo.egg-info/PKG-INFO

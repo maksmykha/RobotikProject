@@ -1,13 +1,6 @@
 package.xml
 setup.cfg
 setup.py
-../../build/robotik_vision/robotik_vision.egg-info/PKG-INFO
-../../build/robotik_vision/robotik_vision.egg-info/SOURCES.txt
-../../build/robotik_vision/robotik_vision.egg-info/dependency_links.txt
-../../build/robotik_vision/robotik_vision.egg-info/entry_points.txt
-../../build/robotik_vision/robotik_vision.egg-info/requires.txt
-../../build/robotik_vision/robotik_vision.egg-info/top_level.txt
-../../build/robotik_vision/robotik_vision.egg-info/zip-safe
 resource/robotik_vision
 robotik_vision/__init__.py
 robotik_vision/test_node.py

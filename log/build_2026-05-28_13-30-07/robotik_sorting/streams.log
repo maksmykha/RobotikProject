@@ -1,0 +1,15 @@
+[2.565s] Invoking command in '/home/maksmykha/Documents/RobotikProject/build/robotik_sorting': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/maksmykha/Documents/RobotikProject/build/robotik_sorting/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/maksmykha/Documents/RobotikProject/install/robotik_sorting/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/maksmykha/Documents/RobotikProject/build/robotik_sorting/build --no-deps symlink_data
+[3.063s] running develop
+[3.342s] running egg_info
+[3.373s] writing robotik_sorting.egg-info/PKG-INFO
+[3.374s] writing dependency_links to robotik_sorting.egg-info/dependency_links.txt
+[3.374s] writing requirements to robotik_sorting.egg-info/requires.txt
+[3.375s] writing top-level names to robotik_sorting.egg-info/top_level.txt
+[3.437s] reading manifest file 'robotik_sorting.egg-info/SOURCES.txt'
+[3.439s] writing manifest file 'robotik_sorting.egg-info/SOURCES.txt'
+[3.467s] running build_ext
+[3.467s] Creating /home/maksmykha/Documents/RobotikProject/install/robotik_sorting/lib/python3.12/site-packages/robotik-sorting.egg-link (link to .)
+[3.473s] 
+[3.473s] Installed /home/maksmykha/Documents/RobotikProject/build/robotik_sorting
+[3.473s] running symlink_data
+[3.586s] Invoked command in '/home/maksmykha/Documents/RobotikProject/build/robotik_sorting' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/maksmykha/Documents/RobotikProject/build/robotik_sorting/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/maksmykha/Documents/RobotikProject/install/robotik_sorting/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/maksmykha/Documents/RobotikProject/build/robotik_sorting/build --no-deps symlink_data

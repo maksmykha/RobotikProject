@@ -1,1 +1,0 @@
-/home/maksmykha/Documents/RobotikProject/src/yolo_ros/yolo_msgs/msg/KeyPoint3DArray.msg

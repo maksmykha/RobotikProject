@@ -1,1 +1,0 @@
-/home/maksmykha/Documents/RobotikProject/build/robotik_gazebo/launch/gazebo_world.launch.py

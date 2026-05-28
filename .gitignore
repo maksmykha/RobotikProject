@@ -1,0 +1,24 @@
+# --- ROS 2 / colcon ---
+build/
+install/
+log/
+
+# --- CMake ---
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# --- IDEs ---
+.vscode/
+.idea/
+
+# --- OS ---
+.DS_Store
+
+# --- Python ---
+__pycache__/
+*.pyc
+
+# --- optional ROS artifacts ---
+*.launch.py.bak

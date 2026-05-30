@@ -266,7 +266,11 @@ source install/setup.bash
 
 ros2 launch robotik_gazebo gazebo_world.launch.py
 
+Bridge für gazebo topic in ros2 topic bild(benötigt für YOLO, da er kein gazebo topic erkennen)
+ros2 run ros_gz_bridge parameter_bridge /gripper_camera/image@sensor_msgs/msg/Image@gz.msgs.Image
 
+bild anschauen und testen
+ros2 run rqt_image_view rqt_image_view
 
 
 zu tun:

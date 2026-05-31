@@ -6,7 +6,8 @@ import os
 
 def generate_launch_description():
     pkg_robotik_gazebo = get_package_share_directory('robotik_gazebo')
-    model_path = os.path.join(pkg_robotik_gazebo, 'models')
+    pkg_robotik_vision = get_package_share_directory('robotik_vision')
+    pkg_ur_description = get_package_share_directory('ur_description')
 
     world_file = os.path.join(
         pkg_robotik_gazebo,
@@ -14,9 +15,14 @@ def generate_launch_description():
         'pick_place_world.sdf'
     )
 
-    set_gz_model_path = SetEnvironmentVariable(
+    resource_path = os.pathsep.join([
+        os.path.join(pkg_robotik_vision, 'models'),
+        os.path.dirname(pkg_ur_description)
+    ])
+
+    set_gz_resource_path = SetEnvironmentVariable(
         name='GZ_SIM_RESOURCE_PATH',
-        value=model_path
+        value=resource_path
     )
 
     gazebo = ExecuteProcess(
@@ -25,6 +31,6 @@ def generate_launch_description():
     )
 
     return LaunchDescription([
-        set_gz_model_path,
+        set_gz_resource_path,
         gazebo
     ])

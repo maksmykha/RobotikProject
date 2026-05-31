@@ -4,6 +4,7 @@ from glob import glob
 
 package_name = 'robotik_gazebo'
 
+
 setup(
     name=package_name,
     version='0.0.0',
@@ -14,8 +15,6 @@ setup(
     ('share/' + package_name, ['package.xml']),
     (os.path.join('share', package_name, 'launch'), glob('launch/*.launch.py')),
     (os.path.join('share', package_name, 'works'), glob('works/*.sdf')),
-    (os.path.join('share', package_name, 'models', 'gripper_depth_camera'),
-        glob('models/gripper_depth_camera/*')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,

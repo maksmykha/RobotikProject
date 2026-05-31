@@ -127,8 +127,5 @@
         </visual>
       </link>
     </model>
-    <include>
-      <uri>model://gripper_depth_camera</uri>
-    </include>
   </world>
 </sdf>

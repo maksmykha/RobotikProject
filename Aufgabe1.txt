@@ -115,7 +115,7 @@ source install/setup.bash
 # GAZEBO
 # =========================================
 
-sudo apt install ros-jazzy-ros-gz -y
+sudo apt install ros-jazzy-ros-gz ros-jazzy-ur-description -y
 
 gz sim
 

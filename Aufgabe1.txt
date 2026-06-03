@@ -1,6 +1,14 @@
 ####Aufgaben#####
 
-hi!!
+Montag, den 08.06.2026
+
+****Maksym und Tim****
+Kamera vom Robotor trennen und Yolo an Kamera anschließen
+
+
+****Nina und Max****
+Objektposition berechnen
+Die Position erkannter Objekte aus den Bilddaten berechnen und in Weltkoordinaten umwandeln.
 Dienstag, den 02.06.2026 13:00
 
 

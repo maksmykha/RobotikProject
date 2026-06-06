@@ -31,11 +31,19 @@ Testobjekte hinzufügen
 # =========================================
 
 # =========================================
-# Yolo Submodul updaten
+# Yolo Submodul updaten und Abhängigkeiten installieren
 # =========================================
 
 git submodule update --init --recursive
 
+sudo apt update
+sudo apt install python3-venv
+
+source .venv/bin/activate
+
+pip install --upgrade pip
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+pip install ultralytics
 # =========================================
 # ROS2 INSTALLATION
 # =========================================

@@ -30,6 +30,10 @@ Testobjekte hinzufügen
 # ALLE WICHTIGEN BEFEHLE
 # =========================================
 
+# =========================================
+# Yolo Submodul updaten
+# =========================================
+git submodule update --init --recursive
 
 # =========================================
 # ROS2 INSTALLATION

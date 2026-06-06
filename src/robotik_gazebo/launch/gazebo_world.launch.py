@@ -1,6 +1,8 @@
 from launch import LaunchDescription
 from launch.actions import ExecuteProcess, SetEnvironmentVariable
 from ament_index_python.packages import get_package_share_directory
+from launch.actions import IncludeLaunchDescription
+from launch.launch_description_sources import PythonLaunchDescriptionSource
 import os
 
 
@@ -39,8 +41,26 @@ def generate_launch_description():
         output='screen'
     )
 
+
+    yolo = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            os.path.join(
+                get_package_share_directory('yolo_bringup'),
+                'launch',
+                'yolo.launch.py',
+            )
+        ),
+        launch_arguments={
+            'input_image_topic': '/gripper_camera/image',
+            'model': 'yolov8m.pt',
+        }.items(),
+    )
+
     return LaunchDescription([
         set_gz_model_path,
         gazebo,
-        camera_bridge
+        camera_bridge,
+        yolo
     ])
+
+    

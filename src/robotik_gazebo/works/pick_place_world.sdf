@@ -1,42 +1,68 @@
 <?xml version="1.0" ?>
-<sdf version="1.6">
- <world name="pick_place_world">
+<sdf version="1.9">
+  <world name="pick_place_world">
 
+    <!-- Physics -->
     <physics name="1ms" type="ignored">
       <max_step_size>0.001</max_step_size>
       <real_time_factor>1.0</real_time_factor>
     </physics>
 
+    <!-- Plugins -->
     <plugin
       filename="gz-sim-physics-system"
-      name="gz::sim::systems::Physics">
-    </plugin>
+      name="gz::sim::systems::Physics"/>
 
     <plugin
       filename="gz-sim-user-commands-system"
-      name="gz::sim::systems::UserCommands">
-    </plugin>
+      name="gz::sim::systems::UserCommands"/>
 
     <plugin
       filename="gz-sim-scene-broadcaster-system"
-      name="gz::sim::systems::SceneBroadcaster">
-    </plugin>
+      name="gz::sim::systems::SceneBroadcaster"/>
 
     <plugin
       filename="gz-sim-sensors-system"
       name="gz::sim::systems::Sensors">
       <render_engine>ogre2</render_engine>
     </plugin>
-    
+
+    <!-- Light -->
     <light type="directional" name="sun">
       <cast_shadows>true</cast_shadows>
       <pose>0 0 10 0 0 0</pose>
-      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <diffuse>1 1 1 1</diffuse>
       <specular>0.2 0.2 0.2 1</specular>
-      <direction>-0.5 0.1 -0.9</direction>
+      <direction>-0.5 0.2 -1</direction>
     </light>
 
+    <!-- Ground -->
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>10 10</size>
+            </plane>
+          </geometry>
+        </collision>
+
+        <visual name="visual">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>10 10</size>
+            </plane>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+
+    <!-- TABLE -->
     <model name="simple_table">
+      <static>true</static>
 
       <!-- Tischplatte -->
       <link name="table_top">
@@ -64,100 +90,104 @@
         </visual>
       </link>
 
-      <!-- Bein 1 -->
+      <!-- Tischbein 1 -->
       <link name="leg1">
-        <pose>0.8 0.35 0.35 0 0 0</pose>
+        <pose>0.9 0.45 0.375 0 0 0</pose>
+
         <collision name="collision">
           <geometry>
             <box>
-              <size>0.05 0.05 0.8</size>
+              <size>0.06 0.06 0.75</size>
             </box>
           </geometry>
         </collision>
+
         <visual name="visual">
           <geometry>
             <box>
-              <size>0.05 0.05 0.8</size>
+              <size>0.06 0.06 0.75</size>
             </box>
           </geometry>
-          <material>
-            <ambient>0.3 0.2 0.1 1</ambient>
-            <diffuse>0.3 0.2 0.1 1</diffuse>
-          </material>
         </visual>
       </link>
 
-      <!-- Bein 2 -->
+      <!-- Tischbein 2 -->
       <link name="leg2">
-        <pose>-0.8 0.35 0.35 0 0 0</pose>
+        <pose>-0.9 0.45 0.375 0 0 0</pose>
+
         <collision name="collision">
           <geometry>
             <box>
-              <size>0.05 0.05 0.8</size>
+              <size>0.06 0.06 0.75</size>
             </box>
           </geometry>
         </collision>
+
         <visual name="visual">
           <geometry>
             <box>
-              <size>0.05 0.05 0.8</size>
+              <size>0.06 0.06 0.75</size>
             </box>
           </geometry>
         </visual>
       </link>
 
-      <!-- Bein 3 -->
+      <!-- Tischbein 3 -->
       <link name="leg3">
-        <pose>0.8 -0.35 0.35 0 0 0</pose>
+        <pose>0.9 -0.45 0.375 0 0 0</pose>
+
         <collision name="collision">
           <geometry>
             <box>
-              <size>0.05 0.05 0.8</size>
+              <size>0.06 0.06 0.75</size>
             </box>
           </geometry>
         </collision>
+
         <visual name="visual">
           <geometry>
             <box>
-              <size>0.05 0.05 0.8</size>
+              <size>0.06 0.06 0.75</size>
             </box>
           </geometry>
         </visual>
       </link>
 
-      <!-- Bein 4 -->
+      <!-- Tischbein 4 -->
       <link name="leg4">
-        <pose>-0.8 -0.35 0.35 0 0 0</pose>
+        <pose>-0.9 -0.45 0.375 0 0 0</pose>
+
         <collision name="collision">
           <geometry>
             <box>
-              <size>0.05 0.05 0.8</size>
+              <size>0.06 0.06 0.75</size>
             </box>
           </geometry>
         </collision>
+
         <visual name="visual">
           <geometry>
             <box>
-              <size>0.05 0.05 0.8</size>
+              <size>0.06 0.06 0.75</size>
             </box>
           </geometry>
         </visual>
       </link>
     </model>
 
+    <!-- BOXES -->
     <model name="obj_red">
       <static>true</static>
+      <pose>0.55 0.15 0.82 0 0 0</pose>
+
       <link name="link">
-        <pose>0.7 0.15 0.82 0 0 0</pose>
-        <collision name="collision">
-          <geometry>
-            <box><size>0.1 0.1 0.1</size></box>
-          </geometry>
-        </collision>
         <visual name="visual">
           <geometry>
-            <box><size>0.1 0.1 0.1</size></box>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
           </geometry>
+
           <material>
             <ambient>1 0 0 1</ambient>
             <diffuse>1 0 0 1</diffuse>
@@ -165,20 +195,19 @@
         </visual>
       </link>
     </model>
-    
+
     <model name="obj_green">
       <static>true</static>
+      <pose>0.25 0.15 0.82 0 0 0</pose>
+
       <link name="link">
-        <pose>0.4 0.15 0.82 0 0 0</pose>
-        <collision name="collision">
-          <geometry>
-            <box><size>0.1 0.1 0.1</size></box>
-          </geometry>
-        </collision>
         <visual name="visual">
           <geometry>
-            <box><size>0.1 0.1 0.1</size></box>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
           </geometry>
+
           <material>
             <ambient>0 1 0 1</ambient>
             <diffuse>0 1 0 1</diffuse>
@@ -189,17 +218,16 @@
 
     <model name="obj_blue">
       <static>true</static>
+      <pose>0.55 -0.15 0.82 0 0 0</pose>
+
       <link name="link">
-        <pose>0.7 -0.15 0.82 0 0 0</pose>
-        <collision name="collision">
-          <geometry>
-            <box><size>0.1 0.1 0.1</size></box>
-          </geometry>
-        </collision>
         <visual name="visual">
           <geometry>
-            <box><size>0.1 0.1 0.1</size></box>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
           </geometry>
+
           <material>
             <ambient>0 0 1 1</ambient>
             <diffuse>0 0 1 1</diffuse>
@@ -210,17 +238,16 @@
 
     <model name="obj_yellow">
       <static>true</static>
+      <pose>0.25 -0.15 0.82 0 0 0</pose>
+
       <link name="link">
-        <pose>0.4 -0.15 0.82 0 0 0</pose>
-        <collision name="collision">
-          <geometry>
-            <box><size>0.1 0.1 0.1</size></box>
-          </geometry>
-        </collision>
         <visual name="visual">
           <geometry>
-            <box><size>0.1 0.1 0.1</size></box>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
           </geometry>
+
           <material>
             <ambient>1 1 0 1</ambient>
             <diffuse>1 1 0 1</diffuse>
@@ -229,7 +256,7 @@
       </link>
     </model>
 
-    <!-- green bin -->
+     <!-- green bin -->
     <model name="green_bin">
       <static>true</static>
       <!-- Set the position of the bin as a whole -->
@@ -626,8 +653,12 @@
         </visual>
       </link>
     </model>
+
+    <!-- CAMERA  -->
     <include>
       <uri>model://gripper_depth_camera</uri>
+      <pose>0 0 2.5 0 1.57 0</pose>
     </include>
+
   </world>
 </sdf>

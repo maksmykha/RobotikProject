@@ -19,6 +19,7 @@ Makefile
 # --- Python ---
 __pycache__/
 *.pyc
+.venv/
 
 # --- optional ROS artifacts ---
 *.launch.py.bak

@@ -6,7 +6,8 @@ import os
 
 def generate_launch_description():
     pkg_robotik_gazebo = get_package_share_directory('robotik_gazebo')
-    model_path = os.path.join(pkg_robotik_gazebo, 'models')
+    pkg_robotik_vision = get_package_share_directory('robotik_vision')
+    model_path = os.path.join(pkg_robotik_vision, 'models')
 
     world_file = os.path.join(
         pkg_robotik_gazebo,

@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
-<sdf version="1.9">
-  <world name="pick_place_world">
+<sdf version="1.6">
+ <world name="pick_place_world">
 
     <physics name="1ms" type="ignored">
       <max_step_size>0.001</max_step_size>
@@ -36,93 +36,592 @@
       <direction>-0.5 0.1 -0.9</direction>
     </light>
 
-    <model name="ground_plane">
-      <static>true</static>
-      <link name="link">
+    <model name="simple_table">
+
+      <!-- Tischplatte -->
+      <link name="table_top">
+        <pose>0 0 0.75 0 0 0</pose>
+
         <collision name="collision">
           <geometry>
-            <plane>
-              <normal>0 0 1</normal>
-              <size>10 10</size>
-            </plane>
+            <box>
+              <size>2.0 1.0 0.05</size>
+            </box>
+          </geometry>
+        </collision>
+
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>2.0 1.0 0.05</size>
+            </box>
+          </geometry>
+
+          <material>
+            <ambient>0.6 0.4 0.2 1</ambient>
+            <diffuse>0.6 0.4 0.2 1</diffuse>
+          </material>
+        </visual>
+      </link>
+
+      <!-- Bein 1 -->
+      <link name="leg1">
+        <pose>0.8 0.35 0.35 0 0 0</pose>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.05 0.05 0.8</size>
+            </box>
           </geometry>
         </collision>
         <visual name="visual">
           <geometry>
-            <plane>
-              <normal>0 0 1</normal>
-              <size>10 10</size>
-            </plane>
+            <box>
+              <size>0.05 0.05 0.8</size>
+            </box>
           </geometry>
           <material>
-            <ambient>0.5 0.5 0.5 1</ambient>
-            <diffuse>0.5 0.5 0.5 1</diffuse>
+            <ambient>0.3 0.2 0.1 1</ambient>
+            <diffuse>0.3 0.2 0.1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+
+      <!-- Bein 2 -->
+      <link name="leg2">
+        <pose>-0.8 0.35 0.35 0 0 0</pose>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.05 0.05 0.8</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.05 0.05 0.8</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
+
+      <!-- Bein 3 -->
+      <link name="leg3">
+        <pose>0.8 -0.35 0.35 0 0 0</pose>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.05 0.05 0.8</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.05 0.05 0.8</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
+
+      <!-- Bein 4 -->
+      <link name="leg4">
+        <pose>-0.8 -0.35 0.35 0 0 0</pose>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.05 0.05 0.8</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.05 0.05 0.8</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name="obj_red">
+      <static>true</static>
+      <link name="link">
+        <pose>0.7 0.15 0.82 0 0 0</pose>
+        <collision name="collision">
+          <geometry>
+            <box><size>0.1 0.1 0.1</size></box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box><size>0.1 0.1 0.1</size></box>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
           </material>
         </visual>
       </link>
     </model>
     
-    <model name="conveyor_belt">
+    <model name="obj_green">
       <static>true</static>
-      <pose>0 0 0.15 0 0 0</pose>
-
-      <link name="belt_link">
+      <link name="link">
+        <pose>0.4 0.15 0.82 0 0 0</pose>
         <collision name="collision">
           <geometry>
-            <box>
-              <size>2.0 0.5 0.2</size>
-            </box>
+            <box><size>0.1 0.1 0.1</size></box>
           </geometry>
         </collision>
-
         <visual name="visual">
           <geometry>
-            <box>
-              <size>2.0 0.5 0.2</size>
-            </box>
+            <box><size>0.1 0.1 0.1</size></box>
           </geometry>
           <material>
-            <ambient>0.05 0.05 0.05 1</ambient>
-            <diffuse>0.05 0.05 0.05 1</diffuse>
+            <ambient>0 1 0 1</ambient>
+            <diffuse>0 1 0 1</diffuse>
           </material>
         </visual>
       </link>
     </model>
-    <model name="test_cube">
+
+    <model name="obj_blue">
       <static>true</static>
-
-      <pose>0 0 0.3 0 0 0</pose>
-
       <link name="link">
+        <pose>0.7 -0.15 0.82 0 0 0</pose>
+        <collision name="collision">
+          <geometry>
+            <box><size>0.1 0.1 0.1</size></box>
+          </geometry>
+        </collision>
         <visual name="visual">
           <geometry>
-            <box>
-              <size>0.3 0.3 0.3</size>
-            </box>
+            <box><size>0.1 0.1 0.1</size></box>
           </geometry>
+          <material>
+            <ambient>0 0 1 1</ambient>
+            <diffuse>0 0 1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
 
+    <model name="obj_yellow">
+      <static>true</static>
+      <link name="link">
+        <pose>0.4 -0.15 0.82 0 0 0</pose>
+        <collision name="collision">
+          <geometry>
+            <box><size>0.1 0.1 0.1</size></box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box><size>0.1 0.1 0.1</size></box>
+          </geometry>
+          <material>
+            <ambient>1 1 0 1</ambient>
+            <diffuse>1 1 0 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- green bin -->
+    <model name="green_bin">
+      <static>true</static>
+      <!-- Set the position of the bin as a whole -->
+      <pose>-0.75 0.20 0.765 0 0 0</pose> <!-- x, y, z of table top + bin bottom/2 -->
+
+      <link name="link">
+        <!-- Bottom -->
+        <collision name="bottom_collision">
+          <pose>0 0 0 0 0 0</pose> <!-- relative to link -->
+          <geometry>
+            <box><size>0.30 0.30 0.03</size></box>
+          </geometry>
+        </collision>
+        <visual name="bottom_visual">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box><size>0.30 0.30 0.03</size></box>
+          </geometry>
+          <material>
+            <ambient>0 1 0 1</ambient>
+            <diffuse>0 1 0 1</diffuse>
+          </material>
+        </visual>
+
+        <!-- Front wall -->
+        <collision name="front_wall_collision">
+          <pose>0 0.145 0.05 0 0 0</pose> <!-- offset from link origin -->
+          <geometry>
+            <box><size>0.30 0.01 0.10</size></box>
+          </geometry>
+        </collision>
+        <visual name="front_wall_visual">
+          <pose>0 0.145 0.05 0 0 0</pose>
+          <geometry>
+            <box><size>0.30 0.01 0.10</size></box>
+          </geometry>
+          <material>
+            <ambient>0 1 0 1</ambient>
+            <diffuse>0 1 0 1</diffuse>
+          </material>
+        </visual>
+
+        <!-- Back wall -->
+        <collision name="back_wall_collision">
+          <pose>0 -0.145 0.05 0 0 0</pose>
+          <geometry>
+            <box><size>0.30 0.01 0.10</size></box>
+          </geometry>
+        </collision>
+        <visual name="back_wall_visual">
+          <pose>0 -0.145 0.05 0 0 0</pose>
+          <geometry>
+            <box><size>0.30 0.01 0.10</size></box>
+          </geometry>
+          <material>
+            <ambient>0 1 0 1</ambient>
+            <diffuse>0 1 0 1</diffuse>
+          </material>
+        </visual>
+
+        <!-- Left wall -->
+        <collision name="left_wall_collision">
+          <pose>-0.145 0 0.05 0 0 0</pose>
+          <geometry>
+            <box><size>0.01 0.30 0.10</size></box>
+          </geometry>
+        </collision>
+        <visual name="left_wall_visual">
+          <pose>-0.145 0 0.05 0 0 0</pose>
+          <geometry>
+            <box><size>0.01 0.30 0.10</size></box>
+          </geometry>
+          <material>
+            <ambient>0 1 0 1</ambient>
+            <diffuse>0 1 0 1</diffuse>
+          </material>
+        </visual>
+
+        <!-- Right wall -->
+        <collision name="right_wall_collision">
+          <pose>0.145 0 0.05 0 0 0</pose>
+          <geometry>
+            <box><size>0.01 0.30 0.10</size></box>
+          </geometry>
+        </collision>
+        <visual name="right_wall_visual">
+          <pose>0.145 0 0.05 0 0 0</pose>
+          <geometry>
+            <box><size>0.01 0.30 0.10</size></box>
+          </geometry>
+          <material>
+            <ambient>0 1 0 1</ambient>
+            <diffuse>0 1 0 1</diffuse>
+          </material>
+        </visual>
+
+      </link>
+    </model>
+
+    <!-- red bin -->
+    <model name="red_bin">
+      <static>true</static>
+      <!-- Position the bin as a whole -->
+      <pose>-0.4 0.20 0.765 0 0 0</pose> <!-- x, y, z of table top + bin bottom/2 -->
+
+      <link name="link">
+        <!-- Bottom -->
+        <collision name="bottom_collision">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box><size>0.30 0.30 0.03</size></box>
+          </geometry>
+        </collision>
+        <visual name="bottom_visual">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box><size>0.30 0.30 0.03</size></box>
+          </geometry>
           <material>
             <ambient>1 0 0 1</ambient>
             <diffuse>1 0 0 1</diffuse>
           </material>
+        </visual>
 
+        <!-- Front wall -->
+        <collision name="front_wall_collision">
+          <pose>0 0.145 0.05 0 0 0</pose>
+          <geometry>
+            <box><size>0.30 0.01 0.10</size></box>
+          </geometry>
+        </collision>
+        <visual name="front_wall_visual">
+          <pose>0 0.145 0.05 0 0 0</pose>
+          <geometry>
+            <box><size>0.30 0.01 0.10</size></box>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+          </material>
+        </visual>
+
+        <!-- Back wall -->
+        <collision name="back_wall_collision">
+          <pose>0 -0.145 0.05 0 0 0</pose>
+          <geometry>
+            <box><size>0.30 0.01 0.10</size></box>
+          </geometry>
+        </collision>
+        <visual name="back_wall_visual">
+          <pose>0 -0.145 0.05 0 0 0</pose>
+          <geometry>
+            <box><size>0.30 0.01 0.10</size></box>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+          </material>
+        </visual>
+
+        <!-- Left wall -->
+        <collision name="left_wall_collision">
+          <pose>-0.145 0 0.05 0 0 0</pose>
+          <geometry>
+            <box><size>0.01 0.30 0.10</size></box>
+          </geometry>
+        </collision>
+        <visual name="left_wall_visual">
+          <pose>-0.145 0 0.05 0 0 0</pose>
+          <geometry>
+            <box><size>0.01 0.30 0.10</size></box>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+          </material>
+        </visual>
+
+        <!-- Right wall -->
+        <collision name="right_wall_collision">
+          <pose>0.145 0 0.05 0 0 0</pose>
+          <geometry>
+            <box><size>0.01 0.30 0.10</size></box>
+          </geometry>
+        </collision>
+        <visual name="right_wall_visual">
+          <pose>0.145 0 0.05 0 0 0</pose>
+          <geometry>
+            <box><size>0.01 0.30 0.10</size></box>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+          </material>
+        </visual>
+
+      </link>
+    </model>
+
+    <!-- blue bin -->
+    <model name="blue_bin">
+      <static>true</static>
+      <!-- Position the bin as a whole -->
+      <pose>-0.75 -0.20 0.765 0 0 0</pose> <!-- x, y, z of table top + bin bottom/2 -->
+
+      <link name="link">
+        <!-- Bottom -->
+        <collision name="bottom_collision">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box><size>0.30 0.30 0.03</size></box>
+          </geometry>
+        </collision>
+        <visual name="bottom_visual">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box><size>0.30 0.30 0.03</size></box>
+          </geometry>
+          <material>
+            <ambient>0 0 1 1</ambient>
+            <diffuse>0 0 1 1</diffuse>
+          </material>
+        </visual>
+
+        <!-- Front wall -->
+        <collision name="front_wall_collision">
+          <pose>0 0.145 0.05 0 0 0</pose>
+          <geometry>
+            <box><size>0.30 0.01 0.10</size></box>
+          </geometry>
+        </collision>
+        <visual name="front_wall_visual">
+          <pose>0 0.145 0.05 0 0 0</pose>
+          <geometry>
+            <box><size>0.30 0.01 0.10</size></box>
+          </geometry>
+          <material>
+            <ambient>0 0 1 1</ambient>
+            <diffuse>0 0 1 1</diffuse>
+          </material>
+        </visual>
+
+        <!-- Back wall -->
+        <collision name="back_wall_collision">
+          <pose>0 -0.145 0.05 0 0 0</pose>
+          <geometry>
+            <box><size>0.30 0.01 0.10</size></box>
+          </geometry>
+        </collision>
+        <visual name="back_wall_visual">
+          <pose>0 -0.145 0.05 0 0 0</pose>
+          <geometry>
+            <box><size>0.30 0.01 0.10</size></box>
+          </geometry>
+          <material>
+            <ambient>0 0 1 1</ambient>
+            <diffuse>0 0 1 1</diffuse>
+          </material>
+        </visual>
+
+        <!-- Left wall -->
+        <collision name="left_wall_collision">
+          <pose>-0.145 0 0.05 0 0 0</pose>
+          <geometry>
+            <box><size>0.01 0.30 0.10</size></box>
+          </geometry>
+        </collision>
+        <visual name="left_wall_visual">
+          <pose>-0.145 0 0.05 0 0 0</pose>
+          <geometry>
+            <box><size>0.01 0.30 0.10</size></box>
+          </geometry>
+          <material>
+            <ambient>0 0 1 1</ambient>
+            <diffuse>0 0 1 1</diffuse>
+          </material>
+        </visual>
+
+        <!-- Right wall -->
+        <collision name="right_wall_collision">
+          <pose>0.145 0 0.05 0 0 0</pose>
+          <geometry>
+            <box><size>0.01 0.30 0.10</size></box>
+          </geometry>
+        </collision>
+        <visual name="right_wall_visual">
+          <pose>0.145 0 0.05 0 0 0</pose>
+          <geometry>
+            <box><size>0.01 0.30 0.10</size></box>
+          </geometry>
+          <material>
+            <ambient>0 0 1 1</ambient>
+            <diffuse>0 0 1 1</diffuse>
+          </material>
         </visual>
       </link>
     </model>
-    <model name="conveyor_frame">
-      <static>true</static>
-      <pose>0 0 0.05 0 0 0</pose>
 
-      <link name="frame_link">
-        <visual name="visual">
+    <!-- yellow bin -->
+    <model name="yellow_bin">
+      <static>true</static>
+      <!-- Position the bin as a whole -->
+      <pose>-0.4 -0.20 0.765 0 0 0</pose> <!-- x, y, z of table top + bin bottom/2 -->
+
+      <link name="link">
+        <!-- Bottom -->
+        <collision name="bottom_collision">
+          <pose>0 0 0 0 0 0</pose>
           <geometry>
-            <box>
-              <size>2.2 0.65 0.1</size>
-            </box>
+            <box><size>0.30 0.30 0.03</size></box>
+          </geometry>
+        </collision>
+        <visual name="bottom_visual">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box><size>0.30 0.30 0.03</size></box>
           </geometry>
           <material>
-            <ambient>0.4 0.4 0.4 1</ambient>
-            <diffuse>0.4 0.4 0.4 1</diffuse>
+            <ambient>1 1 0 1</ambient>
+            <diffuse>1 1 0 1</diffuse>
+          </material>
+        </visual>
+
+        <!-- Front wall -->
+        <collision name="front_wall_collision">
+          <pose>0 0.145 0.05 0 0 0</pose>
+          <geometry>
+            <box><size>0.30 0.01 0.10</size></box>
+          </geometry>
+        </collision>
+        <visual name="front_wall_visual">
+          <pose>0 0.145 0.05 0 0 0</pose>
+          <geometry>
+            <box><size>0.30 0.01 0.10</size></box>
+          </geometry>
+          <material>
+            <ambient>1 1 0 1</ambient>
+            <diffuse>1 1 0 1</diffuse>
+          </material>
+        </visual>
+
+        <!-- Back wall -->
+        <collision name="back_wall_collision">
+          <pose>0 -0.145 0.05 0 0 0</pose>
+          <geometry>
+            <box><size>0.30 0.01 0.10</size></box>
+          </geometry>
+        </collision>
+        <visual name="back_wall_visual">
+          <pose>0 -0.145 0.05 0 0 0</pose>
+          <geometry>
+            <box><size>0.30 0.01 0.10</size></box>
+          </geometry>
+          <material>
+            <ambient>1 1 0 1</ambient>
+            <diffuse>1 1 0 1</diffuse>
+          </material>
+        </visual>
+
+        <!-- Left wall -->
+        <collision name="left_wall_collision">
+          <pose>-0.145 0 0.05 0 0 0</pose>
+          <geometry>
+            <box><size>0.01 0.30 0.10</size></box>
+          </geometry>
+        </collision>
+        <visual name="left_wall_visual">
+          <pose>-0.145 0 0.05 0 0 0</pose>
+          <geometry>
+            <box><size>0.01 0.30 0.10</size></box>
+          </geometry>
+          <material>
+            <ambient>1 1 0 1</ambient>
+            <diffuse>1 1 0 1</diffuse>
+          </material>
+        </visual>
+
+        <!-- Right wall -->
+        <collision name="right_wall_collision">
+          <pose>0.145 0 0.05 0 0 0</pose>
+          <geometry>
+            <box><size>0.01 0.30 0.10</size></box>
+          </geometry>
+        </collision>
+        <visual name="right_wall_visual">
+          <pose>0.145 0 0.05 0 0 0</pose>
+          <geometry>
+            <box><size>0.01 0.30 0.10</size></box>
+          </geometry>
+          <material>
+            <ambient>1 1 0 1</ambient>
+            <diffuse>1 1 0 1</diffuse>
           </material>
         </visual>
       </link>

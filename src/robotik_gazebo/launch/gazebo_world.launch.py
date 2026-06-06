@@ -16,9 +16,9 @@ def generate_launch_description():
     )
 
     set_gz_model_path = SetEnvironmentVariable(
-        name='GZ_SIM_RESOURCE_PATH',
-        value=model_path
-    )
+    name='GZ_SIM_RESOURCE_PATH',
+    value=model_path + ":" + os.environ.get("GZ_SIM_RESOURCE_PATH", "")
+)
 
     gazebo = ExecuteProcess(
         cmd=['gz', 'sim', world_file],

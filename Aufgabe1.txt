@@ -31,20 +31,56 @@ Testobjekte hinzufügen
 # =========================================
 
 # =========================================
-# Yolo Submodul updaten und Abhängigkeiten installieren
+# YOLO Setup (RobotikProject)
 # =========================================
 
+# --- Submodules aktualisieren ---
 git submodule update --init --recursive
 
-sudo apt update
-sudo apt install python3-venv
 
+# --- System Abhängigkeiten ---
+sudo apt update
+sudo apt install python3-venv python3-pip -y
+
+
+# --- Virtual Environment aktivieren ---
+cd ~/Dokumente/RobotikProject
 source .venv/bin/activate
 
-pip install typeguard
+which python
+
+
+# --- ROS2 Umgebung ---
+source /opt/ros/jazzy/setup.bash
+source install/setup.bash
+
+
+# --- PYTHONPATH für venv + ROS (WICHTIG) ---
+export PYTHONPATH=$VIRTUAL_ENV/lib/python3.12/site-packages:$PYTHONPATH
+
+
+# --- pip Update ---
 pip install --upgrade pip
+pip install typeguard
+
+
+# --- YOLO / ML Installation ---
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 pip install ultralytics
+
+
+# --- NumPy Fix (ROS2 Jazzy kompatibel) ---
+pip install numpy==1.26.4
+
+
+# --- Tracking Dependency ---
+pip install lap
+# fallback:
+# pip install lapx
+
+
+# --- Start System ---
+ros2 launch robotik_gazebo gazebo_world.launch.py
 # =========================================
 # ROS2 INSTALLATION
 # =========================================

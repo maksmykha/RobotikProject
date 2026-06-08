@@ -121,7 +121,12 @@ ros2 run rqt_image_view rqt_image_view
 ## YOLO Topics anzeigen
 
 ```bash
-ros2 topic list | grep yolo
+ros2 topic list | grep
+
+
+
+
+yolo
 ```
 
 ## Detections prüfen
@@ -141,6 +146,139 @@ ros2 topic echo /yolo/tracking
 ```bash
 ros2 topic echo /yolo/dbg_image
 ```
+# YOLO Submodule Setup
+
+## Erstmaliges Klonen
+
+Das Projekt verwendet `yolo_ros` als Git-Submodule.
+
+Repository klonen:
+
+```bash
+git clone --recurse-submodules https://github.com/maksmykha/RobotikProject.git
+cd RobotikProject
+```
+
+---
+
+## Bereits vorhandenes Repository
+
+Falls das Repository bereits geklont wurde:
+
+```bash
+git pull
+git submodule update --init --recursive
+```
+
+---
+
+## Prüfen, ob yolo_ros vorhanden ist
+
+```bash
+ls src/yolo_ros
+```
+
+Beispiel:
+
+```text
+CITATION.cff
+Dockerfile
+README.md
+docs
+pyproject.toml
+yolo_bringup
+yolo_msgs
+yolo_ros
+```
+
+---
+
+## Änderungen an YOLO vornehmen
+
+Ins Submodule wechseln:
+
+```bash
+cd src/yolo_ros
+```
+
+Änderungen committen und pushen:
+
+```bash
+git add .
+git commit -m "Beschreibung der Änderung"
+git push
+```
+
+---
+
+## Hauptprojekt aktualisieren
+
+Nachdem Änderungen im YOLO-Repository gepusht wurden:
+
+```bash
+cd ~/Documents/RobotikProject
+
+git add src/yolo_ros
+git commit -m "Update yolo_ros submodule"
+git push
+```
+
+---
+
+## Submodule aktualisieren
+
+Neueste YOLO-Version holen:
+
+```bash
+git submodule update --remote --merge
+```
+
+Anschließend den neuen Stand im Hauptprojekt speichern:
+
+```bash
+git add src/yolo_ros
+git commit -m "Update yolo_ros version"
+git push
+```
+
+---
+
+## Häufige Probleme
+
+### yolo_ros ist leer
+
+```bash
+git submodule update --init --recursive
+```
+
+### Nach Pull fehlen YOLO-Dateien
+
+```bash
+git submodule update --init --recursive
+```
+
+### Aktuelle Submodule-Version prüfen
+
+```bash
+git submodule status
+```
+
+---
+
+## Wichtig
+
+`yolo_ros` ist ein eigenes Git-Repository.
+
+Änderungen müssen immer:
+
+1. Im Repository `src/yolo_ros` gepusht werden.
+2. Danach im Hauptprojekt als neues Submodule-Update gespeichert werden.
+
+Andernfalls sehen andere Teammitglieder die Änderungen nicht.
+
+
+
+
 
 ---
 

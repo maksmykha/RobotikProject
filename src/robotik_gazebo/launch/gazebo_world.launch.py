@@ -10,7 +10,7 @@ def generate_launch_description():
     pkg_robotik_vision = get_package_share_directory('robotik_vision')
 
     # Falls Modelle
-    model_path = os.path.join(pkg_robotik_gazebo, 'models')
+    model_path = os.path.join(pkg_robotik_vision, 'models')
 
     world_file = os.path.join(
         pkg_robotik_gazebo,

@@ -4,9 +4,150 @@ Im Rahmen der Robotik-Vorlesung im 4. Semester an der DHBW wurde eine vollständ
 
 Die gesamte Umgebung wurde in Gazebo Sim aufgebaut und umfasst:
 - einen UR-Roboterarm,
-- ein Förderband,
+- ein Tisch,
 - virtuelle Kamerasysteme,
 sowie unterschiedliche Ablagebereiche zur Sortierung der erkannten Objekte.
+
+# Voraussetzungen
+
+Getestet auf:
+
+* Ubuntu 24.04
+* ROS2 Jazzy
+* Python 3.12
+
+---
+
+# Installation
+
+
+## 1. Entwicklungswerkzeuge installieren
+
+```bash
+sudo apt install \
+python3-colcon-common-extensions \
+python3-rosdep \
+python3-vcstool \
+python3-venv \
+python3-pip \
+git \
+wget \
+curl -y
+```
+
+ROS Dependencies initialisieren:
+
+```bash
+sudo rosdep init
+rosdep update
+```
+
+---
+
+## 2. Repository klonen
+
+```bash
+cd ~/Dokumente
+
+git clone <REPOSITORY_URL>
+cd RobotikProject
+```
+
+Submodules laden:
+
+```bash
+git submodule update --init --recursive
+```
+
+---
+
+## 3. Python Virtual Environment einrichten
+
+Virtuelle Umgebung erstellen:
+
+```bash
+python3 -m venv .venv
+```
+
+Aktivieren:
+
+```bash
+source .venv/bin/activate
+```
+
+Prüfen:
+
+```bash
+which python
+```
+
+Die Ausgabe sollte auf:
+
+```bash
+RobotikProject/.venv/bin/python
+```
+
+zeigen.
+
+---
+
+## 4. ROS Umgebung laden
+
+```bash
+source /opt/ros/jazzy/setup.bash
+```
+
+Workspace bauen:
+
+```bash
+colcon build --symlink-install
+```
+
+Workspace sourcen:
+
+```bash
+source install/setup.bash
+```
+
+Optional dauerhaft:
+
+```bash
+echo "source ~/Dokumente/RobotikProject/install/setup.bash" >> ~/.bashrc
+```
+
+---
+
+## 5. Python-Abhängigkeiten installieren
+
+Wichtig für die Kombination aus ROS2 + Python Virtual Environment:
+
+```bash
+export PYTHONPATH=$VIRTUAL_ENV/lib/python3.12/site-packages:$PYTHONPATH
+```
+
+Pip aktualisieren:
+
+```bash
+pip install --upgrade pip
+```
+
+Benötigte Python-Libraries:
+
+```bash
+pip install typeguard
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+pip install ultralytics
+pip install numpy==1.26.4
+pip install lap
+```
+
+Falls `lap` fehlschlägt:
+
+```bash
+pip install lapx
+```
+
+---
 
 
 # Wichtige Links:

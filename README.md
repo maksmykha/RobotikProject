@@ -49,7 +49,7 @@ rosdep update
 ```bash
 cd ~/Dokumente
 
-git clone <REPOSITORY_URL>
+git clone https://github.com/maksmykha/RobotikProject.git
 cd RobotikProject
 ```
 

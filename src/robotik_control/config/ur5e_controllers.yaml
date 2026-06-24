@@ -4,12 +4,13 @@ controller_manager:
 
     joint_state_broadcaster:
       type: joint_state_broadcaster/JointStateBroadcaster
+      fallback_controllers: [""]
 
-    ur5e_arm_controller:
+    scaled_joint_trajectory_controller:
       type: joint_trajectory_controller/JointTrajectoryController
+      fallback_controllers: [""]
 
-
-ur5e_arm_controller:
+scaled_joint_trajectory_controller:
   ros__parameters:
     joints:
       - shoulder_pan_joint
@@ -25,3 +26,6 @@ ur5e_arm_controller:
     state_interfaces:
       - position
       - velocity
+
+    allow_partial_joints_goal: false
+    open_loop_control: true

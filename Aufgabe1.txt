@@ -304,6 +304,15 @@ worlds/pick_place_world.sdf
 launch/gazebo_world.launch.py
 
 
+
+# =========================================
+# OpenCV
+# =========================================
+
+sudo apt install python3-opencv -y
+sudo apt install ros-jazzy-cv-bridge -y
+
+
 # =========================================
 # PROJEKT STARTEN
 # =========================================
@@ -321,6 +330,16 @@ ros2 run ros_gz_bridge parameter_bridge /gripper_camera/image@sensor_msgs/msg/Im
 
 bild anschauen und testen
 ros2 run rqt_image_view rqt_image_view
+
+
+
+xacro src/robotik_description/urdf/ur5e.urdf.xacro > /tmp/ur5e.urdf
+ros2 run ros_gz_sim create -file /tmp/ur5e.urdf -name ur5e -x 0.0 -y 0.0 -z 0.5
+
+
+rm -rf build install log
+
+colcon build --symlink-install --merge-install
 
 
 zu tun:

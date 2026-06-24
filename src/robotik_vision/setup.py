@@ -34,7 +34,9 @@ setup(
     },
     entry_points={
     'console_scripts': [
-        'test_node = robotik_vision.test_node:main',
+        'color_detector_node = robotik_vision.color_detector_node:main',
+        'manual_target_selector_node = robotik_vision.manual_target_selector_node:main',
+        'target_pose_node = robotik_vision.target_pose_node:main',
     ],
 },
 )

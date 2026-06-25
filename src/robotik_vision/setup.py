@@ -22,5 +22,13 @@ setup(
     description='TODO: Package description',
     license='TODO: License declaration',
     extras_require={'test': ['pytest']},
-    entry_points={'console_scripts': []},
+
+    entry_points={
+        'console_scripts': [
+            'color_detector_node = robotik_vision.color_detector_node:main',
+            'manual_target_selector_node = robotik_vision.manual_target_selector_node:main',
+            'target_pose_node = robotik_vision.target_pose_node:main',
+            'test_node = robotik_vision.test_node:main',
+        ],
+    },
 )

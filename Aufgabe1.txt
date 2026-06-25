@@ -318,9 +318,8 @@ sudo apt install ros-jazzy-cv-bridge -y
 # =========================================
 
 cd ~/Documents/RobotikProject
-
-colcon build
-
+rm -rf build install log
+colcon build --symlink-install  --merge-install
 source install/setup.bash
 
 ros2 launch robotik_gazebo gazebo_world.launch.py
@@ -336,10 +335,6 @@ ros2 run rqt_image_view rqt_image_view
 xacro src/robotik_description/urdf/ur5e.urdf.xacro > /tmp/ur5e.urdf
 ros2 run ros_gz_sim create -file /tmp/ur5e.urdf -name ur5e -x 0.0 -y 0.0 -z 0.5
 
-
-rm -rf build install log
-
-colcon build --symlink-install --merge-install
 
 
 zu tun:

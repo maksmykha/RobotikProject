@@ -1,16 +1,15 @@
 controller_manager:
   ros__parameters:
     update_rate: 100
-
+    use_sim_time: true
     joint_state_broadcaster:
       type: joint_state_broadcaster/JointStateBroadcaster
-
-    ur5e_arm_controller:
+    arm_controller:
       type: joint_trajectory_controller/JointTrajectoryController
 
-
-ur5e_arm_controller:
+arm_controller:
   ros__parameters:
+    use_sim_time: true
     joints:
       - shoulder_pan_joint
       - shoulder_lift_joint
@@ -18,10 +17,13 @@ ur5e_arm_controller:
       - wrist_1_joint
       - wrist_2_joint
       - wrist_3_joint
-
     command_interfaces:
       - position
-
     state_interfaces:
       - position
       - velocity
+    allow_partial_joints_goal: false
+    open_loop_control: true
+    constraints:
+      stopped_velocity_tolerance: 0.1
+      goal_time: 15.0

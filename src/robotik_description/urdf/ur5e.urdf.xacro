@@ -1,10 +1,7 @@
 <?xml version="1.0"?>
-
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="ur5e">
   <link name="world"/>
-
   <xacro:include filename="$(find ur_description)/urdf/ur_macro.xacro"/>
-
   <xacro:ur_robot
     name="ur5e"
     tf_prefix=""
@@ -16,45 +13,38 @@
     safety_limits="true"
     safety_pos_margin="0.15"
     safety_k_position="20">
-
     <origin xyz="0 0 0.2" rpy="0 0 0"/>
-
   </xacro:ur_robot>
-     <ros2_control name="UR5eSystem" type="system">
+
+  <ros2_control name="UR5eSystem" type="system">
     <hardware>
       <plugin>gz_ros2_control/GazeboSimSystem</plugin>
     </hardware>
-
     <joint name="shoulder_pan_joint">
       <command_interface name="position"/>
       <state_interface name="position"/>
       <state_interface name="velocity"/>
     </joint>
-
     <joint name="shoulder_lift_joint">
       <command_interface name="position"/>
       <state_interface name="position"/>
       <state_interface name="velocity"/>
     </joint>
-
     <joint name="elbow_joint">
       <command_interface name="position"/>
       <state_interface name="position"/>
       <state_interface name="velocity"/>
     </joint>
-
     <joint name="wrist_1_joint">
       <command_interface name="position"/>
       <state_interface name="position"/>
       <state_interface name="velocity"/>
     </joint>
-
     <joint name="wrist_2_joint">
       <command_interface name="position"/>
       <state_interface name="position"/>
       <state_interface name="velocity"/>
     </joint>
-
     <joint name="wrist_3_joint">
       <command_interface name="position"/>
       <state_interface name="position"/>
@@ -63,12 +53,13 @@
   </ros2_control>
 
   <gazebo>
-    <plugin filename="gz_ros2_control-system"
+    <plugin filename="libgz_ros2_control-system.so"
             name="gz_ros2_control::GazeboSimROS2ControlPlugin">
       <parameters>$(find robotik_control)/config/ur5e_controllers.yaml</parameters>
+      <ros>
+        <parameter name="use_sim_time">true</parameter>
+      </ros>
     </plugin>
   </gazebo>
-
-    
 
 </robot>

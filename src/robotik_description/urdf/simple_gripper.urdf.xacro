@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:macro name="simple_gripper" params="parent_link">
+
+    <!-- Palm attaches directly to the UR5e tool0 flange -->
+    <joint name="gripper_base_joint" type="fixed">
+      <parent link="${parent_link}"/>
+      <child link="gripper_base_link"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+
+    <link name="gripper_base_link">
+      <visual>
+        <origin xyz="0 0 0.02" rpy="0 0 0"/>
+        <geometry><box size="0.08 0.08 0.04"/></geometry>
+        <material name="dark_grey"><color rgba="0.2 0.2 0.2 1"/></material>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0.02" rpy="0 0 0"/>
+        <geometry><box size="0.08 0.08 0.04"/></geometry>
+      </collision>
+      <inertial>
+        <mass value="0.3"/>
+        <inertia ixx="0.00020" ixy="0" ixz="0" iyy="0.00020" iyz="0" izz="0.00032"/>
+      </inertial>
+    </link>
+
+    <!-- Left finger: slides outward in +Y when joint value increases -->
+    <joint name="left_finger_joint" type="prismatic">
+      <parent link="gripper_base_link"/>
+      <child link="left_finger_link"/>
+      <origin xyz="0 0 0.04" rpy="0 0 0"/>
+      <axis xyz="0 1 0"/>
+      <limit lower="0.0" upper="0.06" effort="10" velocity="0.1"/>
+    </joint>
+
+    <link name="left_finger_link">
+      <visual>
+        <!-- inner face at Y=0, finger center at Y=+0.0125 -->
+        <origin xyz="0 0.0125 0.04" rpy="0 0 0"/>
+        <geometry><box size="0.025 0.025 0.08"/></geometry>
+        <material name="light_grey"><color rgba="0.6 0.6 0.6 1"/></material>
+      </visual>
+      <collision>
+        <origin xyz="0 0.0125 0.04" rpy="0 0 0"/>
+        <geometry><box size="0.025 0.025 0.08"/></geometry>
+      </collision>
+      <inertial>
+        <mass value="0.05"/>
+        <inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+      </inertial>
+    </link>
+
+    <!-- Right finger: mirrors left, slides outward in -Y when joint value increases -->
+    <joint name="right_finger_joint" type="prismatic">
+      <parent link="gripper_base_link"/>
+      <child link="right_finger_link"/>
+      <origin xyz="0 0 0.04" rpy="0 0 0"/>
+      <axis xyz="0 -1 0"/>
+      <limit lower="0.0" upper="0.06" effort="10" velocity="0.1"/>
+    </joint>
+
+    <link name="right_finger_link">
+      <!-- inner face at Y=0, finger center at Y=-0.0125 -->
+      <visual>
+        <origin xyz="0 -0.0125 0.04" rpy="0 0 0"/>
+        <geometry><box size="0.025 0.025 0.08"/></geometry>
+        <material name="light_grey"/>
+      </visual>
+      <collision>
+        <origin xyz="0 -0.0125 0.04" rpy="0 0 0"/>
+        <geometry><box size="0.025 0.025 0.08"/></geometry>
+      </collision>
+      <inertial>
+        <mass value="0.05"/>
+        <inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+      </inertial>
+    </link>
+
+  </xacro:macro>
+
+</robot>

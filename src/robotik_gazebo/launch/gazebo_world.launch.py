@@ -70,6 +70,13 @@ def generate_launch_description():
                 output='screen'
             ),
         ]),
+        TimerAction(period=12.0, actions=[
+            ExecuteProcess(
+                cmd=['ros2', 'control', 'load_controller',
+                     '--set-state', 'active', 'gripper_controller'],
+                output='screen'
+            ),
+        ]),
         TimerAction(period=5.0, actions=[
             ExecuteProcess(
                 cmd=['ros2', 'run', 'ros_gz_bridge', 'parameter_bridge',

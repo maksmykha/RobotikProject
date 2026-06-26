@@ -25,6 +25,7 @@ Getestet auf:
 
 ```bash
 sudo apt install \
+sudo apt install ros-jazzy-ros2-control ros-jazzy-ros2-controllers -y\
 python3-colcon-common-extensions \
 python3-rosdep \
 python3-vcstool \

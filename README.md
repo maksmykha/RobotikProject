@@ -151,6 +151,24 @@ pip install lapx
 ---
 
 
+# Greifer steuern
+
+Greifer öffnen (60 mm pro Finger):
+
+```bash
+ros2 topic pub --once /gripper_controller/joint_trajectory trajectory_msgs/msg/JointTrajectory \
+  '{joint_names: [left_finger_joint, right_finger_joint], points: [{positions: [0.06, 0.06], time_from_start: {sec: 1}}]}'
+```
+
+Greifer schließen:
+
+```bash
+ros2 topic pub --once /gripper_controller/joint_trajectory trajectory_msgs/msg/JointTrajectory \
+  '{joint_names: [left_finger_joint, right_finger_joint], points: [{positions: [0.0, 0.0], time_from_start: {sec: 1}}]}'
+```
+
+---
+
 # Wichtige Links:
 
 *Universal Robots ROS2 Driver*

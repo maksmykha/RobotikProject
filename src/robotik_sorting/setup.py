@@ -15,15 +15,12 @@ setup(
     zip_safe=True,
     maintainer='maksmykha',
     maintainer_email='mykhailich@gmail.com',
-    description='TODO: Package description',
+    description='Pick and place sorting package',
     license='TODO: License declaration',
-    extras_require={
-        'test': [
-            'pytest',
-        ],
-    },
+    extras_require={'test': ['pytest']},
     entry_points={
         'console_scripts': [
+            'pick_place = robotik_sorting.pick_place_node:main',
         ],
     },
 )

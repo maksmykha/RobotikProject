@@ -1,137 +1,180 @@
 #!/usr/bin/env python3
-
+"""
+Pick & Place Node - Sauber, Callback-basiert, kein Thread-Konflikt
+"""
 import rclpy
 from rclpy.node import Node
 from rclpy.action import ActionClient
+from rclpy.callback_groups import ReentrantCallbackGroup
+from rclpy.executors import MultiThreadedExecutor
 from std_msgs.msg import String
+from sensor_msgs.msg import JointState
 from control_msgs.action import FollowJointTrajectory
 from trajectory_msgs.msg import JointTrajectory, JointTrajectoryPoint
 from builtin_interfaces.msg import Duration
+import subprocess
+import math
 
 
 class PickPlaceNode(Node):
     def __init__(self):
         super().__init__('pick_place_node')
+        cb = ReentrantCallbackGroup()
 
-        self._action_client = ActionClient(
-            self,
-            FollowJointTrajectory,
-            '/arm_controller/follow_joint_trajectory'
+        self._ac = ActionClient(
+            self, FollowJointTrajectory,
+            '/arm_controller/follow_joint_trajectory',
+            callback_group=cb
         )
+        self.create_subscription(
+            String, '/target_pose', self._on_target, 10, callback_group=cb
+        )
+        self.create_subscription(
+            JointState, '/joint_states', self._on_joints, 10, callback_group=cb
+        )
+        self._status_pub = self.create_publisher(String, '/pick_place/status', 10)
 
-        self.target_sub = self.create_subscription(
-            String, '/target_pose', self.target_callback, 10
-        )
-        self.status_pub = self.create_publisher(
-            String, '/pick_place/status', 10
-        )
-
-        self.joints = [
+        self._jnames = [
             'shoulder_pan_joint', 'shoulder_lift_joint', 'elbow_joint',
             'wrist_1_joint', 'wrist_2_joint', 'wrist_3_joint',
         ]
 
-        # Greif-Positionen: pan berechnet aus atan2(y, x) der Wuerfel
-        # Wuerfel-Positionen in Gazebo:
-        # yellow: (0.25, -0.15) -> pan=-0.54
-        # red:    (0.55,  0.15) -> pan= 0.27
-        # green:  (0.25,  0.15) -> pan= 0.54
-        # blue:   (0.55, -0.15) -> pan=-0.27
-        self.pick_positions = {
-            'yellow': [-0.54, -1.30, 1.57, -1.80, -1.57, 0.0],
-            'red':    [ 0.27, -1.30, 1.57, -1.80, -1.57, 0.0],
-            'green':  [ 0.54, -1.30, 1.57, -1.80, -1.57, 0.0],
-            'blue':   [-0.27, -1.30, 1.57, -1.80, -1.57, 0.0],
+        # Pick-Positionen (Pan kalibriert aus MoveIt Joints Tab)
+        self._pick = {
+            'yellow': [-1.012, -0.785, 2.025, -2.845, -1.571, 0.0],
+            'red':    [ 0.035, -0.785, 2.025, -2.845, -1.571, 0.0],
+            'green':  [ 0.087, -0.785, 2.025, -2.845, -1.571, 0.0],
+            'blue':   [-0.541, -0.785, 2.025, -2.845, -1.571, 0.0],
         }
 
-        # Bin-Positionen aus SDF:
-        # red_bin:    (-0.4,  0.20)
-        # green_bin:  (-0.75, 0.20)
-        # blue_bin:   (-0.75,-0.20)
-        # yellow_bin: (-0.4, -0.20)
-        self.place_positions = {
-            'red':    [-2.68, -1.20, 1.20, -1.57, -1.57, 0.0],
-            'green':  [-2.87, -1.20, 1.20, -1.57, -1.57, 0.0],
-            'blue':   [ 2.87, -1.20, 1.20, -1.57, -1.57, 0.0],
-            'yellow': [ 2.68, -1.20, 1.20, -1.57, -1.57, 0.0],
+        # Place-Positionen (kalibriert)
+        self._place = {
+            'yellow': [2.143, -0.677, 3.274, -3.066, -1.574, 0.134],
+            'red':    [2.150, -0.679, 2.466, -3.065, -1.552, -0.674],
+            'green':  [0.867, -0.262, 2.756, -2.203, -1.559, -0.384],
+            'blue':   [1.104, -0.362, 3.224, -2.342, -1.572, 0.084],
         }
 
-        self.home = [0.0, -1.57, 0.0, -1.57, 0.0, 0.0]
-        self.is_busy = False
-        self.pending_color = None
+        # Bin-Positionen in Gazebo
+        self._bins = {
+            'red':    (-0.40,  0.20, 0.83),
+            'green':  (-0.75,  0.20, 0.83),
+            'blue':   (-0.75, -0.20, 0.83),
+            'yellow': (-0.40, -0.20, 0.83),
+        }
 
-        self.get_logger().info('Pick & Place Node gestartet!')
-        self.get_logger().info('Warte auf /target_pose ...')
+        self._home = [0.0, -1.57, 0.0, -1.57, 0.0, 0.0]
+        self._joints = [0.0] * 6
+        self._color = None
+        self._state = 'IDLE'
+        self._cube_attached = False
 
-    def target_callback(self, msg):
-        if self.is_busy:
+        self.create_timer(0.1, self._track, callback_group=cb)
+        self._status('READY')
+        self.get_logger().info('Pick & Place bereit!')
+
+    def _on_joints(self, msg):
+        jmap = dict(zip(msg.name, msg.position))
+        for i, n in enumerate(self._jnames):
+            if n in jmap:
+                self._joints[i] = jmap[n]
+
+    def _track(self):
+        """Wuerfel folgt Arm NUR wenn attached=True"""
+        if not self._cube_attached or not self._color:
             return
-        try:
-            parts = msg.data.split(',')
-            color = parts[0]
-            if color not in self.pick_positions:
-                self.get_logger().warn(f'Unbekannte Farbe: {color}')
-                return
-            self.get_logger().info(f'Starte Pick & Place fuer: {color}')
-            self.is_busy = True
-            self.pending_color = color
-            self.publish_status(f'PICKING {color}')
-            self.send_trajectory(
-                self.pick_positions[color], duration=5, on_done=self.step_place
-            )
-        except Exception as e:
-            self.get_logger().error(f'Fehler: {e}')
-            self.is_busy = False
+        p, l, e = self._joints[0], self._joints[1], self._joints[2]
+        r = 0.425 * math.cos(l) + 0.3922 * math.cos(l + e)
+        x = r * math.cos(p)
+        y = r * math.sin(p)
+        z = 0.97 + 0.425 * math.sin(-l) + 0.3922 * math.sin(-(l + e))
+        self._set_pose(f'obj_{self._color}', x, y, z + 0.05)
 
-    def step_place(self):
-        color = self.pending_color
-        self.get_logger().info(f'Lege {color} in Bin')
-        self.publish_status(f'PLACING {color}')
-        self.send_trajectory(
-            self.place_positions[color], duration=5, on_done=self.step_home
-        )
+    def _on_target(self, msg):
+        """Startet Pick & Place - NUR wenn IDLE"""
+        if self._state != 'IDLE':
+            return
+        color = msg.data.split(',')[0]
+        if color not in self._pick:
+            return
+        self._color = color
+        self._state = 'BUSY'
+        self.get_logger().info(f'=== Pick & Place: {color} ===')
+        self._status(f'PICKING {color}')
+        # Schritt 1: Zum Wuerfel fahren
+        self._move(self._pick[color], 5, self._step_grip)
 
-    def step_home(self):
-        self.get_logger().info('Fahre zu Home')
-        self.publish_status('HOME')
-        self.send_trajectory(self.home, duration=4, on_done=self.step_done)
+    def _step_grip(self):
+        """Arm ist beim Wuerfel → Greifen"""
+        self.get_logger().info(f'Greife {self._color}')
+        self._cube_attached = True  # Tracking startet jetzt
+        self._status(f'TRANSPORTING {self._color}')
+        # Schritt 2: Zum Bin fahren (Wuerfel folgt)
+        self._move(self._place[self._color], 6, self._step_release)
 
-    def step_done(self):
-        self.is_busy = False
-        self.pending_color = None
-        self.publish_status('READY')
-        self.get_logger().info('Fertig! Bereit fuer naechstes Objekt.')
+    def _step_release(self):
+        """Arm ist beim Bin → Loslassen"""
+        self.get_logger().info(f'Lasse {self._color} los')
+        self._cube_attached = False  # Tracking stoppen
+        bx, by, bz = self._bins[self._color]
+        self._set_pose(f'obj_{self._color}', bx, by, bz)
+        self._status('HOME')
+        # Schritt 3: Home fahren
+        self._move(self._home, 4, self._step_done)
 
-    def send_trajectory(self, positions, duration=4, on_done=None):
+    def _step_done(self):
+        """Fertig → IDLE"""
+        self.get_logger().info('=== Fertig! ===')
+        self._state = 'IDLE'
+        self._color = None
+        self._status('READY')
+
+    def _move(self, positions, duration, callback):
+        """Sendet Trajectory Goal und ruft callback wenn fertig"""
         goal = FollowJointTrajectory.Goal()
         goal.trajectory = JointTrajectory()
-        goal.trajectory.joint_names = self.joints
-        point = JointTrajectoryPoint()
-        point.positions = [float(p) for p in positions]
-        point.velocities = [0.0] * 6
-        point.time_from_start = Duration(sec=duration)
-        goal.trajectory.points = [point]
-        self._action_client.wait_for_server()
-        future = self._action_client.send_goal_async(goal)
-        if on_done:
-            future.add_done_callback(
-                lambda f: self.on_goal_response(f, on_done)
-            )
+        goal.trajectory.joint_names = self._jnames
+        pt = JointTrajectoryPoint()
+        pt.positions = [float(p) for p in positions]
+        pt.velocities = [0.0] * 6
+        pt.time_from_start = Duration(sec=duration)
+        goal.trajectory.points = [pt]
 
-    def on_goal_response(self, future, on_done):
-        goal_handle = future.result()
-        result_future = goal_handle.get_result_async()
-        result_future.add_done_callback(lambda f: on_done())
+        self._ac.wait_for_server()
+        f = self._ac.send_goal_async(goal)
+        f.add_done_callback(lambda fut: self._on_accepted(fut, callback))
 
-    def publish_status(self, status):
-        self.status_pub.publish(String(data=status))
-        self.get_logger().info(f'Status: {status}')
+    def _on_accepted(self, future, callback):
+        gh = future.result()
+        rf = gh.get_result_async()
+        rf.add_done_callback(lambda f: callback())
+
+    def _set_pose(self, name, x, y, z):
+        cmd = [
+            'gz', 'service', '-s', '/world/pick_place_world/set_pose',
+            '--reqtype', 'gz.msgs.Pose', '--reptype', 'gz.msgs.Boolean',
+            '--timeout', '200', '--req',
+            f'name: "{name}" position: {{x: {x:.3f}, y: {y:.3f}, z: {z:.3f}}} orientation: {{w: 1.0}}'
+        ]
+        try:
+            subprocess.run(cmd, capture_output=True, timeout=0.3)
+        except Exception:
+            pass
+
+    def _status(self, s):
+        self._status_pub.publish(String(data=s))
+        self.get_logger().info(f'[{s}]')
 
 
 def main(args=None):
     rclpy.init(args=args)
     node = PickPlaceNode()
-    rclpy.spin(node)
+    ex = MultiThreadedExecutor()
+    ex.add_node(node)
+    try:
+        ex.spin()
+    except KeyboardInterrupt:
+        pass
     node.destroy_node()
     rclpy.shutdown()
 

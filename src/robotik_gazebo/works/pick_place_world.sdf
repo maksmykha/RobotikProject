@@ -62,7 +62,6 @@
     <!-- TABLE -->
     <model name="simple_table">
       <static>true</static>
-
       <!-- Tischplatte -->
       <link name="table_top">
         <pose>0 0 0.75 0 0 0</pose>

@@ -25,17 +25,16 @@ class Target:
 
 
 class PickPlaceNode(Node):
-    # UR5e-nahe Laengen; dieselben Werte wurden schon im alten Tracking benutzt.
     L1 = 0.425
     L2 = 0.3922
     SHOULDER_Z = 0.97
 
     # Tuning-Werte fuer Simulation.
     # Falls der Magnet zu hoch/tief ist: zuerst PICK_Z_OFFSET anpassen.
-    PICK_Z_OFFSET = 0.08       # target.z ist Wuerfel-Mitte; TCP soll ueber den Wuerfel
-    APPROACH_HEIGHT = 0.18     # Sicherheitsabstand ueber Pick/Place
+    PICK_Z_OFFSET = 0.01       # target.z ist Wuerfel-Mitte; TCP soll ueber den Wuerfel
+    APPROACH_HEIGHT = 0.12     # Sicherheitsabstand ueber Pick/Place
     LIFT_HEIGHT = 0.23         # Hoehe nach dem Greifen
-    PLACE_Z_OFFSET = 0.11      # TCP-Hoehe ueber Ablagepunkt vor dem Loslassen
+    PLACE_Z_OFFSET = 0.01      # TCP-Hoehe ueber Ablagepunkt vor dem Loslassen
     TRACK_PERIOD = 0.08
 
     # Joint-Grenzen grob absichern, damit IK keine unsinnigen Ziele sendet.
@@ -79,11 +78,22 @@ class PickPlaceNode(Node):
             "yellow": (-0.40, -0.20, 0.83),
         }
 
+        # Feinkalibrierung der Pick-Position pro Farbe in Metern.
+        # Yellow greift aktuell links und vor dem Würfel:
+        # x + 0.02 = weiter nach hinten, y - 0.02 = weiter nach rechts.
+        self._pick_offsets: Dict[str, Tuple[float, float]] = {
+            "red": (-0.02, -0.055),
+            "green": (-0.01, -0.05),
+            "blue": (-0.015, -0.02),
+            "yellow": (-0.035, -0.05),
+        }
+
         self._home = [0.0, -1.57, 0.0, -1.57, 0.0, 0.0]
         self._joints = list(self._home)
         self._state = "IDLE"
         self._target: Optional[Target] = None
         self._cube_attached = False
+        self._cube_follow_offset = (0.0, 0.0, 0.0)
         self._step_index = 0
         self._program: List[Tuple[str, List[float], Optional[Callable[[], None]]]] = []
 
@@ -134,6 +144,16 @@ class PickPlaceNode(Node):
     # ------------------------- Programm / Algorithmus -------------------------
 
     def _build_program(self, t: Target) -> List[Tuple[str, List[float], Optional[Callable[[], None]]]]:
+        dx, dy = self._pick_offsets.get(t.color, (0.0, 0.0))
+        pick_x = t.x + dx
+        pick_y = t.y + dy
+
+        self.get_logger().info(
+            f"Pick-Korrektur {t.color}: "
+            f"raw=({t.x:.3f}, {t.y:.3f}) -> "
+            f"pick=({pick_x:.3f}, {pick_y:.3f}), offset=({dx:.3f}, {dy:.3f})"
+        )
+
         pick_z = t.z + self.PICK_Z_OFFSET
         pick_approach_z = pick_z + self.APPROACH_HEIGHT
         lift_z = pick_z + self.LIFT_HEIGHT
@@ -144,9 +164,9 @@ class PickPlaceNode(Node):
 
         return [
             ("HOME", self._home, None),
-            ("APPROACH_PICK", self._ik(t.x, t.y, pick_approach_z), None),
-            ("DESCEND_PICK", self._ik(t.x, t.y, pick_z), self._attach_cube),
-            ("LIFT", self._ik(t.x, t.y, lift_z), None),
+            ("APPROACH_PICK", self._ik(pick_x, pick_y, pick_approach_z), None),
+            ("DESCEND_PICK", self._ik(pick_x, pick_y, pick_z), self._attach_cube),
+            ("LIFT", self._ik(pick_x, pick_y, lift_z), None),
             ("APPROACH_PLACE", self._ik(bx, by, place_approach_z), None),
             ("DESCEND_PLACE", self._ik(bx, by, place_z), self._release_cube),
             ("RETREAT", self._ik(bx, by, place_approach_z), None),
@@ -166,11 +186,32 @@ class PickPlaceNode(Node):
     def _attach_cube(self) -> None:
         if not self._target:
             return
-        self.get_logger().info(f"Magnet EIN: obj_{self._target.color}")
+
+        color = self._target.color
+        self.get_logger().info(f"Magnet EIN: obj_{color}")
+
+        # Wichtig:
+        # Nicht den Wuerfel sofort hart auf TCP setzen.
+        # Sonst springt/teleportiert er, weil _tcp_estimate() nur eine Naeherung ist.
+        tcp_x, tcp_y, tcp_z = self._tcp_estimate()
+
+        # Der Wuerfel bleibt beim Aktivieren an seiner aktuellen Zielposition.
+        # Ab jetzt folgt er dem TCP mit genau diesem Offset.
+        self._cube_follow_offset = (
+            self._target.x - tcp_x,
+            self._target.y - tcp_y,
+            self._target.z - tcp_z,
+        )
+
+        self.get_logger().info(
+            f"Attach-Offset {color}: "
+            f"dx={self._cube_follow_offset[0]:.3f}, "
+            f"dy={self._cube_follow_offset[1]:.3f}, "
+            f"dz={self._cube_follow_offset[2]:.3f}"
+        )
+
         self._cube_attached = True
-        # Sofort an TCP ziehen, damit der Wuerfel nicht hinterherhinkt.
-        self._track_attached_cube()
-        self._status(f"TRANSPORTING {self._target.color}")
+        self._status(f"TRANSPORTING {color}")
 
     def _release_cube(self) -> None:
         if not self._target:
@@ -312,9 +353,18 @@ class PickPlaceNode(Node):
     def _track_attached_cube(self) -> None:
         if not self._cube_attached or self._target is None:
             return
+
         x, y, z = self._tcp_estimate()
-        # Der Wuerfel sitzt unter dem Magnet/TCP.
-        self._set_pose(f"obj_{self._target.color}", x, y, z - self.PICK_Z_OFFSET)
+        dx, dy, dz = self._cube_follow_offset
+
+        # Wuerfel folgt dem TCP relativ zur Position beim Greifen.
+        # Dadurch gibt es keinen Sprung beim Magnetisieren.
+        self._set_pose(
+            f"obj_{self._target.color}",
+            x + dx,
+            y + dy,
+            z + dz,
+        )
 
     # ------------------------- Gazebo / Utils -------------------------
 

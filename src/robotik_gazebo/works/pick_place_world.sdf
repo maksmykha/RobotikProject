@@ -658,5 +658,28 @@
       <pose>0 0 2.5 0 1.57 0</pose>
     </include> 
 
+  
+    <!-- Roboter-Podest  -->
+    <model name="robot_pedestal">
+      <static>true</static>
+      <pose>0 0 0.80 0 0 0</pose>
+      <link name="pedestal_link">
+        <visual name="pedestal_visual">
+          <geometry>
+            <cylinder>
+              <radius>0.12</radius>
+              <length>0.55</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>0.25 0.25 0.25 1</ambient>
+            <diffuse>0.35 0.35 0.35 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+          </material>
+        </visual>
+
+      </link>
+    </model>
+
   </world>
 </sdf>

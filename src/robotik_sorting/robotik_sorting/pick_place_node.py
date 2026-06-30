@@ -75,7 +75,7 @@ class PickPlaceNode(Node):
             "red": (-0.40, 0.20, 0.83),
             "green": (-0.75, 0.20, 0.83),
             "blue": (-0.75, -0.20, 0.83),
-            "yellow": (-0.40, -0.20, 0.83),
+            "yellow": (-0.42, -0.28, 0.80),
         }
 
         # Feinkalibrierung der Pick-Position pro Farbe in Metern.

@@ -667,7 +667,7 @@
         <visual name="pedestal_visual">
           <geometry>
             <cylinder>
-              <radius>0.12</radius>
+              <radius>0.08</radius>
               <length>0.55</length>
             </cylinder>
           </geometry>

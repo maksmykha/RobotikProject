@@ -94,7 +94,6 @@ src/
 ├── robotik_control         # Controller-Konfiguration
 ├── robotik_description     # Roboterbeschreibung / URDF / Xacro
 ├── robotik_moveit_config   # MoveIt-Konfiguration
-└── robotik_bringup         # Startdateien
 ```
 
 ## Installation
@@ -174,6 +173,12 @@ ros2 run robotik_sorting pick_place
 
 Eine Farbe kann über das Topic `/requested_color` angefordert werden.
 
+### Gelben Würfel sortieren
+
+```bash
+ros2 topic pub /requested_color std_msgs/msg/String "data: 'yellow'" --once
+```
+
 ### Roten Würfel sortieren
 
 ```bash
@@ -192,11 +197,6 @@ ros2 topic pub /requested_color std_msgs/msg/String "data: 'green'" --once
 ros2 topic pub /requested_color std_msgs/msg/String "data: 'blue'" --once
 ```
 
-### Gelben Würfel sortieren
-
-```bash
-ros2 topic pub /requested_color std_msgs/msg/String "data: 'yellow'" --once
-```
 
 Der Pick-and-Place-Node arbeitet immer nur ein Objekt gleichzeitig ab. Erst wenn der Status wieder `READY` ist, sollte der nächste Auftrag gesendet werden.
 

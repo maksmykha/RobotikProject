@@ -169,7 +169,7 @@ source install/setup.bash
 ros2 run robotik_sorting pick_place
 ```
 
-## Bedienung
+## Terminal 4: Bedienung
 
 Eine Farbe kann über das Topic `/requested_color` angefordert werden.
 
